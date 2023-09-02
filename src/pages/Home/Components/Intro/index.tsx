@@ -1,10 +1,13 @@
-import { Badges, CartIcon, IconBadge, IntroContainer, IntroTitles } from "./styles"
-import { ShoppingCart } from 'phosphor-react';
-import Coffee from '../../../../assets/Imagem.png'
+import { Badges, IconBadge, IntroContainer, IntroTitles } from "./styles"
+import { Package, ShoppingCart, Coffee, Timer } from 'phosphor-react';
+import CoffeeImg from '../../../../assets/Imagem.png'
+import { useTheme } from 'styled-components'; 
+
 export function Intro() {
+  const theme = useTheme()
+
   return (
     <IntroContainer>
-
       <div>
         <IntroTitles>
           <h2>
@@ -17,42 +20,29 @@ export function Intro() {
         </IntroTitles>
 
         <Badges>
-          <IconBadge>
-              <div>
-                <ShoppingCart size={16} weight="fill" />
-              </div>
-              <span>Compra simples e segura</span>
+          <IconBadge background={theme.product['yellow-dark']}>
+            <ShoppingCart size={16} weight="fill" />
+            <span>Compra simples e segura</span>
           </IconBadge>
-          <IconBadge>
-              <div>
-                <ShoppingCart size={16} weight="fill" />
-              </div>
-              <span>Embalagem mantém o café intacto</span>
+          <IconBadge background={theme.base['base-text']}>
+            <Package size={16} weight="fill" />
+            <span>Embalagem mantém o café intacto</span>
           </IconBadge>
-          <IconBadge>
-              <div>
-                <ShoppingCart size={16} weight="fill" />
-              </div>
-              <span>Entrega rápida e rastreada</span>
+          <IconBadge background={theme.product['yellow']}>
+            <Timer size={16} weight="fill" />
+            <span>Entrega rápida e rastreada</span>
           </IconBadge>
-          <IconBadge>
-              <div>
-                <ShoppingCart size={16} weight="fill" />
-              </div>
-              <span>O café chega fresquinho até você</span>
+          <IconBadge background={theme.product['purple']}>
+            <Coffee size={16} weight="fill" />
+            <span>O café chega fresquinho até você</span>
           </IconBadge>
         </Badges>
       </div>
 
-      <img 
-        src={Coffee} 
+      <img
+        src={CoffeeImg}
         alt="Coffee Delivery app Logo"
         title="Coffee Delivery app"></img>
-        
-
-      
-
-
     </IntroContainer>
   )
 }

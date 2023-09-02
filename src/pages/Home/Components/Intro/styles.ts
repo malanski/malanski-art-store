@@ -5,6 +5,17 @@ export const IntroContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 3.2rem 16rem;
+  img {
+    width: 47.6rem;
+    height: 36.0rem;
+  }
+  @media (max-width: 76.0rem) {
+    flex-direction: column-reverse;
+    img {
+      width: 90vw;
+      height: auto;
+    }
+  }
 `
 
 export const IntroTitles = styled.div`
@@ -27,23 +38,25 @@ export const IntroTitles = styled.div`
 `
 
 export const Badges = styled.div`
-  width: 56.7rem;
-  height: 8.4rem;
+  /* width: 56.7rem; */
+  /* height: 8.4rem; */
   display: flex;
   flex-shrink: 0; 
   flex-wrap: wrap;
   gap: 0.8rem;
 
 `
-
-export const IconBadge = styled.div`
+interface IconBadgeProps {
+  background: string; // add props type for icon background
+}
+export const IconBadge = styled.div<IconBadgeProps>`
   display: flex;
   gap: 0.8rem;
+  width: 49%;
   align-items: center; 
-  /* min-width: 50%;  */
-  div {
+  svg {
     border-radius: 50%;
-    background: ${(props) => props.theme.product['yellow-dark']};
+    background: ${(props) => props.background};
     color: ${(props) => props.theme.base['white']};
     padding: 0.8rem 0.8rem;
     width: 3.2rem;
@@ -53,5 +66,5 @@ export const IconBadge = styled.div`
     color: ${(props) => props.theme.base['base-text']};
     font-family: Roboto;
     font-size: 1.6rem;
-  }
+    }
 `
