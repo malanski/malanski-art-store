@@ -1,4 +1,4 @@
-import { BuyActions, BuyButton, CoffeeCard, CoffeeInfo, CoffeeListContainer, CoffeeListStyles, OptionsStyle } from "./style"
+import { BuyActions, BuyButton, BuyQuantity, CoffeeCard, CoffeeInfo, CoffeeListContainer, CoffeeListStyles, OptionsStyle } from "./style"
 import CoffeeDataList from '../CoffeeDataList'
 import { Minus, Plus, ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components';
@@ -26,22 +26,26 @@ export function CoffeeList() {
             </CoffeeInfo>
 
             <BuyActions>
-              <h6 title="Preço atual">R$ <span>9,90</span></h6>
-              
-              <button title="Remover">
-                <Minus size={14}/>
-              </button>
+              <h6 title="Preço atual">
+                R$ <span>9,90</span>
+              </h6>
 
-              <span title="Unidades">1</span>
-
-              <button title="Adicionar">
-                <Plus size={14}/>
-              </button>
+              <BuyQuantity>
+                <button title="Remover">
+                  <Minus size={14}/>
+                </button>
+                <span title="Unidades">1</span>
+                <button title="Adicionar">
+                  <Plus size={14}/>
+                </button>
+              </BuyQuantity>
 
               <BuyButton
                 title="Comprar"
                 background={theme.product['purple-dark']}>
-                <ShoppingCart size={22} weight="fill" />
+                <button >
+                  <ShoppingCart size={22} weight="fill"/>
+                </button>
               </BuyButton>
             </BuyActions>
           </CoffeeCard>

@@ -2,18 +2,15 @@ import styled from 'styled-components'
 
 export const IntroContainer = styled.div`
   max-width: 112rem;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 3.2rem 16rem; */
   img {
     max-width: 35vw;
     height: auto;
   }
-  @media (max-width: 74.0rem) {
+  @media (max-width: 80.0rem) {
     flex-direction: column-reverse;
-
     img {
       max-width: 70vw;
       height: auto;
@@ -25,35 +22,42 @@ export const TitlesContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    width: 100vw;
+    justify-content: space-between;
     padding: 0 8rem;
     margin: 0 auto;
     @media (max-width: 48.0rem)  {
       padding: 0 4rem;
-
     }
   }
 `
 export const IntroTitles = styled.div`
   gap: 1.6rem;
   max-width: 58.8rem;
-  margin-bottom: 6.6rem;
+  margin: 0 0 6.6rem 0;
   h2 {
     font-family: 'Baloo 2', cursive;
     font-size: 4.8rem; 
     font-weight: 800; 
     color: ${(props) => props.theme.base['base-title']};
   }
-  
   h4 {
     font-family: Roboto;
     font-size: 2.0rem;
     font-weight: 400;  
     color: ${(props) => props.theme.base['base-subtitle']};
   }
+  @media (max-width: 80rem) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
   @media (max-width: 48.0rem) {
     gap: 0.8rem;
+
     h2 {
       font-size: 2.8rem;
     }
@@ -69,22 +73,22 @@ export const IntroTitles = styled.div`
 `
 
 export const Badges = styled.div`
-  /* width: 56.7rem; */
-  /* height: 8.4rem; */
   display: flex;
-  flex-shrink: 0; 
   flex-wrap: wrap;
-  gap: 0.8rem;
-  
-
+  gap: 0.8rem 1.6rem;
+  @media (max-width: 76.0rem) {
+    justify-content: flex-start;
+    margin: 0.8rem auto;
+    }
 `
 interface IconBadgeProps {
   background: string; 
 }
 export const IconBadge = styled.div<IconBadgeProps>`
   display: flex;
-  gap: 0.8rem;
-  max-width: 49%;
+  gap: 1.2rem;
+  width: 29.4rem;
+  height: 3.2rem;
   align-items: center; 
   svg {
     border-radius: 50%;
@@ -99,8 +103,9 @@ export const IconBadge = styled.div<IconBadgeProps>`
     font-family: Roboto;
     font-size: 1.6rem;
     }
-    @media (max-width: 48.0rem) {
-    max-width: 80vw;
-
+    @media (max-width: 76.0rem) {
+    justify-content: flex-start;
+    margin: 0.8rem auto;
     }
+    
 `
