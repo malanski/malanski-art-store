@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  max-width: 144rem;
-  height: calc(100vh - 10rem);
-  margin: 5rem auto;
-  padding: 2.5rem;
-
-  background: ${(props) => props.theme.base.background};
-  border-radius: 8px;
-
-  display: flex;
+  /* padding: 32px 160px 157px 160px; */
+  padding-bottom: 160px;
   flex-direction: column;
+  align-items: center;
+  gap: 54px;  
+  display: flex;
+  background: ${(props) => props.theme.base.background};
+
 `

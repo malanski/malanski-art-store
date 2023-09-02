@@ -26,17 +26,21 @@ export function CoffeeList() {
             </CoffeeInfo>
 
             <BuyActions>
-              <h6>R$ <span>9,90</span></h6>
+              <h6 title="Preço atual">R$ <span>9,90</span></h6>
               
-              <button>
-                <Minus size={14} ></Minus>
-              </button>
-              <span>1</span>
-              <button>
-                <Plus size={14} ></Plus>
+              <button title="Remover">
+                <Minus size={14}/>
               </button>
 
-              <BuyButton background={theme.product['purple-dark']}>
+              <span title="Unidades">1</span>
+
+              <button title="Adicionar">
+                <Plus size={14}/>
+              </button>
+
+              <BuyButton
+                title="Comprar"
+                background={theme.product['purple-dark']}>
                 <ShoppingCart size={22} weight="fill" />
               </BuyButton>
             </BuyActions>

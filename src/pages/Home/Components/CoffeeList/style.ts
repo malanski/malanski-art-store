@@ -3,30 +3,50 @@ import styled from 'styled-components'
 export const CoffeeListStyles = styled.section`
   h2 {
     font-family: 'Baloo 2';
-    margin: 0 3.2rem;
-    width: 25.6rem;
-    text-align: center;
+    max-width: 25.6rem;
     font-size: 3.2rem;
+    margin: 3.2rem  0;
+
+  }
+  @media (max-width: 74.0rem) {
+    h2 {
+      margin: 3.2rem  8rem;
+    }
+  }
+  @media (max-width: 48.0rem) {
+    h2 {
+      margin: 3.2rem 4rem;
+    }
   }
 `
 export const CoffeeListContainer = styled.section`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  /* justify-content: start; */
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 3.2rem;
+  gap: 3.2rem;
+  /* margin: 0 32rem; */
+  max-width: 112rem;
+  @media (max-width: 74.0rem) {
+    margin: 0 4rem;
+    gap: 2.4rem;
+    justify-content: space-around;
+  }
+  @media (max-width: 48.0rem) {
+    margin: 0 2rem;
+    flex-wrap: wrap;
+  }
 `
 export const CoffeeCard = styled.div`
   background: ${(props) => props.theme.base['base-card']};
   border-radius: 6px 36px 6px 36px;
-  width: 25.6rem;
+  max-width: 25.6rem;
   height: 31.0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 3.2rem;
   text-align: center;
   padding: 2.4rem;
   h3 {
@@ -41,6 +61,12 @@ export const CoffeeCard = styled.div`
   }
   img {
     margin-top: -4.0rem;
+  }
+  @media (max-width: 593px) {
+    min-width: calc(85vw - 2.4rem);
+    margin: 0 auto;
+    padding: 1.2rem;
+
   }
 `
 export const CoffeeInfo = styled.div`

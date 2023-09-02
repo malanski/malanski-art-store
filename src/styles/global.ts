@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyled = createGlobalStyle`
   :root {
     font-size: 62.5%;
+    /* min-width: 62.5%; */
   }
 
   * {

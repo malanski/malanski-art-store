@@ -1,4 +1,4 @@
-import { Badges, IconBadge, IntroContainer, IntroTitles } from "./styles"
+import { Badges, IconBadge, IntroContainer, IntroTitles, TitlesContainer } from "./styles"
 import { Package, ShoppingCart, Coffee, Timer } from 'phosphor-react';
 import CoffeeImg from '../../../../assets/Imagem.png'
 import { useTheme } from 'styled-components'; 
@@ -8,7 +8,7 @@ export function Intro() {
 
   return (
     <IntroContainer>
-      <div>
+      <TitlesContainer>
         <IntroTitles>
           <h2>
             Encontre o café perfeito<br></br>
@@ -37,12 +37,13 @@ export function Intro() {
             <span>O café chega fresquinho até você</span>
           </IconBadge>
         </Badges>
-      </div>
+      </TitlesContainer>
 
       <img
         src={CoffeeImg}
         alt="Coffee Delivery app Logo"
-        title="Coffee Delivery app"></img>
+        title="Coffee Delivery app">
+      </img>
     </IntroContainer>
   )
 }
