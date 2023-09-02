@@ -1,5 +1,5 @@
 import { BuyActions, BuyButton, BuyQuantity, CoffeeCard, CoffeeInfo, CoffeeListContainer, CoffeeListStyles, OptionsStyle } from "./style"
-import CoffeeDataList from '../CoffeeDataList'
+import CoffeeDataList from '../../../../Data'
 import { Minus, Plus, ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components';
 
