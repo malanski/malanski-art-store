@@ -11,22 +11,22 @@ export function Intro() {
       <TitlesContainer>
         <IntroTitles>
           <h2>
-            Encontre o design perfeito<br></br>
-            para qualquer hora do dia
+            Veja aqui uma seleção<br></br>
+            que criamos para você  
           </h2>
           <h4>
-            Aqui na Malanski Art Store você recebe seu pedido onde estiver e tem atendimento personalizado
+            Aqui na Malanski Art Store você recebe seu pedido com tranquilidade e também tem atendimento personalizado
           </h4>
         </IntroTitles>
 
         <Badges>
           <IconBadge background={theme.product['yellow-dark']}>
             <ShoppingCart size={16} weight="fill" />
-            <span>Compra simples e segura</span>
+            <span>Compra simples e segura feita pela Colab55</span>
           </IconBadge>
           <IconBadge background={theme.base['base-text']}>
             <Package size={16} weight="fill" />
-            <span>Embalagem mantém adequada</span>
+            <span>Embalagem adequada</span>
           </IconBadge>
           <IconBadge background={theme.product['yellow']}>
             <Timer size={16} weight="fill" />
@@ -41,8 +41,8 @@ export function Intro() {
 
       <img
         src={ProductImg}
-        alt="Coffee Delivery app Logo"
-        title="Coffee Delivery app">
+        alt="Crisântemo e exaramo Logo"
+        title="Artes únicas, feitas com amor">
       </img>
     </IntroContainer>
   )

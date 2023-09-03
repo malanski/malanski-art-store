@@ -1,20 +1,30 @@
 import { BuyActions, BuyButton, OptionsStyle, ProductCard, ProductInfo, ProductListContainer, ProductsListStyles, ProductsNav } from "./style"
-import CapsDataList from '../../../../data/capsData'
-import TshirtsDataList from '../../../../data/tshirtsData'
-import FullTshirtsDataList from '../../../../data/fullShirtsData'
+import CapsDataList from '../../../../data/CapsData'
+import TshirtsDataList from '../../../../data/TshirtsData'
+import FullTshirtsDataList from '../../../../data/FullShirtsData'
 import SweatShirtsDataList from '../../../../data/SweatShirtsData'
 import LeggingsDataList from '../../../../data/LeggingsData'
 import { Plus, ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
 import { SetStateAction, useState } from 'react'
 
-const dataSources = [
-  { name: 'Bonés', data: CapsDataList },
-  { name: 'Camisetas', data: TshirtsDataList },
-  { name: 'Full Prints', data: FullTshirtsDataList },
-  { name: 'Moletons', data: SweatShirtsDataList },
-  { name: 'Leggings', data: LeggingsDataList },
+const allData = [
+  ...TshirtsDataList,
+  ...CapsDataList,
+  ...FullTshirtsDataList,
+  ...LeggingsDataList,
+  ...SweatShirtsDataList,
+
 ];
+
+const dataSources = [
+  { name: 'Todos', data: allData },
+  { name: 'Camisetas', data: TshirtsDataList },
+  { name: 'Bonés', data: CapsDataList },
+  { name: 'Full Prints', data: FullTshirtsDataList },
+  { name: 'Leggings', data: LeggingsDataList },
+  { name: 'Moletons', data: SweatShirtsDataList }
+  ];
 
 export function ProductsList() {
   const theme = useTheme()
