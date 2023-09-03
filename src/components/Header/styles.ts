@@ -9,11 +9,18 @@ export const HeaderContainer = styled.header`
   img {
     width: 8.5rem;
     height: 4rem;
+    filter: invert();
   }
 
   @media (max-width: 76rem) {
     padding: 3.2rem 3rem;
 
+  }
+  @media (max-width: 460px) {
+    padding: 3.2rem 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
   }
 `
 
@@ -22,9 +29,12 @@ export const UserActions = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
+  @media (max-width: 460px) {
+    align-self: flex-end;
+  }
 `
 
-export const UserLocation = styled.div`
+export const OfficialStore = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
