@@ -51,8 +51,8 @@ export function ProductsList() {
   const [modalDetails, setModalDetails] = useState('')
   const [modalPrice, setModalPrice] = useState(Number)
   const [bodyClass, setBodyClass] = useState('')
+
   useEffect(() => {
-    // Atualize a classe do body com base no estado do modal
     document.body.className = bodyClass
   }, [bodyClass])
 

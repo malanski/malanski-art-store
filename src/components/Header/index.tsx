@@ -1,7 +1,7 @@
-import { CartButton, HeaderContainer, OfficialStore, UserActions } from "./styles";
+import { CartButton, HeaderContainer, UserActions } from "./styles";
 
 import logo from '../../assets/Logo.svg'
-import { ShoppingBag, ShoppingCart } from "phosphor-react";
+import { ShoppingCart } from "phosphor-react";
 
 export function Header() {
   return (
