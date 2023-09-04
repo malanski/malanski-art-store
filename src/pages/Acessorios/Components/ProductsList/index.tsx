@@ -1,50 +1,46 @@
-import {
-  BuyActions,
-  BuyButton,
-  OptionsStyle,
-  ProductCard,
-  ProductInfo,
-  ProductListContainer,
-  ProductsListStyles,
-  ProductsNav
-} from "./style"
+  
+import { BuyActions, BuyButton, OptionsStyle, ProductCard, ProductInfo, ProductListContainer, ProductsListStyles, ProductsNav } from "./style"
+import CapsDataList from '../../../../data/CapsData'
+import FlipflopsDataList from '../../../../data/FlipflopsData'
 import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
-
-import FlipflopsDataList from "../../../../data/FlipflopsData"
-import MugsDataList from "../../../../data/MugsData"
-import ApronsDataList from "../../../../data/ApronsData"
-import CapsDataList from '../../../../data/CapsData'
-import TshirtsDataList from '../../../../data/TshirtsData'
-import FullTshirtsDataList from '../../../../data/FullShirtsData'
-import SweatShirtsDataList from '../../../../data/SweatShirtsData'
-import LeggingsDataList from '../../../../data/LeggingsData'
-import SketchbookDataList from "../../../../data/SketchbookData"
+import { SetStateAction, useState } from 'react'
 
 const allData = [
-  ...TshirtsDataList,
   ...CapsDataList,
-  ...FullTshirtsDataList,
-  ...MugsDataList,
-  ...FlipflopsDataList,
-  ...LeggingsDataList,
-  ...SweatShirtsDataList,
-  ...SketchbookDataList,
-  ...ApronsDataList
+  ...FlipflopsDataList
+];
+
+const dataSources = [
+  { name: 'Acessórios', data: allData },
+  { name: 'Bonés', data: CapsDataList },
+  { name: 'Chinelos', data: FlipflopsDataList },
 ];
 
 export function ProductsList() {
   const theme = useTheme()
+  const [activeDataIndex, setActiveDataIndex] = useState(0);
+
+  const toggleDataSource = (index: SetStateAction<number>) => {
+    setActiveDataIndex(index);
+  };
+
+  const currentDataSource = dataSources[activeDataIndex];
 
   return (
     <ProductsListStyles>
       <h2>
-        Todos os Produtos
+        {currentDataSource.name}
       </h2>
       <ProductsNav>
+        {dataSources.map((source, index) => (
+          <li key={index}>
+            <a title={`Mudar para ${source.name}`} onClick={() => toggleDataSource(index)}>{source.name}</a>
+          </li>
+        ))}
       </ProductsNav>
       <ProductListContainer>
-        {allData.map((product, index) => (
+        {currentDataSource.data.map((product, index) => (
           <ProductCard key={index}>
             <img src={`${product.iconSrc}`}></img>
 
