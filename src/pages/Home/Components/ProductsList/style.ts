@@ -237,3 +237,39 @@ export const BuyButton = styled.div<IconButton>`
     }
 }
 `
+export const Modal = styled.div `
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    max-width: 80%; 
+    max-height: 80vh;
+  }
+
+  button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+`
+export const ModalInfo = styled.div `
+  background: ${(props) => props.theme.base['base-card']};
+  padding: 2rem;
+  a, h3, h4 {
+    color: ${(props) => props.theme.base['white']};
+    text-decoration: none;
+  }
+
+`

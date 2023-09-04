@@ -1,129 +1,221 @@
 import styled from 'styled-components'
 
-export const IntroContainer = styled.div`
-  /* max-width: 112rem; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  img {
-    max-width: 35vw;
-    height: auto;
-  }
-  @media (max-width: 80.0rem) {
-    flex-direction: column-reverse;
-    img {
-      max-width: 70vw;
-      height: auto;
-    }
-  }
-`
-export const TitlesContainer = styled.div`
-  @media (max-width: 66.0rem) {
+export const ProductsListStyles = styled.section`
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+  h2 {
+    font-family: 'Baloo 2';
+    font-size: 3.2rem;
+    margin: 3.2rem  0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    /* padding: 0 8rem; */
-    margin: 0 auto;
-    @media (max-width: 48.0rem)  {
-      /* padding: 0 4rem; */
-    }
-    @media (max-width: 400px)  {
-      /* padding: 0 0.8rem; */
-      margin: 0 0;
-
-    }
-  }
-`
-export const IntroTitles = styled.div`
-  gap: 1.6rem;
-  max-width: 58.8rem;
-  margin: 0 0 6.6rem 0;
-  h2 {
-    font-family: 'Baloo 2', cursive;
-    font-size: 4.8rem; 
-    font-weight: 800; 
-    color: ${(props) => props.theme.base['base-title']};
-  }
-  h4 {
-    font-family: Roboto;
-    font-size: 2.0rem;
-    font-weight: 400;  
-    color: ${(props) => props.theme.base['base-subtitle']};
-  }
-  @media (max-width: 80rem) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    transition: all ease-in-out 800ms;
+    text-align: center;
     width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: 74.0rem) {
     h2 {
-      font-size: 2.8rem;
+      margin: 3.2rem  8rem;
     }
   }
   @media (max-width: 48.0rem) {
-    gap: 0.8rem;
-
     h2 {
-      font-size: 2.8rem;
+      margin: 3.2rem 4rem;
     }
+  }
+`
+
+export const ProductsNav = styled.ul`
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 3.2rem  0;
+    background: ${(props) => props.theme.base.bgClear};
+    align-items: center;
+  a {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: ${(props) => props.theme.product['yellow-light']};
+    transition: all ease-in-out 800ms;
+  }
+  a:hover {
+      transition: all ease-in-out 800ms;
+      background: ${(props) => props.theme.base['base-card']};
+      color: ${(props) => props.theme.product['yellow']};
+  }
+  a:active {
+      background: ${(props) => props.theme.base['base-card']};
+      color: ${(props) => props.theme.product['yellow']};
+  }
+  @media (max-width: 740px) {
+    flex-wrap: wrap;
+    margin: 3.2rem  8rem;
+    gap: 0.8rem;
+    a {
+      font-size: 1.9rem;
+    }
+  }
+  @media (max-width: 540px) {
+    a {
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+    }
+  }
+`
+export const ProductListContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  max-width: 112rem;
+  @media (max-width: 74.0rem) {
+    justify-content: space-around;
+  }
+  @media (max-width: 48.0rem) {
+    /* margin: 0 2rem; */
+    /* flex-wrap: wrap; */
+  }
+`
+export const ProductCard = styled.div`
+  background: ${(props) => props.theme.base['base-card']};
+  border-radius: 6px 36px 6px 36px;
+  max-width: 25.6rem;
+  min-height: 31.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2.4rem;
+  h3 {
+    font-family: 'Baloo 2';
+    font-size: 2.0rem;
+    color: ${(props) => props.theme.base['base-subtitle']};
+    margin: 0.8rem 0;
+    min-height: 6.9rem;
+    display: flex;
+    align-items: center;
+  }
+  h4 {
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+    color: ${(props) => props.theme.base['base-label']};
+  }
+  img {
+    margin-top: -4.0rem;
+    margin-bottom: 2.0rem;
+  }
+  @media (max-width: 849px) {
+    min-width: calc(45vw - 2.4rem);
+    min-height: 50vh;
+    padding: 1.2rem;
   }
   @media (max-width: 593px) {
-    h2 {
-      font-size: 2.2rem;
-    }
-    h4 {
-      font-size: 1.6rem;
-    }
-
+    min-width: calc(85vw - 2.4rem);
+    margin: 0 auto;
+    padding: 1.2rem;
   }
-  @media (max-width: 390px) {
-    h2 {
-      font-size: 2rem;
-    }
-    h4 {
-      font-size: 1.2rem;
-    }
-
-  }
- 
 `
-
-export const Badges = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem 1.6rem;
-  @media (max-width: 76.0rem) {
+export const ProductInfo = styled.div`
+    display: flex;
     justify-content: flex-start;
-    margin: 0.8rem auto;
+    align-items: center;
+    flex-direction: column;
+`
+export const OptionsStyle = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    button {
+      font-size: 1rem;
+      background: ${(props) => props.theme.product['yellow-light']};
+      color: ${(props) => props.theme.product['yellow-dark']};
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 100px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 `
-interface IconBadgeProps {
-  background: string; 
-}
-export const IconBadge = styled.div<IconBadgeProps>`
+export const BuyActions = styled.div`
   display: flex;
-  gap: 1.2rem;
-  width: 29.4rem;
-  height: 3.2rem;
-  align-items: center; 
-  svg {
-    border-radius: 50%;
-    background: ${(props) => props.background};
-    color: ${(props) => props.theme.base['white']};
-    padding: 0.8rem 0.8rem;
-    width: 3.2rem;
-    height: 3.2rem;
-  }
-  span {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  h6 {
+    font-family: 'Roboto';
+    font-size: 1.4rem;
     color: ${(props) => props.theme.base['base-text']};
-    font-family: Roboto;
-    font-size: 1.6rem;
+    span {
+      font-family: 'baloo 2';
+      font-size: 2.4rem;
+      font-weight: 800;
+    }    
+  }
+  button:hover {
+    transition: all ease-in-out 600ms;
+    background: ${(props) => props.theme.base['base-label']};
+    svg {
+      filter: invert();
     }
-    @media (max-width: 76.0rem) {
-    justify-content: flex-start;
-    margin: 0.8rem auto;
+  }
+`
+
+interface IconButton {
+  background: string;
+}
+export const BuyButton = styled.div<IconButton>`
+  button {
+    background: ${(props) => props.background};
+    border-radius: 6px;
+    padding: 0.8rem;
+    border: none;
+    width: 3.8rem;
+    height: 3.8rem;
+    svg {
+      color: ${(props) => props.theme.base['white']};
+      margin: auto;
     }
-    
+}
+`
+export const Modal = styled.div `
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 80%; 
+    max-height: 80vh;
+  }
+
+  button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+`
+export const ModalInfo = styled.div `
 `

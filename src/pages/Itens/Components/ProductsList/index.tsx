@@ -7,6 +7,7 @@ import MugsDataList from "../../../../data/MugsData"
 import ApronsDataList from "../../../../data/ApronsData"
 import SketchbookDataList from "../../../../data/SketchbookData"
 import PillowsDataList from "../../../../data/PillowsData"
+import { Nav } from "../../../../components/Nav"
 
 const allData = [
   ...MugsDataList,
@@ -35,6 +36,7 @@ export function ProductsList() {
 
   return (
     <ProductsListStyles>
+      <Nav />
       <h2>
         {currentDataSource.name}
       </h2>
@@ -77,6 +79,8 @@ export function ProductsList() {
           </ProductCard>
         ))}
       </ProductListContainer>
+
+
     </ProductsListStyles>
   )
 }

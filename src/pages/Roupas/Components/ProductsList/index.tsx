@@ -6,6 +6,7 @@ import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
 import { SetStateAction, useState } from 'react'
 import LeggingsDataList from "../../../../data/LeggingsData"
+import { Nav } from "../../../../components/Nav"
 
 const allData = [
   ...TshirtsDataList,
@@ -20,7 +21,7 @@ const dataSources = [
   { name: 'Full Prints', data: FullTshirtsDataList },
   { name: 'Leggings', data: LeggingsDataList },
   { name: 'Moletons', data: SweatShirtsDataList }
-  ];
+];
 
 export function ProductsList() {
   const theme = useTheme()
@@ -34,15 +35,16 @@ export function ProductsList() {
 
   return (
     <ProductsListStyles>
-            <h2>
-              {currentDataSource.name}
-            </h2>
+      <Nav />
+      <h2>
+        {currentDataSource.name}
+      </h2>
       <ProductsNav>
-          {dataSources.map((source, index) => (
-            <li key={index}>
-              <a title={`Mudar para ${source.name}`} onClick={() => toggleDataSource(index)}>{source.name}</a>
-            </li>
-          ))}
+        {dataSources.map((source, index) => (
+          <li key={index}>
+            <a title={`Mudar para ${source.name}`} onClick={() => toggleDataSource(index)}>{source.name}</a>
+          </li>
+        ))}
       </ProductsNav>
       <ProductListContainer>
         {currentDataSource.data.map((product, index) => (

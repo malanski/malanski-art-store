@@ -6,12 +6,13 @@ import {
   ProductInfo,
   ProductListContainer,
   ProductsListStyles,
-  ProductsNav
+  ProductsNav,
+  Modal,
+  ModalInfo
 } from "./style"
 import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
-import { Modal, ModalInfo } from "../../../Itens/Components/ProductsList/style"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import FlipflopsDataList from "../../../../data/FlipflopsData"
 import MugsDataList from "../../../../data/MugsData"
@@ -25,6 +26,7 @@ import SketchbookDataList from "../../../../data/SketchbookData"
 import TowelsDataList from "../../../../data/TowelsData"
 import PillowsDataList from "../../../../data/PillowsData"
 import ButtonsDataList from "../../../../data/ButtonsData"
+import { Nav } from "../../../../components/Nav"
 
 
 const allData = [
@@ -48,14 +50,19 @@ export function ProductsList() {
   const [largeImageSrc, setLargeImageSrc] = useState('')
   const [modalName, setModalName] = useState('')
   const [modalDetails, setModalDetails] = useState('')
+  const [modalPrice, setModalPrice] = useState(Number)
+  const [bodyClass, setBodyClass] = useState('')
+  useEffect(() => {
+    // Atualize a classe do body com base no estado do modal
+    document.body.className = bodyClass
+  }, [bodyClass])
 
   return (
     <ProductsListStyles>
+      <Nav/>
       <h2>
         Todos os Produtos
       </h2>
-      <ProductsNav>
-      </ProductsNav>
       <ProductListContainer>
         {allData.map((product, index) => (
           <ProductCard key={index}>
@@ -66,7 +73,9 @@ export function ProductsList() {
                 setLargeImageSrc(product.imgSrc)
                 setModalName(product.name)
                 setModalDetails(product.description)
+                setModalPrice(product.price)
                 setIsModalOpen(true)
+                setBodyClass('modal-open')
               }}
             ></img>
             <ProductInfo>
@@ -98,14 +107,18 @@ export function ProductsList() {
       </ProductListContainer>
 
       {isModalOpen && (
-        <Modal onClick={() => setIsModalOpen(false)}>
+        <Modal onClick={() => {
+          setIsModalOpen(false)
+          setBodyClass('')
+        }}>
           <img src={largeImageSrc} alt="Imagem Grande" />
           <ModalInfo>
             <h3>{modalName}</h3>
             <h4>{modalDetails}</h4>
+            <h4>{modalPrice}</h4>
             <a href="" title="Comprar">Comprar</a>
           </ModalInfo>
-          <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+          <button onClick={() => setIsModalOpen(false) }>Fechar</button>
         </Modal>
       )}
     </ProductsListStyles>

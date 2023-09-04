@@ -7,6 +7,7 @@ import { useTheme } from 'styled-components'
 import { SetStateAction, useState } from 'react'
 import TowelsDataList from "../../../../data/TowelsData"
 import ButtonsDataList from "../../../../data/ButtonsData"
+import { Nav } from "../../../../components/Nav"
 
 const allData = [
   ...CapsDataList,
@@ -35,6 +36,7 @@ export function ProductsList() {
 
   return (
     <ProductsListStyles>
+      <Nav />
       <h2>
         {currentDataSource.name}
       </h2>

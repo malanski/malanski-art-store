@@ -8,7 +8,6 @@ export function DefaultLayout() {
   return (
     <LayoutContainer>
       <Header />
-      <Nav />
       <Outlet />
       <Nav />
     </LayoutContainer>

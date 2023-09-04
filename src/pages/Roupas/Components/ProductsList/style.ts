@@ -154,44 +154,7 @@ export const OptionsStyle = styled.div`
       text-transform: uppercase;
     }
 `
-export const BuyQuantity = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem;
-  border-radius: 6px;
-  min-width: 7.2rem;
-  height: 3.8rem;
-  font-family: Roboto;
-  font-size: 1.6rem; 
-  background: ${(props) => props.theme.base['base-button']};
-  span {
-    padding: 0.2rem;
-    font-size: 1.6rem;
-  }
-  button {
-    border: none;
-    transition: all ease-in-out 600ms;
-    border-radius: 50%;
-    padding: 0.2rem;
-    display: flex;
-    background: ${(props) => props.theme.base['base-button']};
-  }
-  button:hover {
-    transition: all ease-in-out 600ms;
-    background: ${(props) => props.theme.base['base-label']};
-    border: 0.2rem solid ${(props) => props.theme.base['white']};
-    svg {
-      filter: invert();
-    }
-  }
 
-  @media (max-width: 591px)  {
-    max-width: 10.2rem;
-    flex-grow: 1;
-  }
-
-`
 export const BuyActions = styled.div`
   display: flex;
   flex-direction: row;
@@ -207,9 +170,6 @@ export const BuyActions = styled.div`
       font-size: 2.4rem;
       font-weight: 800;
     }    
-  }
-  button {
-
   }
   button:hover {
     transition: all ease-in-out 600ms;
