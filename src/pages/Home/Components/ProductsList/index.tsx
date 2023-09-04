@@ -7,7 +7,8 @@ import {
   ProductListContainer,
   ProductsListStyles,
   Modal,
-  ModalInfo
+  ModalInfo,
+  ModalFlex
 } from "./style"
 import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
@@ -58,7 +59,7 @@ export function ProductsList() {
 
   return (
     <ProductsListStyles>
-      <Nav/>
+      <Nav />
       <h2>
         Todos os Produtos
       </h2>
@@ -96,9 +97,9 @@ export function ProductsList() {
               <BuyButton
                 title="Comprar"
                 background={theme.product['purple-dark']}>
-                <button>
+                <a>
                   <ShoppingCart size={22} weight="fill" />
-                </button>
+                </a>
               </BuyButton>
             </BuyActions>
           </ProductCard>
@@ -107,17 +108,31 @@ export function ProductsList() {
 
       {isModalOpen && (
         <Modal onClick={() => {
-          setIsModalOpen(false)
+          // setIsModalOpen(true)
           setBodyClass('')
         }}>
-          <img src={largeImageSrc} alt="Imagem Grande" />
-          <ModalInfo>
-            <h3>{modalName}</h3>
-            <h4>{modalDetails}</h4>
-            <h4>{modalPrice}</h4>
-            <a href="" title="Comprar">Comprar</a>
-          </ModalInfo>
-          <button onClick={() => setIsModalOpen(false) }>Fechar</button>
+          <ModalFlex>
+            <img src={largeImageSrc} alt="Imagem Grande" />
+            <ModalInfo>
+              <h3>{modalName}</h3>
+              <hr></hr>
+              <h5>{modalDetails}</h5>
+              <BuyActions>
+                <h6 title="Preço atual">
+                  R$ <span>{modalPrice}</span>
+                </h6>
+
+                <BuyButton
+                  title="Comprar"
+                  background={theme.product['purple-dark']}>
+                  <a>
+                    <ShoppingCart size={22} weight="fill" />
+                  </a>
+                </BuyButton>
+              </BuyActions>
+            </ModalInfo>
+            <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+          </ModalFlex>
         </Modal>
       )}
     </ProductsListStyles>

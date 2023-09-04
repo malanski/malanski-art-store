@@ -1,7 +1,5 @@
-import { CartButton, HeaderContainer, UserActions } from "./styles";
-
+import { HeaderContainer } from "./styles";
 import logo from '../../assets/Logo.svg'
-import { ShoppingCart } from "phosphor-react";
 
 export function Header() {
   return (
@@ -10,18 +8,6 @@ export function Header() {
         src={logo} 
         alt="Coffee Delivery app Logo"
         title="Coffee Delivery app"></img>
-
-      <UserActions>
-        {/* <OfficialStore title="Loja oficial">
-          <ShoppingBag size={22} weight="fill"/>
-          <span>Veja a Loja principal na Colab 55</span>
-        </OfficialStore> */}
-
-        <CartButton>
-          <ShoppingCart size={22} weight="fill" />
-        </CartButton>
-
-      </UserActions>
     </HeaderContainer>
   )
 }

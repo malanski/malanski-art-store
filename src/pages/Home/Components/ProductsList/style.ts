@@ -154,44 +154,6 @@ export const OptionsStyle = styled.div`
       text-transform: uppercase;
     }
 `
-export const BuyQuantity = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem;
-  border-radius: 6px;
-  min-width: 7.2rem;
-  height: 3.8rem;
-  font-family: Roboto;
-  font-size: 1.6rem; 
-  background: ${(props) => props.theme.base['base-button']};
-  span {
-    padding: 0.2rem;
-    font-size: 1.6rem;
-  }
-  button {
-    border: none;
-    transition: all ease-in-out 600ms;
-    border-radius: 50%;
-    padding: 0.2rem;
-    display: flex;
-    background: ${(props) => props.theme.base['base-button']};
-  }
-  button:hover {
-    transition: all ease-in-out 600ms;
-    background: ${(props) => props.theme.base['base-label']};
-    border: 0.2rem solid ${(props) => props.theme.base['white']};
-    svg {
-      filter: invert();
-    }
-  }
-
-  @media (max-width: 591px)  {
-    max-width: 10.2rem;
-    flex-grow: 1;
-  }
-
-`
 export const BuyActions = styled.div`
   display: flex;
   flex-direction: row;
@@ -208,10 +170,8 @@ export const BuyActions = styled.div`
       font-weight: 800;
     }    
   }
-  button {
 
-  }
-  button:hover {
+  a:hover {
     transition: all ease-in-out 600ms;
     background: ${(props) => props.theme.base['base-label']};
     svg {
@@ -224,13 +184,14 @@ interface IconButton {
   background: string;
 }
 export const BuyButton = styled.div<IconButton>`
-  button {
+  a {
     background: ${(props) => props.background};
     border-radius: 6px;
     padding: 0.8rem;
     border: none;
     width: 3.8rem;
     height: 3.8rem;
+    display: flex;
     svg {
       color: ${(props) => props.theme.base['white']};
       margin: auto;
@@ -238,16 +199,13 @@ export const BuyButton = styled.div<IconButton>`
 }
 `
 export const Modal = styled.div `
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem 0 ;
   img {
     max-width: 80%; 
     max-height: 80vh;
@@ -263,13 +221,29 @@ export const Modal = styled.div `
     font-size: 24px;
     cursor: pointer;
   }
+  @media (max-width: 750px) {
+    img {
+      max-width: 90%; 
+      height: auto;
+    }
+  }
+`
+export const ModalFlex = styled.div`
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 export const ModalInfo = styled.div `
   background: ${(props) => props.theme.base['base-card']};
   padding: 2rem;
-  a, h3, h4 {
+
+  a, h3, h5 {
     color: ${(props) => props.theme.base['white']};
     text-decoration: none;
   }
 
 `
+
+
