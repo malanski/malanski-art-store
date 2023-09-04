@@ -6,7 +6,6 @@ import {
   ProductInfo,
   ProductListContainer,
   ProductsListStyles,
-  ProductsNav,
   Modal,
   ModalInfo
 } from "./style"
