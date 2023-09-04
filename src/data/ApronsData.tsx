@@ -3,10 +3,10 @@ import ApronsSunflower from '../assets/products_icon/aprons_big_rose.png'
 import ApronsTurtleOrange from '../assets/products_icon/aprons_lion_red.png'
 import ApronsRedWings from '../assets/products_icon/aprons_dragon_blue.png'
 
-import ApronsMandalaRedBig from '../assets/products_icon/aprons_koi_fishes.png'
-import ApronsSunflowerBig from '../assets/products_icon/aprons_big_rose.png'
-import ApronsTurtleOrangeBig from '../assets/products_icon/aprons_lion_red.png'
-import ApronsRedWingsBig from '../assets/products_icon/aprons_dragon_blue.png'
+import ApronsMandalaRedBig from '../assets/products_img/aprons_koi_fishes.png'
+import ApronsSunflowerBig from '../assets/products_img/aprons_big_rose.png'
+import ApronsTurtleOrangeBig from '../assets/products_img/aprons_lion_red.png'
+import ApronsRedWingsBig from '../assets/products_img/aprons_dragon_blue.png'
 
 
 

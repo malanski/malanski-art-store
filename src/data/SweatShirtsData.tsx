@@ -3,7 +3,7 @@ import teeSwOctoColor from '../assets/products_icon/tee_sw_octo_color.png'
 import teeSwButterflyPink from '../assets/products_icon/tee_sw_butterfly_pink.png'
 import teeSwSnake from '../assets/products_icon/tee_sw_snake.png'
 
-import teeSwRedDragonBig from '../assets/products_img/tee_sw_octo_color.png'
+import teeSwRedDragonBig from '../assets/products_img/tee_sw_red_dragon.png'
 import teeSwOctoColorBig from '../assets/products_img/tee_sw_octo_color.png'
 import teeSwButterflyPinkBig from '../assets/products_img/tee_sw_butterfly_pink.png'
 import teeSwSnakeBig from '../assets/products_img/tee_sw_snake.png'

@@ -3,7 +3,7 @@ import teeHeptaInv from '../assets/products_icon/tee_full_hepta_inv.png'
 import teeButterflyMarb from '../assets/products_icon/tee_full_butterfly_marb.png'
 import teeHeptaMud from '../assets/products_icon/tee_full_hepta_mud.png'
 
-import teeFullRedDragonBig from '../assets/products_img/tee_full_hepta_inv.png'
+import teeFullRedDragonBig from '../assets/products_img/tee_full_red_dragon.png'
 import teeHeptaInvBig from '../assets/products_img/tee_full_hepta_inv.png'
 import teeButterflyMarbBig from '../assets/products_img/tee_full_butterfly_marb.png'
 import teeHeptaMudBig from '../assets/products_img/tee_full_hepta_mud.png'

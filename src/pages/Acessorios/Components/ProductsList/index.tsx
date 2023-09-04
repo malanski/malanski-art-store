@@ -5,15 +5,21 @@ import FlipflopsDataList from '../../../../data/FlipflopsData'
 import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
 import { SetStateAction, useState } from 'react'
+import TowelsDataList from "../../../../data/TowelsData"
+import ButtonsDataList from "../../../../data/ButtonsData"
 
 const allData = [
   ...CapsDataList,
-  ...FlipflopsDataList
+  ...ButtonsDataList,
+  ...TowelsDataList,
+  ...FlipflopsDataList,
 ];
 
 const dataSources = [
   { name: 'Acessórios', data: allData },
   { name: 'Bonés', data: CapsDataList },
+  { name: 'Broches', data: ButtonsDataList },
+  { name: 'Toalhas', data: TowelsDataList },
   { name: 'Chinelos', data: FlipflopsDataList },
 ];
 

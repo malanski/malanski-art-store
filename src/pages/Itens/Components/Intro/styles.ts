@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const IntroContainer = styled.div`
-  max-width: 112rem;
+  /* max-width: 112rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,10 +25,15 @@ export const TitlesContainer = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 8rem;
+    /* padding: 0 8rem; */
     margin: 0 auto;
     @media (max-width: 48.0rem)  {
-      padding: 0 4rem;
+      /* padding: 0 4rem; */
+    }
+    @media (max-width: 400px)  {
+      /* padding: 0 0.8rem; */
+      margin: 0 0;
+
     }
   }
 `
@@ -71,7 +76,18 @@ export const IntroTitles = styled.div`
     h4 {
       font-size: 1.6rem;
     }
+
   }
+  @media (max-width: 390px) {
+    h2 {
+      font-size: 2rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+
+  }
+ 
 `
 
 export const Badges = styled.div`

@@ -12,10 +12,10 @@ export function Header() {
         title="Coffee Delivery app"></img>
 
       <UserActions>
-        <OfficialStore title="Loja oficial">
+        {/* <OfficialStore title="Loja oficial">
           <ShoppingBag size={22} weight="fill"/>
           <span>Veja a Loja principal na Colab 55</span>
-        </OfficialStore>
+        </OfficialStore> */}
 
         <CartButton>
           <ShoppingCart size={22} weight="fill" />

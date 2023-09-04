@@ -10,6 +10,8 @@ import {
 } from "./style"
 import { ShoppingCart } from "phosphor-react"
 import { useTheme } from 'styled-components'
+import { Modal, ModalInfo } from "../../../Itens/Components/ProductsList/style"
+import { useState } from 'react'
 
 import FlipflopsDataList from "../../../../data/FlipflopsData"
 import MugsDataList from "../../../../data/MugsData"
@@ -20,14 +22,21 @@ import FullTshirtsDataList from '../../../../data/FullShirtsData'
 import SweatShirtsDataList from '../../../../data/SweatShirtsData'
 import LeggingsDataList from '../../../../data/LeggingsData'
 import SketchbookDataList from "../../../../data/SketchbookData"
+import TowelsDataList from "../../../../data/TowelsData"
+import PillowsDataList from "../../../../data/PillowsData"
+import ButtonsDataList from "../../../../data/ButtonsData"
+
 
 const allData = [
   ...TshirtsDataList,
   ...CapsDataList,
   ...FullTshirtsDataList,
+  ...ButtonsDataList,
   ...MugsDataList,
-  ...FlipflopsDataList,
   ...LeggingsDataList,
+  ...PillowsDataList,
+  ...FlipflopsDataList,
+  ...TowelsDataList,
   ...SweatShirtsDataList,
   ...SketchbookDataList,
   ...ApronsDataList
@@ -35,6 +44,10 @@ const allData = [
 
 export function ProductsList() {
   const theme = useTheme()
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [largeImageSrc, setLargeImageSrc] = useState('')
+  const [modalName, setModalName] = useState('')
+  const [modalDetails, setModalDetails] = useState('')
 
   return (
     <ProductsListStyles>
@@ -46,8 +59,16 @@ export function ProductsList() {
       <ProductListContainer>
         {allData.map((product, index) => (
           <ProductCard key={index}>
-            <img src={`${product.iconSrc}`}></img>
-
+            <img
+              src={`${product.iconSrc}`}
+              alt={product.name}
+              onClick={() => {
+                setLargeImageSrc(product.imgSrc)
+                setModalName(product.name)
+                setModalDetails(product.description)
+                setIsModalOpen(true)
+              }}
+            ></img>
             <ProductInfo>
               <OptionsStyle>
                 {product.options.map((option, index) => (
@@ -75,6 +96,18 @@ export function ProductsList() {
           </ProductCard>
         ))}
       </ProductListContainer>
+
+      {isModalOpen && (
+        <Modal onClick={() => setIsModalOpen(false)}>
+          <img src={largeImageSrc} alt="Imagem Grande" />
+          <ModalInfo>
+            <h3>{modalName}</h3>
+            <h4>{modalDetails}</h4>
+            <a href="" title="Comprar">Comprar</a>
+          </ModalInfo>
+          <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+        </Modal>
+      )}
     </ProductsListStyles>
   )
 }

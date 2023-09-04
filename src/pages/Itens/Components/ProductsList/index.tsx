@@ -6,10 +6,12 @@ import { SetStateAction, useState } from 'react'
 import MugsDataList from "../../../../data/MugsData"
 import ApronsDataList from "../../../../data/ApronsData"
 import SketchbookDataList from "../../../../data/SketchbookData"
+import PillowsDataList from "../../../../data/PillowsData"
 
 const allData = [
   ...MugsDataList,
   ...SketchbookDataList,
+  ...PillowsDataList,
   ...ApronsDataList
 ];
 
@@ -17,6 +19,7 @@ const dataSources = [
   { name: 'Itens', data: allData },
   { name: 'Canecas', data: MugsDataList },
   { name: 'Cadernos', data: SketchbookDataList },
+  { name: 'Almofadas', data: PillowsDataList },
   { name: 'Aventais', data: ApronsDataList },
 ];
 

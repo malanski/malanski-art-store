@@ -16,8 +16,8 @@ export const HeaderContainer = styled.header`
     padding: 3.2rem 3rem;
 
   }
-  @media (max-width: 460px) {
-    padding: 3.2rem 3rem;
+  @media (max-width: 475px) {
+    padding: 1rem 1.5rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.6rem;

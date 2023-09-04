@@ -3,9 +3,9 @@ import teeOctoInv from '../assets/products_icon/tee_octo_inv.png'
 import teeRoseSing from '../assets/products_icon/tee_rose_sing.png'
 import teeKoiFishFlowers from '../assets/products_icon/tee_koi_fish_flowers.png'
 
+import teeRedDragonBig from '../assets/products_img/tee_red_dragon.png'
 import teeOctoInvBig from '../assets/products_img/tee_octo_inv.png'
 import teeRoseSingBig from '../assets/products_img/tee_rose_sing.png'
-import teeRedDragonBig from '../assets/products_img/bone_abelha_pb.png'
 import teeKoiFishFlowersBig from '../assets/products_img/tee_koi_fish_flowers.png'
 
 interface ITshirtsData {
