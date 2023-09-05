@@ -19,42 +19,43 @@ interface ITshirtsData {
 }
 const TshirtsDataList: ITshirtsData[] = [
   {
-    name:'Camiseta Dragão Vermelho',
-    description:'Disponível em varias cores e tamanhos',
-    options:['Regular', 'Baby Long', 'Infantil'],
+    name: 'Camiseta Dragão Vermelho',
+    description: 'Disponível em varias cores e tamanhos',
+    options: ['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeRedDragon,
     imgSrc: teeRedDragonBig,
     price: 119.99,
-    buyHref:'https://www.colab55.com/@malanskiart/tees/dragao-vermelho'
+    buyHref: 'https://www.colab55.com/@malanskiart/tees/dragao-vermelho',
   },
   {
-    name:'Camiseta crisântemo octógama',
-    description:'Disponível em varias cores e tamanhos',
-    options:['Regular', 'Baby Long', 'Infantil'],
+    name: 'Camiseta crisântemo octógama',
+    description: 'Disponível em varias cores e tamanhos',
+    options: ['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeOctoInv,
     imgSrc: teeOctoInvBig,
     price: 119.99,
-    buyHref:'https://www.colab55.com/@malanskiart/tees/crisantemo-octograma-estrela-invertido'
+    buyHref:
+      'https://www.colab55.com/@malanskiart/tees/crisantemo-octograma-estrela-invertido',
   },
   {
-    name:'Peixes Koi Carpas Flores',
-    description:'Disponível em varias cores e tamanhos',
-    options:['Regular', 'Baby Long', 'Infantil'],
+    name: 'Peixes Koi Carpas Flores',
+    description: 'Disponível em varias cores e tamanhos',
+    options: ['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeKoiFishFlowers,
     imgSrc: teeKoiFishFlowersBig,
     price: 119.99,
-    buyHref:'https://www.colab55.com/@malanskiart/tees/peixes-koi-carpas-flores'
+    buyHref:
+      'https://www.colab55.com/@malanskiart/tees/peixes-koi-carpas-flores',
   },
   {
-    name:'Camiseta Rosa Singular',
-    description:'Disponível em varias cores e tamanhos',
-    options:['Regular', 'Baby Long', 'Infantil'],
+    name: 'Camiseta Rosa Singular',
+    description: 'Disponível em varias cores e tamanhos',
+    options: ['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeRoseSing,
     imgSrc: teeRoseSingBig,
     price: 119.99,
-    buyHref:'https://www.colab55.com/@malanskiart/tees/rosa-singular'
+    buyHref: 'https://www.colab55.com/@malanskiart/tees/rosa-singular',
   },
-  
 ]
 
-export default TshirtsDataList;
+export default TshirtsDataList
