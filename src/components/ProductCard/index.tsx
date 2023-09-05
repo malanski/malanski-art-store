@@ -25,33 +25,33 @@ export interface IProductData {
 
 export function ProductCard(props: IProductData) {
   const theme = useTheme()
-  const { name, description, options, iconSrc, imgSrc, price } = props.data
-
+  const { name, description, options, iconSrc, price } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [largeImageSrc, setLargeImageSrc] = useState('')
-  const [modalName, setModalName] = useState('')
-  const [modalDetails, setModalDetails] = useState('')
-  const [modalPrice, setModalPrice] = useState(Number)
-  const [bodyClass, setBodyClass] = useState('')
+  const [selectedProduct, setSelectedProduct] = useState<
+    IProductData['data'] | null
+  >(null)
 
   useEffect(() => {
-    document.body.className = bodyClass
-  }, [bodyClass])
+    document.body.className = isModalOpen ? 'modal-open' : ''
+  }, [isModalOpen])
+
+  const openModal = (productData: IProductData['data']) => {
+    setSelectedProduct(productData)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setSelectedProduct(null)
+    setIsModalOpen(false)
+  }
 
   return (
     <ProductCardStyle>
       <img
         src={`${iconSrc}`}
         alt={name}
-        onClick={() => {
-          setLargeImageSrc(imgSrc)
-          setModalName(name)
-          setModalDetails(description)
-          setModalPrice(price)
-          setIsModalOpen(true)
-          setBodyClass('modal-open')
-        }}
-      ></img>
+        onClick={() => openModal(props.data)}
+      />
 
       <ProductInfo>
         <OptionsStyle>
@@ -76,22 +76,17 @@ export function ProductCard(props: IProductData) {
         </BuyButton>
       </BuyActions>
 
-      {isModalOpen && (
-        <Modal
-          onClick={() => {
-            // setIsModalOpen(true)
-            setBodyClass('')
-          }}
-        >
+      {isModalOpen && selectedProduct && (
+        <Modal onClick={closeModal}>
           <ModalFlex>
-            <img src={largeImageSrc} alt="Imagem Grande" />
+            <img src={selectedProduct.imgSrc} alt="Imagem Grande" />
             <ModalInfo>
-              <h3>{modalName}</h3>
-              <hr></hr>
-              <h5>{modalDetails}</h5>
+              <h3>{selectedProduct.name}</h3>
+              <hr />
+              <h5>{selectedProduct.description}</h5>
               <BuyActions>
                 <h6 title="Preço atual">
-                  R$ <span>{modalPrice}</span>
+                  R$ <span>{selectedProduct.price}</span>
                 </h6>
 
                 <BuyButton
@@ -104,7 +99,7 @@ export function ProductCard(props: IProductData) {
                 </BuyButton>
               </BuyActions>
             </ModalInfo>
-            <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+            <button onClick={closeModal}>Fechar</button>
           </ModalFlex>
         </Modal>
       )}
