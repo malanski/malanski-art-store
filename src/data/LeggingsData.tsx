@@ -10,45 +10,50 @@ import LegSnakeBig from '../assets/products_img/leggings_snake.png'
 
 
 interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const LeggingsDataList: IProductsData[] = [
   {
-    name:'Moletom Dragão Vermelho',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Leggings Mandala',
+    description:'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
+    options:['Tamanho Único', '36 ao 44'],
     iconSrc: LegMandala,
     imgSrc: LegMandalaBig,
-    price: 149.90 
+    price: 149.90,
+    buyHref:'https://www.colab55.com/@malanskiart/leggings/fractal-mandala-branco' 
   },
   {
-    name:'Moletom Octógama Colorido',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Leggings Tattooo',
+    description:'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
+    options:['Tamanho Único', '36 ao 44'],
     iconSrc: LegTattoSnake,
     imgSrc: LegTattoSnakeBig,
-    price: 149.90 
+    price: 149.90,
+    buyHref:'https://www.colab55.com/@malanskiart/leggings/cobra-serpente-flores-e-folhas'  
   },
   {
-    name:'Moletom Borboleta Rosa',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Leggings Folhas',
+    description:'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
+    options:['Tamanho Único', '36 ao 44'],
     iconSrc: LegLeaves,
     imgSrc: LegLeavesBig,
-    price: 149.90 
+    price: 149.90,
+    buyHref:'https://www.colab55.com/@malanskiart/leggings/folhagem-floral-verde-marmore'  
   },
   {
-    name:'Moletom Serpente',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Leggings Serpente',
+    description:'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
+    options:['Tamanho Único', '36 ao 44'],
     iconSrc: LegSnake,
     imgSrc: LegSnakeBig,
-    price: 149.90 
+    price: 149.90,
+    buyHref:'https://www.colab55.com/@malanskiart/leggings/cobra-serpente'  
   },
 ]
 

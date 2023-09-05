@@ -9,12 +9,13 @@ import teeSwButterflyPinkBig from '../assets/products_img/tee_sw_butterfly_pink.
 import teeSwSnakeBig from '../assets/products_img/tee_sw_snake.png'
 
 interface ISweatShirtsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const SweatShirtsDataList: ISweatShirtsData[] = [
   {
@@ -23,7 +24,8 @@ const SweatShirtsDataList: ISweatShirtsData[] = [
     options:['Preto', 'Branco', 'Cinza'],
     iconSrc: teeSwRedDragon,
     imgSrc: teeSwRedDragonBig,
-    price: 184.90 
+    price: 184.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sweatshirts/dragao-vermelho'
   },
   {
     name:'Moletom Octógama Colorido',
@@ -31,7 +33,8 @@ const SweatShirtsDataList: ISweatShirtsData[] = [
     options:['Preto', 'Branco', 'Cinza'],
     iconSrc: teeSwOctoColor,
     imgSrc: teeSwOctoColorBig,
-    price: 184.90 
+    price: 184.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sweatshirts/crisantemo-octograma-estrela-invertido' 
   },
   {
     name:'Moletom Borboleta Rosa',
@@ -39,7 +42,8 @@ const SweatShirtsDataList: ISweatShirtsData[] = [
     options:['Preto', 'Branco', 'Cinza'],
     iconSrc: teeSwButterflyPink,
     imgSrc: teeSwButterflyPinkBig,
-    price: 184.90 
+    price: 184.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sweatshirts/borboleta-e-rosas-de-afrodite-rosa-lavado' 
   },
   {
     name:'Moletom Serpente',
@@ -47,7 +51,8 @@ const SweatShirtsDataList: ISweatShirtsData[] = [
     options:['Preto', 'Branco', 'Cinza'],
     iconSrc: teeSwSnake,
     imgSrc: teeSwSnakeBig,
-    price: 184.90 
+    price: 184.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sweatshirts/cobra-serpente' 
   },
 ]
 

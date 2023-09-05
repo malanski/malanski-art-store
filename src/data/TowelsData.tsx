@@ -16,16 +16,19 @@ interface IProductsData {
   options: string[];
   iconSrc: string;
   imgSrc: string;
+  buyHref: string
   price: number;
 }
 const TowelsDataList: IProductsData[] = [
   {
-    name:'Toalha Leão',
+    name:'Toalha Leão Iluminado',
     description:'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
     options:['Banho/Praia', 'Rosto'],
     iconSrc: Towels,
     imgSrc: TowelsBig,
-    price: 84.90 
+    price: 84.90,
+    buyHref:'https://www.colab55.com/@malanskiart/towels/leao-iluminado'
+    
   },
   {
     name:'Toalha Tartaruga',
@@ -33,7 +36,8 @@ const TowelsDataList: IProductsData[] = [
     options:['Banho/Praia', 'Rosto'],
     iconSrc: TowelsTurtle,
     imgSrc: TowelsTurtleBig,
-    price: 84.90 
+    price: 84.90,
+    buyHref:'https://www.colab55.com/@malanskiart/towels/tartaruga-marinha-nadapontilhismo-azul-aquarela' 
   },
   {
     name:'Toalha Lua',
@@ -41,7 +45,8 @@ const TowelsDataList: IProductsData[] = [
     options:['Banho/Praia', 'Rosto'],
     iconSrc: TowelsMoon,
     imgSrc: TowelsMoonBig,
-    price: 84.90 
+    price: 84.90,
+    buyHref:'https://www.colab55.com/@malanskiart/towels/lua-floral-verde'
   },
   {
     name:'Toalha Vitruviana',
@@ -49,7 +54,8 @@ const TowelsDataList: IProductsData[] = [
     options:['Banho/Praia', 'Rosto'],
     iconSrc: TowelsVitruvian,
     imgSrc: TowelsVitruvianBig,
-    price: 84.90 
+    price: 84.90,
+    buyHref:'https://www.colab55.com/@malanskiart/towels/vitruviano'
   },
 ]
 

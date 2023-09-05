@@ -11,12 +11,13 @@ import PillowVitruvianBig from '../assets/products_img/pillow_elephant.png'
 
 
 interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const PillowsDataList: IProductsData[] = [
   {
@@ -25,7 +26,8 @@ const PillowsDataList: IProductsData[] = [
     options:['40x40cm', '50x50cm'],
     iconSrc: Pillow,
     imgSrc: PillowBig,
-    price: 79.90 
+    price: 79.90,
+    buyHref:'https://www.colab55.com/@malanskiart/pillows/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela' 
   },
   {
     name:'Almofada Carpas',
@@ -33,7 +35,8 @@ const PillowsDataList: IProductsData[] = [
     options:['40x40cm', '50x50cm'],
     iconSrc: PillowTurtle,
     imgSrc: PillowTurtleBig,
-    price: 79.90 
+    price: 79.90,
+    buyHref:'https://www.colab55.com/@malanskiart/pillows/peixes-carpas-flores-koi-colorido' 
   },
   {
     name:'Almofada Rosa',
@@ -41,7 +44,8 @@ const PillowsDataList: IProductsData[] = [
     options:['40x40cm', '50x50cm'],
     iconSrc: PillowMoon,
     imgSrc: PillowMoonBig,
-    price: 79.90 
+    price: 79.90,
+    buyHref:'https://www.colab55.com/@malanskiart/pillows/rosa-grande-rosa-cristal' 
   },
   {
     name:'Almofada Elefante',
@@ -49,7 +53,8 @@ const PillowsDataList: IProductsData[] = [
     options:['40x40cm', '50x50cm'],
     iconSrc: PillowVitruvian,
     imgSrc: PillowVitruvianBig,
-    price: 79.90 
+    price: 79.90,
+    buyHref:'https://www.colab55.com/@malanskiart/pillows/elefante-espiral-invertido' 
   },
 ]
 

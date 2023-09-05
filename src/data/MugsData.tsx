@@ -9,45 +9,50 @@ import MugsTurtleOrangeBig from '../assets/products_img/mugs_bee_black.png'
 import MugsRedWingsBig from '../assets/products_img/mugs_eagle_wings.png'
 
 interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const MugsDataList: IProductsData[] = [
   {
-    name:'Moletom Dragão Vermelho',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Caneca Rosa',
+    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options:['300ml'],
     iconSrc: MugsMandalaRed,
     imgSrc: MugsMandalaRedBig,
-    price: 149.90 
+    price: 64.90,
+    buyHref:'https://www.colab55.com/@malanskiart/mugs/rosa-grande-rosa-cristal'  
   },
   {
-    name:'Moletom Octógama Colorido',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Caneca Libélula',
+    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options:['300ml'],
     iconSrc: MugsSunflower,
     imgSrc: MugsSunflowerBig,
-    price: 149.90 
+    price: 64.90,
+    buyHref:'https://www.colab55.com/@malanskiart/mugs/libelulas-branco'  
   },
   {
-    name:'Moletom Borboleta Rosa',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Caneca Abelha',
+    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options:['300ml'],
     iconSrc: MugsTurtleOrange,
     imgSrc: MugsTurtleOrangeBig,
-    price: 149.90 
+    price: 64.90,
+    buyHref:'https://www.colab55.com/@malanskiart/mugs/abelha-rainha-preto-e-branco'  
   },
   {
-    name:'Moletom Serpente',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name:'Caneca Águia',
+    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options:['300ml'],
     iconSrc: MugsRedWings,
     imgSrc: MugsRedWingsBig,
-    price: 149.90 
+    price: 64.90,
+    buyHref:'https://www.colab55.com/@malanskiart/mugs/aguia-bate-asas'  
   },
 ]
 

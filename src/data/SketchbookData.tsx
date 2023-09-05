@@ -9,12 +9,13 @@ import SketchbookTurtleOrangeBig from '../assets/products_img/sketchbooks_bee.pn
 import SketchbookWingsBig from '../assets/products_img/sketchbooks_oxossi.png'
 
 interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const SketchbookDataList: IProductsData[] = [
   {
@@ -23,7 +24,8 @@ const SketchbookDataList: IProductsData[] = [
     options:['Cor do elástico'],
     iconSrc: Sketchbook,
     imgSrc: SketchbookBig,
-    price: 89.90 
+    price: 89.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/dragao-vermelho' 
   },
   {
     name:'Caderno Hectograma',
@@ -31,7 +33,8 @@ const SketchbookDataList: IProductsData[] = [
     options:['Cor do elástico'],
     iconSrc: SketchbookSunflower,
     imgSrc: SketchbookSunflowerBig,
-    price: 89.90 
+    price: 89.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/crisantemo-estrela-heptagrama-colorido-aquarela' 
   },
   {
     name:'Caderno Abelha',
@@ -39,7 +42,8 @@ const SketchbookDataList: IProductsData[] = [
     options:['Cor do elástico'],
     iconSrc: SketchbookTurtleOrange,
     imgSrc: SketchbookTurtleOrangeBig,
-    price: 89.90 
+    price: 89.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/abelha-rainha-preto-e-branco' 
   },
   {
     name:'Caderno Oxossi',
@@ -47,7 +51,8 @@ const SketchbookDataList: IProductsData[] = [
     options:['Cor do elástico'],
     iconSrc: SketchbookWings,
     imgSrc: SketchbookWingsBig,
-    price: 89.90 
+    price: 89.90,
+    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/oxossi-aquarela' 
   },
 ]
 

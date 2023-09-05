@@ -9,12 +9,13 @@ import teeButterflyMarbBig from '../assets/products_img/tee_full_butterfly_marb.
 import teeHeptaMudBig from '../assets/products_img/tee_full_hepta_mud.png'
 
 interface IFullTshirtsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
+  name: string
+  description: string
+  options: string[]
+  iconSrc: string
+  imgSrc: string
+  buyHref: string
+  price: number
 }
 const FullTshirtsDataList: IFullTshirtsData[] = [
   {
@@ -23,15 +24,17 @@ const FullTshirtsDataList: IFullTshirtsData[] = [
     options:['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeFullRedDragon,
     imgSrc: teeFullRedDragonBig,
-    price: 139.90 
+    price: 134.90,
+    buyHref:'https://www.colab55.com/@malanskiart/tees-fullprint/dragao-vermelho'  
   },
   {
-    name:'Camiseta Dragão Vermelho',
-    description:'Disponível em varias cores de gola e tamanhos',
+    name:'Camiseta Crisântemo Hectograma',
+    description:'Disponível em vários tamanhos e cores de gola',
     options:['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeHeptaInv,
     imgSrc: teeHeptaInvBig,
-    price: 139.90 
+    price: 134.90,
+    buyHref:'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-e-estrela-heptagrama-invertido'   
   },
   {
     name:'Camiseta Dragão Vermelho',
@@ -39,15 +42,17 @@ const FullTshirtsDataList: IFullTshirtsData[] = [
     options:['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeButterflyMarb,
     imgSrc: teeButterflyMarbBig,
-    price: 139.90 
+    price: 134.90,
+    buyHref:'https://www.colab55.com/@malanskiart/tees-fullprint/grande-borboleta-nas-costas-marmore?m=baby-long'   
   },
   {
-    name:'Camiseta Dragão Vermelho',
+    name:'Camiseta Crisântemo Octógrama',
     description:'Disponível em varias cores de gola e tamanhos',
     options:['Regular', 'Baby Long', 'Infantil'],
     iconSrc: teeHeptaMud,
     imgSrc: teeHeptaMudBig,
-    price: 139.90 
+    price: 134.90,
+    buyHref:'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-octograma-estrela-invertido?m=baby-long'   
   },
 ]
 
