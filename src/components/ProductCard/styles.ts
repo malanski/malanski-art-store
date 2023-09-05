@@ -20,8 +20,9 @@ export const ProductCardStyle = styled.div`
     display: flex;
     align-items: center;
   }
-  h4 {
+  p {
     font-family: 'Roboto';
+    /* text-align: left; */
     font-size: 1.4rem;
     margin: 0.8rem 0;
     color: ${(props) => props.theme.base['base-label']};
@@ -35,7 +36,7 @@ export const ProductCardStyle = styled.div`
     min-height: 50vh;
     padding: 1.2rem;
   }
-  @media (max-width: 593px) {
+  @media (max-width: 650px) {
     min-width: calc(85vw - 2.4rem);
     margin: 0 auto;
     padding: 1.2rem;
@@ -52,7 +53,9 @@ export const OptionsStyle = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* max-width: calc(90% - 2rem); */
   button {
     font-size: 1rem;
     background: ${(props) => props.theme.product['yellow-light']};

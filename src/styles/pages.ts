@@ -9,7 +9,7 @@ export const ProductsListStyles = styled.section`
     font-family: 'Baloo 2';
     /* max-width: 25.6rem; */
     font-size: 3.2rem;
-    margin: 3.2rem 0;
+    margin-top: 3.2rem;
     display: flex;
     align-items: center;
     transition: all ease-in-out 800ms;
@@ -18,12 +18,12 @@ export const ProductsListStyles = styled.section`
     justify-content: center;
   }
 
-  @media (max-width: 74rem) {
+  @media (max-width: 740px) {
     h2 {
       margin: 3.2rem 8rem;
     }
   }
-  @media (max-width: 48rem) {
+  @media (max-width: 480px) {
     h2 {
       margin: 3.2rem 4rem;
     }
@@ -34,8 +34,8 @@ export const ProductsNav = styled.ul`
   display: flex;
   width: 100%;
   list-style-type: none;
-  justify-content: space-around;
-  margin: 3.2rem 0;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
   background: ${(props) => props.theme.base.bgClear};
   align-items: center;
 
@@ -65,7 +65,7 @@ export const ProductsNav = styled.ul`
       font-size: 1.9rem;
     }
   }
-  @media (max-width: 540px) {
+  @media (max-width: 650px) {
     a {
       font-size: 1.8rem;
       padding: 1rem 2rem;
@@ -75,14 +75,16 @@ export const ProductsNav = styled.ul`
 export const ProductListContainer = styled.section`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 3.2rem;
-  max-width: 112rem;
-  @media (max-width: 74rem) {
+  /* max-width: 112rem; */
+  @media (max-width: 1232px) {
     justify-content: space-around;
+    gap: 1.6rem;
   }
-  @media (max-width: 48rem) {
+  @media (max-width: 480px) {
     /* margin: 0 2rem; */
     /* flex-wrap: wrap; */
   }

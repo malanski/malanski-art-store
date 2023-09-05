@@ -20,12 +20,13 @@ export interface IProductData {
     iconSrc: string
     imgSrc: string
     price: number
+    buyLink: string
   }
 }
 
 export function ProductCard(props: IProductData) {
   const theme = useTheme()
-  const { name, description, options, iconSrc, price } = props.data
+  const { name, description, options, iconSrc, price, buyLink } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState<
     IProductData['data'] | null
@@ -61,7 +62,7 @@ export function ProductCard(props: IProductData) {
         </OptionsStyle>
 
         <h3>{name}</h3>
-        <h4>{description}</h4>
+        <p>{description}</p>
       </ProductInfo>
 
       <BuyActions>
@@ -70,7 +71,7 @@ export function ProductCard(props: IProductData) {
         </h6>
 
         <BuyButton title="Comprar" background={theme.product['purple-dark']}>
-          <a>
+          <a href={buyLink} target="_blanc" rel="noopener noreferrer">
             <ShoppingCart size={22} weight="fill" />
           </a>
         </BuyButton>
@@ -93,7 +94,11 @@ export function ProductCard(props: IProductData) {
                   title="Comprar"
                   background={theme.product['purple-dark']}
                 >
-                  <a>
+                  <a
+                    href={selectedProduct.buyLink}
+                    target="_blanc"
+                    rel="noopener noreferrer"
+                  >
                     <ShoppingCart size={22} weight="fill" />
                   </a>
                 </BuyButton>
