@@ -8,16 +8,16 @@ import teeSwOctoColorBig from '../assets/products_img/tee_sw_octo_color.png'
 import teeSwButterflyPinkBig from '../assets/products_img/tee_sw_butterfly_pink.png'
 import teeSwSnakeBig from '../assets/products_img/tee_sw_snake.png'
 
-interface ISweatShirtsData {
-  name: string
-  description: string
-  options: string[]
-  iconSrc: string
-  imgSrc: string
-  buyHref: string
-  price: number
-}
-const SweatShirtsDataList: ISweatShirtsData[] = [
+// interface ISweatShirtsData {
+//   name: string
+//   description: string
+//   options: string[]
+//   iconSrc: string
+//   imgSrc: string
+//   buyHref: string
+//   price: number
+// }
+const SweatShirtsDataList = [
   {
     name:'Moletom Dragão Vermelho',
     description:'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
