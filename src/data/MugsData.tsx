@@ -8,52 +8,49 @@ import MugsSunflowerBig from '../assets/products_img/mugs_firefly.png'
 import MugsTurtleOrangeBig from '../assets/products_img/mugs_bee_black.png'
 import MugsRedWingsBig from '../assets/products_img/mugs_eagle_wings.png'
 
-interface IProductsData {
-  name: string
-  description: string
-  options: string[]
-  iconSrc: string
-  imgSrc: string
-  buyHref: string
-  price: number
-}
-const MugsDataList: IProductsData[] = [
+const MugsDataList = [
   {
-    name:'Caneca Rosa',
-    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options:['300ml'],
+    name: 'Caneca Rosa',
+    description:
+      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml'],
     iconSrc: MugsMandalaRed,
     imgSrc: MugsMandalaRedBig,
-    price: 64.90,
-    buyHref:'https://www.colab55.com/@malanskiart/mugs/rosa-grande-rosa-cristal'  
+    price: 64.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/mugs/rosa-grande-rosa-cristal',
   },
   {
-    name:'Caneca Libélula',
-    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options:['300ml'],
+    name: 'Caneca Libélula',
+    description:
+      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml'],
     iconSrc: MugsSunflower,
     imgSrc: MugsSunflowerBig,
-    price: 64.90,
-    buyHref:'https://www.colab55.com/@malanskiart/mugs/libelulas-branco'  
+    price: 64.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/mugs/libelulas-branco',
   },
   {
-    name:'Caneca Abelha',
-    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options:['300ml'],
+    name: 'Caneca Abelha',
+    description:
+      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml'],
     iconSrc: MugsTurtleOrange,
     imgSrc: MugsTurtleOrangeBig,
-    price: 64.90,
-    buyHref:'https://www.colab55.com/@malanskiart/mugs/abelha-rainha-preto-e-branco'  
+    price: 64.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/mugs/abelha-rainha-preto-e-branco',
   },
   {
-    name:'Caneca Águia',
-    description:'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options:['300ml'],
+    name: 'Caneca Águia',
+    description:
+      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml'],
     iconSrc: MugsRedWings,
     imgSrc: MugsRedWingsBig,
-    price: 64.90,
-    buyHref:'https://www.colab55.com/@malanskiart/mugs/aguia-bate-asas'  
+    price: 64.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/mugs/aguia-bate-asas',
   },
 ]
 
-export default MugsDataList;
+export default MugsDataList

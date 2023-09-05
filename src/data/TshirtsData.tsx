@@ -8,16 +8,7 @@ import teeOctoInvBig from '../assets/products_img/tee_octo_inv.png'
 import teeRoseSingBig from '../assets/products_img/tee_rose_sing.png'
 import teeKoiFishFlowersBig from '../assets/products_img/tee_koi_fish_flowers.png'
 
-interface ITshirtsData {
-  name: string
-  description: string
-  options: string[]
-  iconSrc: string
-  imgSrc: string
-  buyHref: string
-  price: number
-}
-const TshirtsDataList: ITshirtsData[] = [
+const TshirtsDataList = [
   {
     name: 'Camiseta Dragão Vermelho',
     description: 'Disponível em varias cores e tamanhos',
@@ -25,7 +16,7 @@ const TshirtsDataList: ITshirtsData[] = [
     iconSrc: teeRedDragon,
     imgSrc: teeRedDragonBig,
     price: 119.99,
-    buyHref: 'https://www.colab55.com/@malanskiart/tees/dragao-vermelho',
+    buyLink: 'https://www.colab55.com/@malanskiart/tees/dragao-vermelho',
   },
   {
     name: 'Camiseta crisântemo octógama',
@@ -34,7 +25,7 @@ const TshirtsDataList: ITshirtsData[] = [
     iconSrc: teeOctoInv,
     imgSrc: teeOctoInvBig,
     price: 119.99,
-    buyHref:
+    buyLink:
       'https://www.colab55.com/@malanskiart/tees/crisantemo-octograma-estrela-invertido',
   },
   {
@@ -44,7 +35,7 @@ const TshirtsDataList: ITshirtsData[] = [
     iconSrc: teeKoiFishFlowers,
     imgSrc: teeKoiFishFlowersBig,
     price: 119.99,
-    buyHref:
+    buyLink:
       'https://www.colab55.com/@malanskiart/tees/peixes-koi-carpas-flores',
   },
   {
@@ -54,7 +45,7 @@ const TshirtsDataList: ITshirtsData[] = [
     iconSrc: teeRoseSing,
     imgSrc: teeRoseSingBig,
     price: 119.99,
-    buyHref: 'https://www.colab55.com/@malanskiart/tees/rosa-singular',
+    buyLink: 'https://www.colab55.com/@malanskiart/tees/rosa-singular',
   },
 ]
 

@@ -8,55 +8,48 @@ import TowelsTurtleBig from '../assets/products_img/towel_turtle.png'
 import TowelsMoonBig from '../assets/products_img/towel_moon_flower.png'
 import TowelsVitruvianBig from '../assets/products_img/towel_vitruviano.png'
 
-
-
-interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  buyHref: string
-  price: number;
-}
-const TowelsDataList: IProductsData[] = [
+const TowelsDataList = [
   {
-    name:'Toalha Leão Iluminado',
-    description:'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options:['Banho/Praia', 'Rosto'],
+    name: 'Toalha Leão Iluminado',
+    description:
+      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
+    options: ['Banho/Praia', 'Rosto'],
     iconSrc: Towels,
     imgSrc: TowelsBig,
-    price: 84.90,
-    buyHref:'https://www.colab55.com/@malanskiart/towels/leao-iluminado'
-    
+    price: 84.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/towels/leao-iluminado',
   },
   {
-    name:'Toalha Tartaruga',
-    description:'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options:['Banho/Praia', 'Rosto'],
+    name: 'Toalha Tartaruga',
+    description:
+      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
+    options: ['Banho/Praia', 'Rosto'],
     iconSrc: TowelsTurtle,
     imgSrc: TowelsTurtleBig,
-    price: 84.90,
-    buyHref:'https://www.colab55.com/@malanskiart/towels/tartaruga-marinha-nadapontilhismo-azul-aquarela' 
+    price: 84.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/towels/tartaruga-marinha-nadapontilhismo-azul-aquarela',
   },
   {
-    name:'Toalha Lua',
-    description:'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options:['Banho/Praia', 'Rosto'],
+    name: 'Toalha Lua',
+    description:
+      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
+    options: ['Banho/Praia', 'Rosto'],
     iconSrc: TowelsMoon,
     imgSrc: TowelsMoonBig,
-    price: 84.90,
-    buyHref:'https://www.colab55.com/@malanskiart/towels/lua-floral-verde'
+    price: 84.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/towels/lua-floral-verde',
   },
   {
-    name:'Toalha Vitruviana',
-    description:'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options:['Banho/Praia', 'Rosto'],
+    name: 'Toalha Vitruviana',
+    description:
+      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
+    options: ['Banho/Praia', 'Rosto'],
     iconSrc: TowelsVitruvian,
     imgSrc: TowelsVitruvianBig,
-    price: 84.90,
-    buyHref:'https://www.colab55.com/@malanskiart/towels/vitruviano'
+    price: 84.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/towels/vitruviano',
   },
 ]
 
-export default TowelsDataList;
+export default TowelsDataList

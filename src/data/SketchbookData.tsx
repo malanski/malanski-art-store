@@ -8,52 +8,49 @@ import SketchbookSunflowerBig from '../assets/products_img/sketchbooks_hepta.png
 import SketchbookTurtleOrangeBig from '../assets/products_img/sketchbooks_bee.png'
 import SketchbookWingsBig from '../assets/products_img/sketchbooks_oxossi.png'
 
-interface IProductsData {
-  name: string
-  description: string
-  options: string[]
-  iconSrc: string
-  imgSrc: string
-  buyHref: string
-  price: number
-}
-const SketchbookDataList: IProductsData[] = [
+const SketchbookDataList = [
   {
-    name:'Caderno Dragão Vermelho',
-    description:'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options:['Cor do elástico'],
+    name: 'Caderno Dragão Vermelho',
+    description:
+      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
+    options: ['Cor do elástico'],
     iconSrc: Sketchbook,
     imgSrc: SketchbookBig,
-    price: 89.90,
-    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/dragao-vermelho' 
+    price: 89.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/sketchbooks/dragao-vermelho',
   },
   {
-    name:'Caderno Hectograma',
-    description:'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options:['Cor do elástico'],
+    name: 'Caderno Hectograma',
+    description:
+      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
+    options: ['Cor do elástico'],
     iconSrc: SketchbookSunflower,
     imgSrc: SketchbookSunflowerBig,
-    price: 89.90,
-    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/crisantemo-estrela-heptagrama-colorido-aquarela' 
+    price: 89.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/sketchbooks/crisantemo-estrela-heptagrama-colorido-aquarela',
   },
   {
-    name:'Caderno Abelha',
-    description:'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options:['Cor do elástico'],
+    name: 'Caderno Abelha',
+    description:
+      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
+    options: ['Cor do elástico'],
     iconSrc: SketchbookTurtleOrange,
     imgSrc: SketchbookTurtleOrangeBig,
-    price: 89.90,
-    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/abelha-rainha-preto-e-branco' 
+    price: 89.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/sketchbooks/abelha-rainha-preto-e-branco',
   },
   {
-    name:'Caderno Oxossi',
-    description:'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options:['Cor do elástico'],
+    name: 'Caderno Oxossi',
+    description:
+      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
+    options: ['Cor do elástico'],
     iconSrc: SketchbookWings,
     imgSrc: SketchbookWingsBig,
-    price: 89.90,
-    buyHref:'https://www.colab55.com/@malanskiart/sketchbooks/oxossi-aquarela' 
+    price: 89.9,
+    buyLink: 'https://www.colab55.com/@malanskiart/sketchbooks/oxossi-aquarela',
   },
 ]
 
-export default SketchbookDataList;
+export default SketchbookDataList

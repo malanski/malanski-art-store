@@ -8,48 +8,51 @@ import FlopsSunflowerBig from '../assets/products_img/flipflops_sunflower.png'
 import FlopsTurtleOrangeBig from '../assets/products_img/flipflops_turtle_orange.png'
 import FlopsRedWingsBig from '../assets/products_img/flipflops_red_wings.png'
 
-
-interface IProductsData {
-  name: string;
-  description: string;
-  options: string[];
-  iconSrc: string;
-  imgSrc: string;
-  price: number;
-}
-const FlipflopsDataList: IProductsData[] = [
+const FlipflopsDataList = [
   {
-    name:'Moletom Dragão Vermelho',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name: 'Chinelo Mandala Vermelha',
+    description:
+      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
+    options: ['Tradicional', 'Slim'],
     iconSrc: FlopsMandalaRed,
     imgSrc: FlopsMandalaRedBig,
-    price: 149.90 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/flipflops/fractal-mandala-preto',
   },
   {
-    name:'Moletom Octógama Colorido',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name: 'Chinelo Girassóis',
+    description:
+      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
+    options: ['Tradicional', 'Slim'],
     iconSrc: FlopsSunflower,
     imgSrc: FlopsSunflowerBig,
-    price: 149.90 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/flipflops/girassois-e-margaridas-verde-claro',
   },
   {
-    name:'Moletom Borboleta Rosa',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name: 'Chinelo Tartarugas de Olho',
+    description:
+      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
+    options: ['Tradicional', 'Slim'],
     iconSrc: FlopsTurtleOrange,
     imgSrc: FlopsTurtleOrangeBig,
-    price: 149.90 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/flipflops/tartaruga-marinha-pontilhismo-terceiro-olho',
   },
   {
-    name:'Moletom Serpente',
-    description:'Em tamanho único do 36 ao 44. Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options:['Preto', 'Branco', 'Cinza'],
+    name: 'Chinelo asas para os seus pés',
+    description:
+      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
+    options: ['Tradicional', 'Slim'],
     iconSrc: FlopsRedWings,
     imgSrc: FlopsRedWingsBig,
-    price: 149.90 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/flipflops/asas-de-carcara-vermelho-e-branco',
   },
 ]
 
-export default FlipflopsDataList;
+export default FlipflopsDataList

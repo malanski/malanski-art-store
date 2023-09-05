@@ -8,54 +8,51 @@ import PillowTurtleBig from '../assets/products_img/pillow_koi.png'
 import PillowMoonBig from '../assets/products_img/pillow_rose.png'
 import PillowVitruvianBig from '../assets/products_img/pillow_elephant.png'
 
-
-
-interface IProductsData {
-  name: string
-  description: string
-  options: string[]
-  iconSrc: string
-  imgSrc: string
-  buyHref: string
-  price: number
-}
-const PillowsDataList: IProductsData[] = [
+const PillowsDataList = [
   {
-    name:'Almofada Geisha',
-    description:'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options:['40x40cm', '50x50cm'],
+    name: 'Almofada Geisha',
+    description:
+      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    options: ['40x40cm', '50x50cm'],
     iconSrc: Pillow,
     imgSrc: PillowBig,
-    price: 79.90,
-    buyHref:'https://www.colab55.com/@malanskiart/pillows/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela' 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/pillows/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
-    name:'Almofada Carpas',
-    description:'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options:['40x40cm', '50x50cm'],
+    name: 'Almofada Carpas',
+    description:
+      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    options: ['40x40cm', '50x50cm'],
     iconSrc: PillowTurtle,
     imgSrc: PillowTurtleBig,
-    price: 79.90,
-    buyHref:'https://www.colab55.com/@malanskiart/pillows/peixes-carpas-flores-koi-colorido' 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/pillows/peixes-carpas-flores-koi-colorido',
   },
   {
-    name:'Almofada Rosa',
-    description:'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options:['40x40cm', '50x50cm'],
+    name: 'Almofada Rosa',
+    description:
+      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    options: ['40x40cm', '50x50cm'],
     iconSrc: PillowMoon,
     imgSrc: PillowMoonBig,
-    price: 79.90,
-    buyHref:'https://www.colab55.com/@malanskiart/pillows/rosa-grande-rosa-cristal' 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/pillows/rosa-grande-rosa-cristal',
   },
   {
-    name:'Almofada Elefante',
-    description:'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options:['40x40cm', '50x50cm'],
+    name: 'Almofada Elefante',
+    description:
+      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    options: ['40x40cm', '50x50cm'],
     iconSrc: PillowVitruvian,
     imgSrc: PillowVitruvianBig,
-    price: 79.90,
-    buyHref:'https://www.colab55.com/@malanskiart/pillows/elefante-espiral-invertido' 
+    price: 79.9,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/pillows/elefante-espiral-invertido',
   },
 ]
 
-export default PillowsDataList;
+export default PillowsDataList
