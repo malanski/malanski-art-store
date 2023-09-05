@@ -51,13 +51,14 @@ export function ProductCard(props: IProductData) {
       <img
         src={`${iconSrc}`}
         alt={name}
+        title="Click e saiba mais"
         onClick={() => openModal(props.data)}
       />
 
       <ProductInfo>
         <OptionsStyle>
           {options.map((option, index) => (
-            <button key={index}>{option}</button>
+            <div key={index}>{option}</div>
           ))}
         </OptionsStyle>
 
@@ -84,7 +85,14 @@ export function ProductCard(props: IProductData) {
             <ModalInfo>
               <h3>{selectedProduct.name}</h3>
               <hr />
-              <h5>{selectedProduct.description}</h5>
+              <p>{selectedProduct.description}</p>
+              <h5>Modelos:</h5>
+              <OptionsStyle>
+                {selectedProduct.options.map((option, index) => (
+                  <div key={index}>{option}</div>
+                ))}
+              </OptionsStyle>
+
               <BuyActions>
                 <h6 title="Preço atual">
                   R$ <span>{selectedProduct.price}</span>

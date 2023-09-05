@@ -56,7 +56,7 @@ export const OptionsStyle = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   /* max-width: calc(90% - 2rem); */
-  button {
+  div {
     font-size: 1rem;
     background: ${(props) => props.theme.product['yellow-light']};
     color: ${(props) => props.theme.product['yellow-dark']};
@@ -111,23 +111,30 @@ export const BuyButton = styled.div<IconButton>`
     }
   }
 `
+
 export const Modal = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  min-height: 100vh;
+  height: 100vh;
+  background: ${(props) => props.theme.base.transparentBg};
   padding: 1rem 0;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
   img {
     max-width: 80%;
     max-height: 80vh;
+    margin-bottom: -30px;
+    position: relative;
   }
 
   button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
     background: transparent;
     border: none;
     color: white;
@@ -143,18 +150,31 @@ export const Modal = styled.div`
 `
 export const ModalFlex = styled.div`
   display: flex;
-  height: 100%;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 3.2rem;
 `
 export const ModalInfo = styled.div`
   background: ${(props) => props.theme.base['base-card']};
-  padding: 2rem;
-
+  padding: 0 2rem;
+  border-radius: 20px;
+  /* margin-top: -90px; */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  h5 {
+    text-align: left;
+  }
+  p {
+    padding: 1rem 0;
+  }
   a,
   h3,
-  h5 {
+  h5,
+  p {
     color: ${(props) => props.theme.base.white};
     text-decoration: none;
   }

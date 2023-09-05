@@ -82,7 +82,7 @@ export const ProductListContainer = styled.section`
   /* max-width: 112rem; */
   @media (max-width: 1232px) {
     justify-content: space-around;
-    gap: 1.6rem;
+    gap: 2.5rem;
   }
   @media (max-width: 480px) {
     /* margin: 0 2rem; */
