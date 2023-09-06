@@ -2,6 +2,8 @@ import { useTheme } from 'styled-components'
 import {
   BuyActions,
   BuyButton,
+  CardHeader,
+  CardImage,
   Modal,
   ModalFlex,
   ModalInfo,
@@ -9,7 +11,7 @@ import {
   ProductCardStyle,
   ProductInfo,
 } from './styles'
-import { ShoppingCart } from 'phosphor-react'
+import { Plus, ShoppingCart } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 
 export interface IProductData {
@@ -48,12 +50,19 @@ export function ProductCard(props: IProductData) {
 
   return (
     <ProductCardStyle>
-      <img
-        src={`${iconSrc}`}
-        alt={name}
-        title="Click e saiba mais"
-        onClick={() => openModal(props.data)}
-      />
+      <CardHeader onClick={() => openModal(props.data)}>
+        <CardImage
+          src={`${iconSrc}`}
+          alt={name}
+          title={`Click e saiba mais sobre ${name}`}
+        />
+        <div title="Click e saiba mais">
+          <span>
+            <Plus size={24} />
+            Saiba Mais
+          </span>
+        </div>
+      </CardHeader>
 
       <ProductInfo>
         <OptionsStyle>
@@ -67,9 +76,9 @@ export function ProductCard(props: IProductData) {
       </ProductInfo>
 
       <BuyActions>
-        <h6 title="Preço atual">
-          R$ <span>{price}</span>
-        </h6>
+        <div title="Preço atual">
+          <p>R$ {price}</p>
+        </div>
 
         <BuyButton title="Comprar" background={theme.product['purple-dark']}>
           <a href={buyLink} target="_blanc" rel="noopener noreferrer">
@@ -94,9 +103,9 @@ export function ProductCard(props: IProductData) {
               </OptionsStyle>
 
               <BuyActions>
-                <h6 title="Preço atual">
-                  R$ <span>{selectedProduct.price}</span>
-                </h6>
+                <div title="Preço atual">
+                  <p>R$ {price}</p>
+                </div>
 
                 <BuyButton
                   title="Comprar"

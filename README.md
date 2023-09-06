@@ -1,5 +1,28 @@
 # React + TypeScript + Vite
 
+
+## Project structure
+
+Moda
+- Camisetas
+- Full Prints
+- Leggings
+- Moletons
+- Bonés
+- Aventais
+- Chinelos
+- Broches
+
+Acessórios
+- Toalhas
+- Almofadas
+- Quadros
+- Canecas
+- Cadernos
+
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

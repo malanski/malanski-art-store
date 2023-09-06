@@ -14,6 +14,7 @@ export const defaultTheme = {
     'base-button': '#E6E5E5',
     'base-input': '#EDEDED',
     'base-card': '#000a0f',
+    'base-black': '#000000',
   },
   product: {
     yellow: '#DBAC2C',

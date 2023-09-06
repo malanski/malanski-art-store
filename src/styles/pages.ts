@@ -80,6 +80,7 @@ export const ProductListContainer = styled.section`
   flex-wrap: wrap;
   gap: 3.2rem;
   /* max-width: 112rem; */
+  width: 100%;
   @media (max-width: 1232px) {
     justify-content: space-around;
     gap: 2.5rem;

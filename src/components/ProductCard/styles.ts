@@ -4,13 +4,14 @@ export const ProductCardStyle = styled.div`
   background: ${(props) => props.theme.base['base-card']};
   border-radius: 6px 36px 6px 36px;
   max-width: 25.6rem;
-  min-height: 31rem;
+  min-height: 44rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 2.4rem;
+  transition: ease-out 500ms;
   h3 {
     font-family: 'Baloo 2';
     font-size: 2rem;
@@ -21,15 +22,21 @@ export const ProductCardStyle = styled.div`
     align-items: center;
   }
   p {
-    font-family: 'Roboto';
-    /* text-align: left; */
     font-size: 1.4rem;
     margin: 0.8rem 0;
     color: ${(props) => props.theme.base['base-label']};
   }
-  img {
-    margin-top: -4rem;
-    margin-bottom: 2rem;
+  &:hover {
+    transition: ease-in 200ms;
+    background: ${(props) => props.theme.base['base-black']};
+    box-shadow: 0px 0px 16px 5px ${(props) => props.theme.base['base-subtitle']};
+    span {
+      /* background: ${(props) => props.theme.base.transparentBg}; */
+      display: flex;
+      align-items: center;
+      /* background: ${(props) => props.theme.base['base-black']}; */
+      /* opacity: 1; */
+    }
   }
   @media (max-width: 849px) {
     min-width: calc(45vw - 2.4rem);
@@ -42,6 +49,51 @@ export const ProductCardStyle = styled.div`
     padding: 1.2rem;
   }
 `
+export const CardHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 32px;
+  border-radius: 6px 36px 6px 36px;
+  transition: ease-out 500ms;
+  height: 220px;
+
+  div {
+    display: flex;
+    margin-left: -90px;
+    margin-top: 200px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* align-self: baseline; */
+    border-radius: 20px;
+    width: 100%;
+    /* padding: 0.4rem 0.8rem; */
+    /* background: ${(props) => props.theme.base.transparentBg}; */
+    color: ${(props) => props.theme.base['base-label']};
+    /* opacity: 0.2; */
+    /* position: relative; */
+    /* position: relative; */
+    /* position: absolute; */
+    span {
+      display: none;
+      font-size: 1.2rem;
+    }
+  }
+  &:hover {
+    transition: ease-in 200ms;
+    box-shadow: 0px 0px 2px 2px ${(props) => props.theme.base['base-subtitle']};
+    background: ${(props) => props.theme.base.transparentBg};
+  }
+`
+export const CardImage = styled.img`
+  /* position: absolute; */
+  /* position: relative; */
+  /* margin: 0 -40px 0 0; */
+`
+
 export const ProductInfo = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -73,20 +125,22 @@ export const BuyActions = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 0.8rem;
-  h6 {
+  div {
     font-family: 'Roboto';
     font-size: 1.4rem;
     color: ${(props) => props.theme.base['base-text']};
-    span {
+    p {
       font-family: 'baloo 2';
       font-size: 2.4rem;
       font-weight: 800;
+      width: 100%;
     }
   }
 
   a:hover {
     transition: all ease-in-out 600ms;
     background: ${(props) => props.theme.base['base-label']};
+    box-shadow: 0px 0px 2px 2px ${(props) => props.theme.base['base-subtitle']};
     svg {
       filter: invert();
     }
@@ -112,16 +166,16 @@ export const BuyButton = styled.div<IconButton>`
 
 export const Modal = styled.div`
   position: fixed;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: ${(props) => props.theme.base.transparentBg};
-  padding: 1rem 0;
-  display: flex;
-  flex-shrink: 1;
-  align-items: center;
-  justify-content: center;
   img {
     max-width: 80%;
     max-height: 80vh;
@@ -147,18 +201,22 @@ export const Modal = styled.div`
   }
 `
 export const ModalFlex = styled.div`
+  /* position: relative; */
+  position: absolute;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 3.2rem;
-
+  background: ${(props) => props.theme.base['base-black']};
+  border-radius: 6px 36px 6px 36px;
   @media (max-width: 1200px) {
     flex-direction: column;
   }
 `
 export const ModalInfo = styled.div`
+  /* position: absolute; */
+  right: 0;
   background: ${(props) => props.theme.base['base-card']};
   padding: 2rem;
   border-radius: 6px 36px 6px 36px;
