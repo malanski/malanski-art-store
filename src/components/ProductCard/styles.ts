@@ -154,7 +154,7 @@ export const ModalFlex = styled.div`
   flex-direction: row;
   padding: 3.2rem;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
   }
 `
