@@ -55,7 +55,6 @@ export const OptionsStyle = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-  /* max-width: calc(90% - 2rem); */
   div {
     font-size: 1rem;
     background: ${(props) => props.theme.product['yellow-light']};
@@ -73,6 +72,7 @@ export const BuyActions = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  margin-top: 0.8rem;
   h6 {
     font-family: 'Roboto';
     font-size: 1.4rem;
@@ -102,8 +102,6 @@ export const BuyButton = styled.div<IconButton>`
     border-radius: 6px;
     padding: 0.8rem;
     border: none;
-    width: 3.8rem;
-    height: 3.8rem;
     display: flex;
     svg {
       color: ${(props) => props.theme.base.white};
@@ -153,18 +151,23 @@ export const ModalFlex = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 3.2rem;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
 `
 export const ModalInfo = styled.div`
   background: ${(props) => props.theme.base['base-card']};
-  padding: 0 2rem;
-  border-radius: 20px;
-  /* margin-top: -90px; */
+  padding: 2rem;
+  border-radius: 6px 36px 6px 36px;
+  margin-top: -10px;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  width: 350px;
   h5 {
     text-align: left;
   }
@@ -177,5 +180,9 @@ export const ModalInfo = styled.div`
   p {
     color: ${(props) => props.theme.base.white};
     text-decoration: none;
+  }
+
+  @media (max-width: 1050px) {
+    width: 290px;
   }
 `

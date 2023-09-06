@@ -108,6 +108,7 @@ export function ProductCard(props: IProductData) {
                     rel="noopener noreferrer"
                   >
                     <ShoppingCart size={22} weight="fill" />
+                    <span>Comprar</span>
                   </a>
                 </BuyButton>
               </BuyActions>
