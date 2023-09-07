@@ -18,6 +18,8 @@ export const defaultTheme = {
   },
   product: {
     yellow: '#DBAC2C',
+    purpleGradient:
+      '-webkit-linear-gradient(left, rgba(206,75,232,0.77) 0%, rgba(110,32,227,0.72) 79%, rgba(88,14,199,0.71) 100%)',
     'yellow-dark': '#C47F17',
     'yellow-light': '#F1E9C9',
 

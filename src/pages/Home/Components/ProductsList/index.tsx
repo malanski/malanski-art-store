@@ -17,12 +17,14 @@ import PillowsDataList from '../../../../data/PillowsData'
 import ButtonsDataList from '../../../../data/ButtonsData'
 import { Nav } from '../../../../components/Nav'
 import { ProductCard } from '../../../../components/ProductCard'
+import TotebagsList from '../../../../data/TotebagsData'
 
 const allData = [
   ...TshirtsDataList,
   ...CapsDataList,
   ...FullTshirtsDataList,
   ...ButtonsDataList,
+  ...TotebagsList,
   ...MugsDataList,
   ...LeggingsDataList,
   ...PillowsDataList,

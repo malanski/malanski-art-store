@@ -35,13 +35,15 @@ export const ProductsNav = styled.ul`
   display: flex;
   width: 100%;
   list-style-type: none;
-  justify-content: space-between;
-  margin-bottom: 3.2rem;
+  justify-content: center;
+  margin-bottom: 8rem;
   background: ${(props) => props.theme.base.bgClear};
   align-items: center;
-
+  li {
+    width: 14%;
+    margin: 0 auto;
+  }
   a {
-    width: 100%;
     padding: 1rem;
     text-align: center;
     font-size: 2.2rem;
@@ -60,8 +62,13 @@ export const ProductsNav = styled.ul`
   }
   @media (max-width: 740px) {
     flex-wrap: wrap;
-    margin: 3.2rem 8rem;
+    flex-direction: row;
+    margin: 5rem; 
     gap: 0.8rem;
+    li {
+      width: 45%;
+      text-align: center;
+    }
     a {
       font-size: 1.9rem;
     }

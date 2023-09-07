@@ -86,7 +86,7 @@ export function ProductCard(props: IProductData) {
 
       <BuyActions>
         <div title="Preço atual">
-          <p>R$ {price}</p>
+          <p>R$ {price}0</p>
         </div>
 
         <BuyButton title="Comprar" background={theme.product['purple-dark']}>

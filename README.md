@@ -3,30 +3,42 @@
 
 ## Project structure  
   
-Esta loja virtual é como uma sala de visitas para clientes que ainda não conhecem a loja principal situada na plataforma [Colab 55](https://www.colab55.com/@malanskiart/), exibindo uma seleção dos trabalhos que melhor representam todo nosso catálogo de produtos.  
+Esta loja virtual é como uma sala de visitas para clientes que ainda não conhecem a loja principal, situada na plataforma [Colab 55](https://www.colab55.com/@malanskiart/), onde exibimos uma seleção dos trabalhos que melhor representam todo o catálogo de produtos da [@malanskiart](https://www.colab55.com/@malanskiart/).  
   
 Nesse aplicativo podemos separar e reorganizar os produtos em uma ordem diferente da loja principal na Colab 55, podendo assim dar destaque aos produtos que estão muito abaixo na lista geral. Da mesma forma, podemos criar agrupamentos e coleções especiais conectado produtos que foram criados em tempos diferentes.  
     
-Moda
+#### Roupas: 
 - Camisetas
 - Full Prints
-- Leggings
 - Moletons
+- Leggings
+
+- Meias
+- Bodies(bebes)
+
+#### Acessórios: 
 - Bonés
-- Aventais
+- Broches
+- Toalhas   
 - Chinelos
-- Broches  
+
+- Bolsas 
   
-Acessórios  
-- Toalhas
+#### Itens: 
 - Almofadas
-- Quadros
 - Canecas
 - Cadernos
+- Aventais
 
-
-
-
+- Adesivos
+- Azulejos
+- Posters
+- Quadros
+- Imãs  
+- Capinhas  
+  
+## Installation 
+  
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

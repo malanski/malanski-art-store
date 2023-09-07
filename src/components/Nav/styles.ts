@@ -10,9 +10,11 @@ export const NavContainer = styled.nav`
   a {
     font-size: 1.4rem;
     border-radius: 0.6rem;
-    transition: all ease-in-out 600ms;
+    transition: ease-out 800ms;
     text-transform: uppercase;
     font-weight: 600;
+    flex-grow: 1;
+    gap: 4rem;
     min-width: 140px;
     text-decoration: none;
     padding: 0.1rem 0.4rem;
@@ -21,11 +23,12 @@ export const NavContainer = styled.nav`
   }
 
   a:hover {
+    transition: ease-in 200ms;
     background: ${(props) => props.theme.product.yellow};
     color: ${(props) => props.theme.product['yellow-light']};
   }
   a.active {
-    background: ${(props) => props.theme.product.yellow};
+    background: ${(props) => props.theme.product.purpleGradient};
     color: ${(props) => props.theme.product['yellow-light']};
   }
   @media (max-width: 506px) {

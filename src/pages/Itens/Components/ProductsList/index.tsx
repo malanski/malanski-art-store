@@ -10,9 +10,11 @@ import SketchbookDataList from '../../../../data/SketchbookData'
 import PillowsDataList from '../../../../data/PillowsData'
 import { Nav } from '../../../../components/Nav'
 import { ProductCard } from '../../../../components/ProductCard'
+import TotebagsList from '../../../../data/TotebagsData'
 
 const allData = [
   ...MugsDataList,
+  ...TotebagsList,
   ...SketchbookDataList,
   ...PillowsDataList,
   ...ApronsDataList,
@@ -21,6 +23,7 @@ const allData = [
 const dataSources = [
   { name: 'Itens', data: allData },
   { name: 'Canecas', data: MugsDataList },
+  { name: 'Bolsas', data: TotebagsList },
   { name: 'Cadernos', data: SketchbookDataList },
   { name: 'Almofadas', data: PillowsDataList },
   { name: 'Aventais', data: ApronsDataList },
