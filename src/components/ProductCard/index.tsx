@@ -4,6 +4,8 @@ import {
   BuyButton,
   CardHeader,
   CardImage,
+  LearnAbout,
+  LearnMore,
   Modal,
   ModalFlex,
   ModalInfo,
@@ -56,14 +58,21 @@ export function ProductCard(props: IProductData) {
           alt={name}
           title={`Click e saiba mais sobre ${name}`}
         />
-        <div title="Click e saiba mais">
+        <LearnMore title="Click e saiba mais">
           <span>
             <Plus size={24} />
             Saiba Mais
           </span>
-        </div>
+        </LearnMore>
       </CardHeader>
 
+      <LearnAbout
+        onClick={() => openModal(props.data)}
+        title="Click e saiba mais"
+      >
+        <Plus size={24} />
+        Saiba Mais
+      </LearnAbout>
       <ProductInfo>
         <OptionsStyle>
           {options.map((option, index) => (

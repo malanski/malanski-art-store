@@ -8,8 +8,9 @@ export const ProductsListStyles = styled.section`
   h2 {
     font-family: 'Baloo 2';
     /* max-width: 25.6rem; */
+    margin: 3.2rem 0 3.2rem 0;
+
     font-size: 3.2rem;
-    margin-top: 3.2rem;
     display: flex;
     align-items: center;
     transition: all ease-in-out 800ms;
@@ -20,12 +21,12 @@ export const ProductsListStyles = styled.section`
 
   @media (max-width: 740px) {
     h2 {
-      margin: 3.2rem 8rem;
+      /* margin: 8rem 8rem; */
     }
   }
   @media (max-width: 480px) {
     h2 {
-      margin: 3.2rem 4rem;
+      /* margin: 8rem 4rem; */
     }
   }
 `
@@ -85,8 +86,12 @@ export const ProductListContainer = styled.section`
     justify-content: space-around;
     gap: 2.5rem;
   }
-  @media (max-width: 480px) {
-    /* margin: 0 2rem; */
+  @media (max-width: 900px) {
+    gap: 1.5rem;
+  }
+  @media (max-width: 650px) {
+    gap: 5rem;
+
     /* flex-wrap: wrap; */
   }
 `

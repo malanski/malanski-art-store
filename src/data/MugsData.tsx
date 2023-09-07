@@ -12,8 +12,8 @@ const MugsDataList = [
   {
     name: 'Caneca Rosa',
     description:
-      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml'],
+      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml', 'Cerâmica premium'],
     iconSrc: MugsMandalaRed,
     imgSrc: MugsMandalaRedBig,
     price: 64.9,
@@ -23,8 +23,8 @@ const MugsDataList = [
   {
     name: 'Caneca Libélula',
     description:
-      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml'],
+      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml', 'Cerâmica premium'],
     iconSrc: MugsSunflower,
     imgSrc: MugsSunflowerBig,
     price: 64.9,
@@ -33,8 +33,8 @@ const MugsDataList = [
   {
     name: 'Caneca Abelha',
     description:
-      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml'],
+      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml', 'Cerâmica premium'],
     iconSrc: MugsTurtleOrange,
     imgSrc: MugsTurtleOrangeBig,
     price: 64.9,
@@ -44,8 +44,8 @@ const MugsDataList = [
   {
     name: 'Caneca Águia',
     description:
-      'Cerâmica premium branca com alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml'],
+      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
+    options: ['300ml', 'Cerâmica premium'],
     iconSrc: MugsRedWings,
     imgSrc: MugsRedWingsBig,
     price: 64.9,

@@ -7,10 +7,25 @@ import {
 } from './styles'
 import { Package, ShoppingCart, Timer, HandbagSimple } from 'phosphor-react'
 import ProductImg from '../../../../assets/Imagem.png'
+import ProductImg2 from '../../../../assets/Imagem2.png'
+import ProductImg3 from '../../../../assets/Imagem3.png'
 import { useTheme } from 'styled-components'
+import { useState } from 'react'
 
 export function Intro() {
   const theme = useTheme()
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const images = [ProductImg, ProductImg2, ProductImg3]
+
+  function changeImage() {
+    // Verifique se estamos na última imagem e, se sim, volte para a primeira
+    if (currentImageIndex === images.length - 1) {
+      setCurrentImageIndex(0)
+    } else {
+      // Caso contrário, vá para a próxima imagem
+      setCurrentImageIndex(currentImageIndex + 1)
+    }
+  }
 
   return (
     <IntroContainer>
@@ -27,7 +42,7 @@ export function Intro() {
           <div>
             <IconBadge background={theme.product['yellow-dark']}>
               <ShoppingCart size={16} weight="fill" />
-              <span>Compra simples e segura feita pela Colab55</span>
+              <span>Compra simples e segura feita pela Colab 55</span>
             </IconBadge>
             <IconBadge background={theme.base['base-text']}>
               <Package size={16} weight="fill" />
@@ -48,10 +63,11 @@ export function Intro() {
       </TitlesContainer>
 
       <img
-        src={ProductImg}
-        alt="Crisântemo e exaramo Logo"
+        src={images[currentImageIndex]}
+        onClick={changeImage}
+        alt="Desenho de um crisântemo sobre hexagrama"
         title="Artes únicas, feitas com amor"
-      ></img>
+      />
     </IntroContainer>
   )
 }

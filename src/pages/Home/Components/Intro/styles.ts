@@ -9,6 +9,11 @@ export const IntroContainer = styled.div`
   img {
     max-width: 35vw;
     height: auto;
+    transition: 15s ease-out;
+    &:hover {
+      rotate: 1480deg;
+      transition: 10s ease-in;
+    }
   }
   @media (max-width: 80rem) {
     flex-direction: column-reverse;
@@ -26,7 +31,7 @@ export const TitlesContainer = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     margin: 0 auto;
     width: 100%;
   }

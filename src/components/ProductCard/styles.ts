@@ -11,6 +11,7 @@ export const ProductCardStyle = styled.div`
   align-items: center;
   text-align: center;
   padding: 2.4rem;
+  /* margin-bottom: 5rem; */
   transition: ease-out 500ms;
   h3 {
     font-family: 'Baloo 2';
@@ -26,6 +27,7 @@ export const ProductCardStyle = styled.div`
     margin: 0.8rem 0;
     color: ${(props) => props.theme.base['base-label']};
   }
+
   &:hover {
     transition: ease-in 200ms;
     background: ${(props) => props.theme.base['base-black']};
@@ -54,44 +56,64 @@ export const CardHeader = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: -40px;
+  margin-top: -50px;
   margin-bottom: 32px;
   border-radius: 6px 36px 6px 36px;
   transition: ease-out 500ms;
-  height: 220px;
+  height: 250px;
 
-  div {
-    display: flex;
-    margin-left: -90px;
-    margin-top: 200px;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    /* align-self: baseline; */
-    border-radius: 20px;
-    width: 100%;
-    /* padding: 0.4rem 0.8rem; */
-    /* background: ${(props) => props.theme.base.transparentBg}; */
-    color: ${(props) => props.theme.base['base-label']};
-    /* opacity: 0.2; */
-    /* position: relative; */
-    /* position: relative; */
-    /* position: absolute; */
-    span {
-      display: none;
-      font-size: 1.2rem;
-    }
-  }
   &:hover {
     transition: ease-in 200ms;
     box-shadow: 0px 0px 2px 2px ${(props) => props.theme.base['base-subtitle']};
     background: ${(props) => props.theme.base.transparentBg};
   }
 `
+export const LearnMore = styled.div`
+  display: flex;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+  justify-content: space-between;
+  /* align-self: baseline; */
+  border-radius: 20px;
+  margin-left: -90px;
+  margin-top: 200px;
+  width: 100%;
+  color: ${(props) => props.theme.base['base-label']};
+  span {
+    display: none;
+    font-size: 1.2rem;
+  }
+  @media (max-width: 848px) {
+    display: none;
+    margin: 0;
+  }
+`
+export const LearnAbout = styled.div`
+  color: ${(props) => props.theme.base['base-label']};
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  display: none;
+  padding: 0.5rem 2rem;
+  transition: ease-out 500ms;
+  border-radius: 20px;
+  &:hover {
+    transition: ease-in 200ms;
+    background: ${(props) => props.theme.product['yellow-dark']};
+    color: ${(props) => props.theme.base['base-card']};
+  }
+  @media (max-width: 848px) {
+    display: flex;
+  }
+`
+
 export const CardImage = styled.img`
   /* position: absolute; */
   /* position: relative; */
-  /* margin: 0 -40px 0 0; */
+  margin: 0 auto 0 0;
+  @media (max-width: 848px) {
+    margin: auto;
+  }
 `
 
 export const ProductInfo = styled.div`

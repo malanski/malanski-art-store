@@ -17,7 +17,7 @@ export const LayoutContainer = styled.div`
     padding: 3.2rem 2.5rem;
     gap: 1.4rem;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 864px) {
     padding: 3.2rem 2rem;
     gap: 1.2rem;
   }
