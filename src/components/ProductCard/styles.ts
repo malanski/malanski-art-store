@@ -124,7 +124,8 @@ export const ProductInfo = styled.div`
 `
 export const OptionsStyle = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 100%;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -143,9 +144,9 @@ export const OptionsStyle = styled.div`
 export const BuyActions = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin-top: 0.8rem;
   div {
     font-family: 'Roboto';
@@ -176,7 +177,7 @@ export const BuyButton = styled.div<IconButton>`
   a {
     background: ${(props) => props.background};
     border-radius: 6px;
-    padding: 0.8rem;
+    padding: 1rem;
     border: none;
     display: flex;
     svg {

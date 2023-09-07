@@ -1,8 +1,12 @@
 # React + TypeScript + Vite
 
 
-## Project structure
-
+## Project structure  
+  
+Esta loja virtual é como uma sala de visitas para clientes que ainda não conhecem a loja principal situada na plataforma [Colab 55](https://www.colab55.com/@malanskiart/), exibindo uma seleção dos trabalhos que melhor representam todo nosso catálogo de produtos.  
+  
+Nesse aplicativo podemos separar e reorganizar os produtos em uma ordem diferente da loja principal na Colab 55, podendo assim dar destaque aos produtos que estão muito abaixo na lista geral. Da mesma forma, podemos criar agrupamentos e coleções especiais conectado produtos que foram criados em tempos diferentes.  
+    
 Moda
 - Camisetas
 - Full Prints
@@ -11,9 +15,9 @@ Moda
 - Bonés
 - Aventais
 - Chinelos
-- Broches
-
-Acessórios
+- Broches  
+  
+Acessórios  
 - Toalhas
 - Almofadas
 - Quadros
