@@ -14,7 +14,7 @@ const CapsDataList = [
     description: 'Bonés em brim, estampados com arte minimalista',
     options: ['preto', 'branco', 'azul', 'vermelho', 'rosa'],
     iconSrc: boneAbelhaPb,
-    imgSrc: boneAbelhaPbBig,
+    imgSrc: [boneAbelhaPbBig],
     price: 99.99,
     buyLink:
       'https://www.colab55.com/@malanskiart/caps/abelha-rainha-preto-e-branco',
@@ -24,7 +24,7 @@ const CapsDataList = [
     description: 'Bonés em brim, estampados com arte minimalista',
     options: ['preto', 'branco', 'azul', 'vermelho', 'rosa'],
     iconSrc: boneCrisantemoHex,
-    imgSrc: boneCrisantemoHexBig,
+    imgSrc: [boneCrisantemoHexBig],
     price: 99.99,
     buyLink: 'https://www.colab55.com/@malanskiart/caps/crisantemo-hexagrama',
   },
@@ -33,7 +33,7 @@ const CapsDataList = [
     description: 'Bonés em brim, estampados com arte minimalista',
     options: ['preto', 'branco', 'azul', 'vermelho', 'rosa'],
     iconSrc: boneHexaInv,
-    imgSrc: boneHexaInvBig,
+    imgSrc: [boneHexaInvBig],
     price: 99.99,
     buyLink:
       'https://www.colab55.com/@malanskiart/caps/crisantemo-e-estrela-hexagrama-vermelho?c=pink',
@@ -43,7 +43,7 @@ const CapsDataList = [
     description: 'Bonés em brim, estampados com arte minimalista',
     options: ['preto', 'branco', 'azul', 'vermelho', 'rosa'],
     iconSrc: boneOctaInv,
-    imgSrc: boneOctaInvBig,
+    imgSrc: [boneOctaInvBig],
     price: 99.99,
     buyLink:
       'https://www.colab55.com/@malanskiart/caps/crisantemo-octograma-estrela-invertido?c=black',

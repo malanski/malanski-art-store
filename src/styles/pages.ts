@@ -63,7 +63,7 @@ export const ProductsNav = styled.ul`
   @media (max-width: 740px) {
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 5rem; 
+    margin: 5rem;
     gap: 0.8rem;
     li {
       width: 45%;

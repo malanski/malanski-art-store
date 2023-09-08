@@ -15,7 +15,7 @@ const ButtonsDataList = [
       'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
     options: ['Banho/Praia', 'Rosto'],
     iconSrc: Buttons,
-    imgSrc: ButtonsBig,
+    imgSrc: [ButtonsBig],
     price: 9.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/leao-cruz-pontilhismo',
@@ -26,7 +26,7 @@ const ButtonsDataList = [
       'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
     options: ['Banho/Praia', 'Rosto'],
     iconSrc: ButtonsButterfly,
-    imgSrc: ButtonsButterflyBig,
+    imgSrc: [ButtonsButterflyBig],
     price: 9.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/borboleta-e-rosas-de-afrodite-rosa-lavado',
@@ -37,7 +37,7 @@ const ButtonsDataList = [
       'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
     options: ['Banho/Praia', 'Rosto'],
     iconSrc: ButtonsLionFlower,
-    imgSrc: ButtonsLionFlowerBig,
+    imgSrc: [ButtonsLionFlowerBig],
     price: 9.9,
     buyLink: 'https://www.colab55.com/@malanskiart/buttons/leao-floral-espiral',
   },
@@ -47,7 +47,7 @@ const ButtonsDataList = [
       'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
     options: ['Banho/Praia', 'Rosto'],
     iconSrc: Buttonseagle,
-    imgSrc: ButtonseagleBig,
+    imgSrc: [ButtonseagleBig],
     price: 9.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/aguia-na-cabreiragem',

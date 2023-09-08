@@ -22,7 +22,7 @@ export interface IProductData {
     description: string
     options: string[]
     iconSrc: string
-    imgSrc: string
+    imgSrc: string[]
     price: number
     buyLink: string
   }
@@ -32,6 +32,8 @@ export function ProductCard(props: IProductData) {
   const theme = useTheme()
   const { name, description, options, iconSrc, price, buyLink } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
   const [selectedProduct, setSelectedProduct] = useState<
     IProductData['data'] | null
   >(null)
@@ -48,6 +50,14 @@ export function ProductCard(props: IProductData) {
   const closeModal = () => {
     setSelectedProduct(null)
     setIsModalOpen(false)
+  }
+
+  function changeImage() {
+    if (currentImageIndex === props.data.imgSrc.length - 1) {
+      setCurrentImageIndex(0)
+    } else {
+      setCurrentImageIndex(currentImageIndex + 1)
+    }
   }
 
   return (
@@ -86,7 +96,7 @@ export function ProductCard(props: IProductData) {
 
       <BuyActions>
         <div title="Preço atual">
-          <p>R$ {price}0</p>
+          <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
         </div>
 
         <BuyButton title="Comprar" background={theme.product['purple-dark']}>
@@ -97,9 +107,14 @@ export function ProductCard(props: IProductData) {
       </BuyActions>
 
       {isModalOpen && selectedProduct && (
-        <Modal onClick={closeModal}>
+        <Modal>
           <ModalFlex>
-            <img src={selectedProduct.imgSrc} alt="Imagem Grande" />
+            <img
+              src={props.data.imgSrc[currentImageIndex]}
+              alt={selectedProduct.name}
+              onClick={changeImage}
+            ></img>
+
             <ModalInfo>
               <h3>{selectedProduct.name}</h3>
               <hr />

@@ -15,7 +15,7 @@ const FlipflopsDataList = [
       'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
     options: ['Tradicional', 'Slim'],
     iconSrc: FlopsMandalaRed,
-    imgSrc: FlopsMandalaRedBig,
+    imgSrc: [FlopsMandalaRedBig],
     price: 79.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/fractal-mandala-preto',
@@ -26,7 +26,7 @@ const FlipflopsDataList = [
       'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
     options: ['Tradicional', 'Slim'],
     iconSrc: FlopsSunflower,
-    imgSrc: FlopsSunflowerBig,
+    imgSrc: [FlopsSunflowerBig],
     price: 79.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/girassois-e-margaridas-verde-claro',
@@ -37,7 +37,7 @@ const FlipflopsDataList = [
       'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
     options: ['Tradicional', 'Slim'],
     iconSrc: FlopsTurtleOrange,
-    imgSrc: FlopsTurtleOrangeBig,
+    imgSrc: [FlopsTurtleOrangeBig],
     price: 79.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/tartaruga-marinha-pontilhismo-terceiro-olho',
@@ -48,7 +48,7 @@ const FlipflopsDataList = [
       'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
     options: ['Tradicional', 'Slim'],
     iconSrc: FlopsRedWings,
-    imgSrc: FlopsRedWingsBig,
+    imgSrc: [FlopsRedWingsBig],
     price: 79.9,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/asas-de-carcara-vermelho-e-branco',

@@ -16,8 +16,9 @@ import TowelsDataList from '../../../../data/TowelsData'
 import PillowsDataList from '../../../../data/PillowsData'
 import ButtonsDataList from '../../../../data/ButtonsData'
 import { Nav } from '../../../../components/Nav'
-import { ProductCard } from '../../../../components/ProductCard'
 import TotebagsList from '../../../../data/TotebagsData'
+
+import { ProductCard } from '../../../../components/ProductCard'
 
 const allData = [
   ...TshirtsDataList,
