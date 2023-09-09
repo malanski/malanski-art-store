@@ -25,80 +25,88 @@ import teeKatanaMan from '../assets/products_img/tee_katana_man.png'
 import teeGeoElephantBig from '../assets/products_img/tee_geo_elephant.png'
 import teeGeoElephantMan from '../assets/products_img/tee_geo_elephant_man.png'
 
+const ItemDescription =
+  'Disponível em varias cores e tamanhos, impressão frontal'
+const category = 'Camiseta'
+const ItemPrice = 119.9
+const ItemOptions = ['Regular', 'Baby Long', 'Infantil']
+
 const TshirtsDataList = [
   {
-    name: 'Camiseta Dragão Vermelho',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Dragão Vermelho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeRedDragon,
     imgSrc: [teeRedDragonBig, teeRedDragonBlack],
-    price: 119.99,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/dragao-vermelho',
   },
   {
-    name: 'Camiseta crisântemo octógama',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Crisântemo Octógama`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeOctoInv,
     imgSrc: [teeOctoInvBig, teeOctoInvBlack],
-    price: 119.99,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees/crisantemo-octograma-estrela-invertido',
   },
   {
-    name: 'Peixes Koi Carpas Flores',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category}  Carpas Flores`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeKoiFishFlowers,
     imgSrc: [teeKoiFishFlowersBig, teeKoiFishFlowersGreen],
-    price: 119.99,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees/peixes-koi-carpas-flores',
   },
   {
-    name: 'Camiseta Rosa Singular',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Rosa Singular`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeRoseSing,
     imgSrc: [teeRoseSingBig, teeRoseSingWhite],
-    price: 119.99,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/rosa-singular',
   },
   {
-    name: 'Camiseta Lua Floral',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Lua Floral`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeMoon,
     imgSrc: [teeMoonMan, teeMoonBig, teeMoonGrey],
-    price: 119.99,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/lua-floral-verde',
   },
   {
-    name: 'Camiseta Elefante',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Elefante`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeElephant,
     imgSrc: [teeElephantBig, teeElephantGreen],
-    price: 119.99,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/geometria-elefante',
   },
   {
-    name: 'Camiseta Katana',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Katana`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeKatana,
     imgSrc: [teeKatanaBig, teeKatanaMan],
-    price: 119.99,
-    buyLink: 'https://www.colab55.com/@malanskiart/tees/geometria-elefante',
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees/sol-katana-dupla-lapis-aquarela',
   },
   {
-    name: 'Camiseta Elefante Áureo',
-    description: 'Disponível em varias cores e tamanhos, impressão frontal',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Elefante Áureo`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeGeoElephant,
     imgSrc: [teeGeoElephantBig, teeGeoElephantMan],
-    price: 119.99,
-    buyLink: 'https://www.colab55.com/@malanskiart/tees/geometria-elefante',
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees/elefante-espiral-invertido',
   },
 ]
 

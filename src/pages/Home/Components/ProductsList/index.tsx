@@ -21,9 +21,9 @@ import TotebagsList from '../../../../data/TotebagsData'
 import { ProductCard } from '../../../../components/ProductCard'
 
 const allData = [
+  ...FullTshirtsDataList,
   ...TshirtsDataList,
   ...CapsDataList,
-  ...FullTshirtsDataList,
   ...ButtonsDataList,
   ...TotebagsList,
   ...MugsDataList,

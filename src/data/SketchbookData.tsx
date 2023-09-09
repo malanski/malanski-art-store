@@ -8,47 +8,49 @@ import SketchbookSunflowerBig from '../assets/products_img/sketchbooks_hepta.png
 import SketchbookTurtleOrangeBig from '../assets/products_img/sketchbooks_bee.png'
 import SketchbookWingsBig from '../assets/products_img/sketchbooks_oxossi.png'
 
+const ItemDescription =
+  'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals'
+const category = 'Caderno'
+const ItemPrice = 89.9
+const ItemOptions = ['Cor do elástico']
+
 const SketchbookDataList = [
   {
-    name: 'Caderno Dragão Vermelho',
-    description:
-      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options: ['Cor do elástico'],
+    name: `${category} Dragão Vermelho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: Sketchbook,
     imgSrc: [SketchbookBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/sketchbooks/dragao-vermelho',
   },
   {
-    name: 'Caderno Hectograma',
-    description:
-      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options: ['Cor do elástico'],
+    name: `${category} Hectograma`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: SketchbookSunflower,
     imgSrc: [SketchbookSunflowerBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sketchbooks/crisantemo-estrela-heptagrama-colorido-aquarela',
   },
   {
-    name: 'Caderno Abelha',
-    description:
-      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options: ['Cor do elástico'],
+    name: `${category} Abelha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: SketchbookTurtleOrange,
     imgSrc: [SketchbookTurtleOrangeBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sketchbooks/abelha-rainha-preto-e-branco',
   },
   {
-    name: 'Caderno Oxossi',
-    description:
-      'Vários modelos como sketchbooks agendas, planners semanais e mensais, blocos de notas e bullet journals',
-    options: ['Cor do elástico'],
+    name: `${category} Oxossi`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: SketchbookWings,
     imgSrc: [SketchbookWingsBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/sketchbooks/oxossi-aquarela',
   },
 ]

@@ -8,47 +8,49 @@ import BagEagleBig from '../assets/products_img/bag_eagle.png'
 import BagElephantBig from '../assets/products_img/bag_elephant.png'
 import BagVitruvianoBig from '../assets/products_img/bag_vitruviano.png'
 
+const ItemDescription =
+  'Tamanho: 43 x 45 cm, a impressão é digital frente e verso em tecido sarjado 150gsm 100% poliéster'
+const category = 'Bolsa'
+const ItemPrice = 89.9
+const ItemOptions = ['Alça 30cm', 'Sem zipper']
+
 const TotebagsList = [
   {
-    name: 'Bolsa Abelha',
-    description:
-      'Tamanho: 43 x 45 cm, a impressão é digital frente e verso em tecido sarjado 150gsm 100% poliéster',
-    options: ['Alça 30cm', 'Sem zipper'],
+    name: `${category} Abelha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: BagAbelha,
     imgSrc: [BagAbelhaBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/totebags/abelha-rainha-preto-e-branco',
   },
   {
-    name: 'Bolsa Águia',
-    description:
-      'Tamanho: 43 x 45 cm, a impressão é digital frente e verso em tecido sarjado 150gsm 100% poliéster',
-    options: ['Alça 30cm', 'Sem zipper'],
+    name: `${category} Águia`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: BagEagle,
     imgSrc: [BagEagleBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/totebags/aguia-bate-asas',
   },
   {
-    name: 'Bolsa Elefante',
-    description:
-      'Tamanho: 43 x 45 cm, a impressão é digital frente e verso em tecido sarjado 150gsm 100% poliéster',
-    options: ['Alça 30cm', 'Sem zipper'],
+    name: `${category} Elefante`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: BagElephant,
     imgSrc: [BagElephantBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/totebags/elefante-espiral-invertido',
   },
   {
-    name: 'Bolsa Vitruviano',
-    description:
-      'Tamanho: 43 x 45 cm, a impressão é digital frente e verso em tecido sarjado 150gsm 100% poliéster',
-    options: ['Alça 30cm', 'Sem zipper'],
+    name: `${category} Vitruviano`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: BagVitruviano,
     imgSrc: [BagVitruvianoBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/totebags/vitruviano',
   },
 ]

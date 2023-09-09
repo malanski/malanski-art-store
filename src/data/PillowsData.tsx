@@ -15,92 +15,91 @@ import PillowTartarugaBig from '../assets/products_img/pillow_tartaruga.png'
 import PillowGirassoisBig from '../assets/products_img/pillow_girassois.png'
 import PillowLibelulaBig from '../assets/products_img/pillow_libelula.png'
 import PillowBesouroBig from '../assets/products_img/pillow_besouro.png'
+
+const ItemDescription =
+  'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster'
+const category = 'Almofadas'
+const ItemPrice = 79.9
+const ItemOptions = ['40x40cm', '50x50cm']
+
 const PillowsDataList = [
   {
-    name: 'Almofada Geisha',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options: ['40x40cm', '50x50cm'],
+    name: `${category} Geisha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: PillowGeisha,
     imgSrc: [PillowGeishaBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/pillows/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
-    name: 'Almofada Carpas',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options: ['40x40cm', '50x50cm'],
+    name: `${category}  Carpas`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: PillowKoi,
     imgSrc: [PillowKoiBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/pillows/peixes-carpas-flores-koi-colorido',
   },
   {
-    name: 'Almofada Rosa',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options: ['40x40cm', '50x50cm'],
+    name: `${category}  Rosa`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: PillowRose,
     imgSrc: [PillowRoseBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/pillows/rosa-grande-rosa-cristal',
   },
   {
-    name: 'Almofada Elefante',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
-    options: ['40x40cm', '50x50cm'],
+    name: `${category}  Elefante`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: PillowElephant,
     imgSrc: [PillowElephantBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/pillows/elefante-espiral-invertido',
   },
   {
-    name: 'Almofada Tartaruga',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    name: `${category}  Tartaruga`,
+    description: ItemDescription,
     options: ['45x30cm', 'Capa', 'Enchimento'],
     iconSrc: PillowTartaruga,
     imgSrc: [PillowTartarugaBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/rectangular-pillows/tartaruga-marinha-pontilhismo-terceiro-olho',
   },
   {
-    name: 'Almofada Girassóis',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    name: `${category}  Girassóis`,
+    description: ItemDescription,
     options: ['45x30cm', 'Capa', 'Enchimento'],
     iconSrc: PillowGirassois,
     imgSrc: [PillowGirassoisBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/rectangular-pillows/girassois-e-margaridas-cheio-verde',
   },
   {
-    name: 'Almofada Libélula',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    name: `${category}  Libélula`,
+    description: ItemDescription,
     options: ['45x30cm', 'Capa', 'Enchimento'],
     iconSrc: PillowLibelula,
     imgSrc: [PillowLibelulaBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/rectangular-pillows/libelula-na-floresta',
   },
   {
-    name: 'Almofada Besouro',
-    description:
-      'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster',
+    name: `${category}  Besouro`,
+    description: ItemDescription,
     options: ['45x30cm', 'Capa', 'Enchimento'],
     iconSrc: PillowBesouro,
     imgSrc: [PillowBesouroBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/rectangular-pillows/grande-besouro-voador-magenta-viva',
   },

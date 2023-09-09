@@ -8,47 +8,49 @@ import ButtonsButterflyBig from '../assets/products_img/buttons_butterfly.png'
 import ButtonsLionFlowerBig from '../assets/products_img/buttons_lion_flower.png'
 import ButtonseagleBig from '../assets/products_img/buttons_eagle.png'
 
+const ItemDescription =
+  'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro'
+const category = 'Broche'
+const ItemPrice = 9.9
+const ItemOptions = ['Banho/Praia', 'Rosto']
+
 const ButtonsDataList = [
   {
-    name: 'Broche Leão',
-    description:
-      'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Leão`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: Buttons,
     imgSrc: [ButtonsBig],
-    price: 9.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/leao-cruz-pontilhismo',
   },
   {
-    name: 'Broche Borboleta',
-    description:
-      'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Borboleta`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ButtonsButterfly,
     imgSrc: [ButtonsButterflyBig],
-    price: 9.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/borboleta-e-rosas-de-afrodite-rosa-lavado',
   },
   {
-    name: 'Broche Leão Floral',
-    description:
-      'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Leão Floral`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ButtonsLionFlower,
     imgSrc: [ButtonsLionFlowerBig],
-    price: 9.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/buttons/leao-floral-espiral',
   },
   {
-    name: 'Broche Águia',
-    description:
-      'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Águia`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: Buttonseagle,
     imgSrc: [ButtonseagleBig],
-    price: 9.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/buttons/aguia-na-cabreiragem',
   },

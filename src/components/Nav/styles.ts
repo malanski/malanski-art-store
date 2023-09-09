@@ -14,17 +14,19 @@ export const NavContainer = styled.nav`
     text-transform: uppercase;
     font-weight: 600;
     flex-grow: 1;
-    gap: 4rem;
+    gap: 3.2rem;
     min-width: 140px;
+    max-width: 25.6rem;
+
     text-decoration: none;
     padding: 0.1rem 0.4rem;
     background: ${(props) => props.theme.product['yellow-light']};
-    color: ${(props) => props.theme.product['yellow-dark']};
+    color: ${(props) => props.theme.product.purpleDark};
   }
 
   a:hover {
     transition: ease-in 200ms;
-    background: ${(props) => props.theme.product.yellow};
+    background: ${(props) => props.theme.product.purple};
     color: ${(props) => props.theme.product['yellow-light']};
   }
   a.active {

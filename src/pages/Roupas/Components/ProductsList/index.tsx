@@ -12,16 +12,17 @@ import { Nav } from '../../../../components/Nav'
 import { ProductCard } from '../../../../components/ProductCard'
 
 const allData = [
-  ...TshirtsDataList,
   ...FullTshirtsDataList,
+  ...TshirtsDataList,
+
   ...LeggingsDataList,
   ...SweatShirtsDataList,
 ]
 
 const dataSources = [
   { name: 'Roupas', data: allData },
-  { name: 'Camisetas', data: TshirtsDataList },
   { name: 'Full Prints', data: FullTshirtsDataList },
+  { name: 'Camisetas', data: TshirtsDataList },
   { name: 'Leggings', data: LeggingsDataList },
   { name: 'Moletons', data: SweatShirtsDataList },
 ]
@@ -39,6 +40,7 @@ export function ProductsList() {
     <ProductsListStyles>
       <Nav />
       <h2>{currentDataSource.name}</h2>
+      <h4>Categorias</h4>
       <ProductsNav>
         {dataSources.map((source, index) => (
           <li key={index}>

@@ -11,35 +11,18 @@ export const ProductCardStyle = styled.div`
   align-items: center;
   text-align: center;
   padding: 2.4rem;
-  /* margin-bottom: 5rem; */
+  margin-bottom: 1rem;
   transition: ease-out 500ms;
-  h3 {
-    font-family: 'Baloo 2';
-    font-size: 2rem;
-    color: ${(props) => props.theme.base['base-subtitle']};
-    margin: 0.8rem 0;
-    min-height: 6.9rem;
-    display: flex;
-    align-items: center;
-  }
-  p {
-    font-size: 1.4rem;
-    margin: 0.8rem 0;
-    color: ${(props) => props.theme.base['base-label']};
-  }
-
   &:hover {
     transition: ease-in 200ms;
     background: ${(props) => props.theme.base['base-black']};
     box-shadow: 0px 0px 16px 5px ${(props) => props.theme.base['base-subtitle']};
     span {
-      /* background: ${(props) => props.theme.base.transparentBg}; */
       display: flex;
       align-items: center;
-      /* background: ${(props) => props.theme.base['base-black']}; */
-      /* opacity: 1; */
     }
   }
+
   @media (max-width: 849px) {
     min-width: calc(45vw - 2.4rem);
     min-height: 50vh;
@@ -56,7 +39,7 @@ export const CardHeader = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -70px;
   margin-bottom: 32px;
   border-radius: 6px 36px 6px 36px;
   transition: ease-out 500ms;
@@ -66,6 +49,9 @@ export const CardHeader = styled.div`
     transition: ease-in 200ms;
     box-shadow: 0px 0px 2px 2px ${(props) => props.theme.base['base-subtitle']};
     background: ${(props) => props.theme.base.transparentBg};
+  }
+  @media (max-width: 650px) {
+    margin-top: -50px;
   }
 `
 export const LearnMore = styled.div`
@@ -121,6 +107,20 @@ export const ProductInfo = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  h3 {
+    font-family: 'Baloo 2';
+    font-size: 2rem;
+    color: ${(props) => props.theme.base['base-subtitle']};
+    margin: 0.8rem 0;
+    min-height: 6.9rem;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+    color: ${(props) => props.theme.base['base-label']};
+  }
 `
 export const OptionsStyle = styled.div`
   display: flex;
@@ -175,11 +175,13 @@ interface IconButton {
 }
 export const BuyButton = styled.div<IconButton>`
   a {
+    text-transform: uppercase;
     background: ${(props) => props.background};
     border-radius: 6px;
     padding: 1rem;
     border: none;
     display: flex;
+    align-items: center;
     svg {
       color: ${(props) => props.theme.base.white};
       margin: auto;
@@ -193,35 +195,12 @@ export const Modal = styled.div`
   flex-shrink: 1;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: ${(props) => props.theme.base.transparentBg};
-  img {
-    max-width: 80%;
-    max-height: 80vh;
-    margin-bottom: -30px;
-    position: relative;
-  }
-
-  button {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  @media (max-width: 750px) {
-    img {
-      max-width: 90%;
-      height: auto;
-    }
-  }
 `
 export const ModalFlex = styled.div`
   /* position: relative; */
@@ -230,15 +209,51 @@ export const ModalFlex = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 3.2rem;
+  padding: 1rem;
+  height: 95vh;
   background: ${(props) => props.theme.base['base-black']};
   border-radius: 6px 36px 6px 36px;
-  @media (max-width: 1200px) {
+  @media (max-width: 890px) {
+    padding: 0.5rem;
     flex-direction: column;
+    height: 85vh;
+  }
+  @media (max-height: 420px) {
+    flex-direction: row;
+    height: 100vh;
+  }
+`
+export const ModalHeader = styled.div`
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  img {
+    max-height: 100%;
+  }
+  svg {
+    color: white;
+  }
+  @media (max-width: 890px) {
+    /* height: 70vh; */
+    /* position: unset; */
+    height: 60%;
+
+    img {
+      /* min-width: 50vw; */
+      height: 90%;
+    }
+  }
+  @media (max-height: 420px) {
+    img {
+      height: 100%;
+    }
   }
 `
 export const ModalInfo = styled.div`
-  /* position: absolute; */
   right: 0;
   background: ${(props) => props.theme.base['base-card']};
   padding: 2rem;
@@ -249,6 +264,10 @@ export const ModalInfo = styled.div`
   flex-direction: column;
   gap: 0.4rem;
   width: 350px;
+  h3 {
+    text-align: center;
+    width: 100%;
+  }
   h5 {
     text-align: left;
   }
@@ -265,5 +284,47 @@ export const ModalInfo = styled.div`
 
   @media (max-width: 1050px) {
     width: 290px;
+  }
+`
+export const CardCloseButton = styled.button`
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  color: ${(props) => props.theme.base.white};
+  background: ${(props) => props.theme.base.transparentBg};
+  transition: ease-out 600ms;
+  opacity: 0.5;
+  border: none;
+  border-radius: 50%;
+  font-size: 55px;
+  cursor: pointer;
+  &:hover {
+    transition: ease-in 200ms;
+    background: ${(props) => props.theme.product.purple};
+    opacity: 1;
+  }
+  @media (height: 600px) {
+    top: 85px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+  }
+  @media (max-width: 580px) {
+    top: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-height: 420px) {
+    top: 25px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
   }
 `

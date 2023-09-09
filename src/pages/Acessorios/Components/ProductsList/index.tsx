@@ -39,6 +39,8 @@ export function ProductsList() {
     <ProductsListStyles>
       <Nav />
       <h2>{currentDataSource.name}</h2>
+      <h4>Categorias</h4>
+
       <ProductsNav>
         {dataSources.map((source, index) => (
           <li key={index}>

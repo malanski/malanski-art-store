@@ -15,7 +15,7 @@ export const IntroContainer = styled.div`
       transition: 10s ease-in;
     }
   }
-  @media (max-width: 80rem) {
+  @media (max-width: 800px) {
     flex-direction: column-reverse;
     img {
       max-width: 70vw;
@@ -68,19 +68,22 @@ export const IntroTitles = styled.div`
       width: 100%;
     }
   }
-  @media (max-width: 48rem) {
-    gap: 0.8rem;
 
-    h1 {
-      font-size: 2.8rem;
-    }
-  }
   @media (max-width: 593px) {
     h1 {
       font-size: 2.2rem;
     }
     h4 {
-      font-size: 1.6rem;
+      background: ${(props) => props.theme.base['base-card']};
+      padding: 2rem;
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 480px) {
+    gap: 0.8rem;
+
+    h1 {
+      font-size: 2.8rem;
     }
   }
 `

@@ -8,47 +8,49 @@ import MugsSunflowerBig from '../assets/products_img/mugs_firefly.png'
 import MugsTurtleOrangeBig from '../assets/products_img/mugs_bee_black.png'
 import MugsRedWingsBig from '../assets/products_img/mugs_eagle_wings.png'
 
+const ItemDescription =
+  'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças'
+const category = 'Caneca'
+const ItemPrice = 64.9
+const ItemOptions = ['300ml', 'Cerâmica premium']
+
 const MugsDataList = [
   {
-    name: 'Caneca Rosa',
-    description:
-      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml', 'Cerâmica premium'],
+    name: `${category} Rosa`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: MugsMandalaRed,
     imgSrc: [MugsMandalaRedBig],
-    price: 64.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/mugs/rosa-grande-rosa-cristal',
   },
   {
-    name: 'Caneca Libélula',
-    description:
-      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml', 'Cerâmica premium'],
+    name: `${category} Libélula`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: MugsSunflower,
     imgSrc: [MugsSunflowerBig],
-    price: 64.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/mugs/libelulas-branco',
   },
   {
-    name: 'Caneca Abelha',
-    description:
-      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml', 'Cerâmica premium'],
+    name: `${category} Abelha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: MugsTurtleOrange,
     imgSrc: [MugsTurtleOrangeBig],
-    price: 64.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/mugs/abelha-rainha-preto-e-branco',
   },
   {
-    name: 'Caneca Águia',
-    description:
-      'Alça anti-térmica. Pode ir ao micro-ondas, freezer e lava-louças',
-    options: ['300ml', 'Cerâmica premium'],
+    name: `${category} Águia`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: MugsRedWings,
     imgSrc: [MugsRedWingsBig],
-    price: 64.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/mugs/aguia-bate-asas',
   },
 ]

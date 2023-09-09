@@ -18,6 +18,11 @@ export const ProductsListStyles = styled.section`
     width: 100%;
     justify-content: center;
   }
+  h4 {
+    font-size: 2.5rem;
+    text-align: left;
+    width: 100%;
+  }
 
   @media (max-width: 740px) {
     h2 {
@@ -40,7 +45,7 @@ export const ProductsNav = styled.ul`
   background: ${(props) => props.theme.base.bgClear};
   align-items: center;
   li {
-    width: 14%;
+    /* width: 14%; */
     margin: 0 auto;
   }
   a {

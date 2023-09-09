@@ -8,47 +8,49 @@ import ApronsSunflowerBig from '../assets/products_img/aprons_big_rose.png'
 import ApronsTurtleOrangeBig from '../assets/products_img/aprons_lion_red.png'
 import ApronsRedWingsBig from '../assets/products_img/aprons_dragon_blue.png'
 
+const ItemDescription =
+  'Brim 100% algodão , Bolso frontal arredondado, faixa para amarração nas costas e alça com regulador em metal'
+const category = 'Aventais'
+const ItemPrice = 89.9
+const ItemOptions = ['Preto', 'Branco', 'Vermelho', 'Azul']
+
 const ApronsDataList = [
   {
-    name: 'Avental Carpas e Flores',
-    description:
-      'Brim 100% algodão , Bolso frontal arredondado, faixa para amarração nas costas e alça com regulador em metal',
-    options: ['Preto', 'Branco', 'Vermelho', 'Azul'],
+    name: `${category} Carpas e Flores`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ApronsMandalaRed,
     imgSrc: [ApronsMandalaRedBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/aprons/peixes-koi-carpas-flores',
   },
   {
     name: 'Avental Rosa Branca',
-    description:
-      'Brim 100% algodão , Bolso frontal arredondado, faixa para amarração nas costas e alça com regulador em metal',
-    options: ['Preto', 'Branco', 'Vermelho', 'Azul'],
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ApronsSunflower,
     imgSrc: [ApronsSunflowerBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/aprons/rosa-grande-rosa-cristal',
   },
   {
     name: 'Avental Leão Colorido',
-    description:
-      'Brim 100% algodão , Bolso frontal arredondado, faixa para amarração nas costas e alça com regulador em metal',
-    options: ['Preto', 'Branco', 'Vermelho', 'Azul'],
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ApronsTurtleOrange,
     imgSrc: [ApronsTurtleOrangeBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/aprons/leao-ruge',
   },
   {
     name: 'Avental Dragão Vermelho',
-    description:
-      'Brim 100% algodão , Bolso frontal arredondado, faixa para amarração nas costas e alça com regulador em metal',
-    options: ['Preto', 'Branco', 'Vermelho', 'Azul'],
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: ApronsRedWings,
     imgSrc: [ApronsRedWingsBig],
-    price: 89.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/aprons/dragao-vermelho',
   },
 ]

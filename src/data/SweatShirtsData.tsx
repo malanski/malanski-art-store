@@ -34,86 +34,92 @@ import teeSwTattooBig from '../assets/products_img/tee_sw_tattoo.png'
 import teeSwTattooGrey from '../assets/products_img/tee_sw_tattoo_grey.png'
 import teeSwTattooBlack from '../assets/products_img/tee_sw_tattoo_black.png'
 
+const ItemDescription =
+  'Disponível em vários tamanhos, 85% algodão, 15% poliéster'
+const category = 'Moletons'
+const ItemPrice = 184.9
+const ItemOptions = ['Preto', 'Branco', 'Cinza']
+
 const SweatShirtsDataList = [
   {
-    name: 'Moletom Dragão Vermelho',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Dragão Vermelho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwRedDragon,
     imgSrc: [teeSwRedDragonBig, teeSwRedDragonBlack],
-    price: 184.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/sweatshirts/dragao-vermelho',
   },
   {
-    name: 'Moletom Octógama Colorido',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Octógama Colorido`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwOctoColor,
     imgSrc: [teeSwOctoColorBig, teeSwOctoColorBlack],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/crisantemo-octograma-estrela-colorido',
   },
   {
-    name: 'Moletom Octógama Invertido',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Octógama Invertido`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwOctoColorInv,
     imgSrc: [teeSwOctoColorInvBig, teeSwOctoColorInvBlack],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/crisantemo-octograma-estrela-invertido',
   },
   {
-    name: 'Moletom Borboleta Rosa',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Borboleta Rosa`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwButterflyPink,
     imgSrc: [
       teeSwButterflyPinkBig,
       teeSwButterflyPinkBlack,
       teeSwButterflyPinkGrey,
     ],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/borboleta-e-rosas-de-afrodite-rosa-lavado',
   },
   {
-    name: 'Moletom Serpente',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Serpente`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwSnake,
     imgSrc: [teeSwSnakeBig, teeSwSnakeGrey],
-    price: 184.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/sweatshirts/cobra-serpente',
   },
   {
-    name: 'Moletom Geisha',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Geisha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwGeisha,
     imgSrc: [teeSwGeishaBig, teeSwGeishaBlack],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
-    name: 'Moletom Carpas',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Carpas`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwKoi,
     imgSrc: [teeSwKoiBig, teeSwKoiBlack],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
-    name: 'Moletom Tattoo',
-    description: 'Disponível em vários tamanhos, 85% algodão, 15% poliéster',
-    options: ['Preto', 'Branco', 'Cinza'],
+    name: `${category} Tattoo`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeSwTattoo,
     imgSrc: [teeSwTattooBlack, teeSwTattooBig, teeSwTattooGrey],
-    price: 184.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/sweatshirts/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },

@@ -83,7 +83,7 @@ const FullTshirtsDataList = [
     imgSrc: [teeRoseBig, teeRoseBack],
     price: 134.9,
     buyLink:
-      'https://www.colab55.com/@malanskiart/tees-fullprint/raposa-construtivista',
+      'https://www.colab55.com/@malanskiart/tees-fullprint/rosa-singular-aberta',
   },
   {
     name: 'Camiseta Geisha',
@@ -93,7 +93,7 @@ const FullTshirtsDataList = [
     imgSrc: [teeGeishaBig, teeGeishaBack],
     price: 134.9,
     buyLink:
-      'https://www.colab55.com/@malanskiart/tees-fullprint/raposa-construtivista',
+      'https://www.colab55.com/@malanskiart/tees-fullprint/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
     name: 'Camiseta Cobra',
@@ -103,7 +103,7 @@ const FullTshirtsDataList = [
     imgSrc: [teeCobraBig, teeCobraBack],
     price: 134.9,
     buyLink:
-      'https://www.colab55.com/@malanskiart/tees-fullprint/raposa-construtivista',
+      'https://www.colab55.com/@malanskiart/tees-fullprint/cobra-serpente',
   },
 ]
 

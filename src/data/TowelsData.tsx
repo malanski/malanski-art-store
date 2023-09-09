@@ -8,46 +8,48 @@ import TowelsTurtleBig from '../assets/products_img/towel_turtle.png'
 import TowelsMoonBig from '../assets/products_img/towel_moon_flower.png'
 import TowelsVitruvianBig from '../assets/products_img/towel_vitruviano.png'
 
+const ItemDescription =
+  'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster'
+const category = 'Toalha'
+const ItemPrice = 84.9
+const ItemOptions = ['Banho/Praia', 'Rosto']
+
 const TowelsDataList = [
   {
-    name: 'Toalha Leão Iluminado',
-    description:
-      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Leão Iluminado`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: Towels,
     imgSrc: [TowelsBig],
-    price: 84.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/towels/leao-iluminado',
   },
   {
-    name: 'Toalha Tartaruga',
-    description:
-      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Tartaruga`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: TowelsTurtle,
     imgSrc: [TowelsTurtleBig],
-    price: 84.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/towels/tartaruga-marinha-nadapontilhismo-azul-aquarela',
   },
   {
-    name: 'Toalha Lua',
-    description:
-      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Lua`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: TowelsMoon,
     imgSrc: [TowelsMoonBig],
-    price: 84.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/towels/lua-floral-verde',
   },
   {
-    name: 'Toalha Vitruviana',
-    description:
-      'Toalhas de banho, de praia e de rosto com, tecido felpudo de poliéster',
-    options: ['Banho/Praia', 'Rosto'],
+    name: `${category} Vitruviana`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: TowelsVitruvian,
     imgSrc: [TowelsVitruvianBig],
-    price: 84.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/towels/vitruviano',
   },
 ]

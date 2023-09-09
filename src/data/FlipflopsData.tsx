@@ -8,48 +8,50 @@ import FlopsSunflowerBig from '../assets/products_img/flipflops_sunflower.png'
 import FlopsTurtleOrangeBig from '../assets/products_img/flipflops_turtle_orange.png'
 import FlopsRedWingsBig from '../assets/products_img/flipflops_red_wings.png'
 
+const ItemDescription =
+  'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras'
+const category = 'Chinelo'
+const ItemPrice = 79.9
+const ItemOptions = ['Tradicional', 'Slim']
+
 const FlipflopsDataList = [
   {
-    name: 'Chinelo Mandala Vermelha',
-    description:
-      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
-    options: ['Tradicional', 'Slim'],
+    name: `${category} Mandala Vermelha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: FlopsMandalaRed,
     imgSrc: [FlopsMandalaRedBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/fractal-mandala-preto',
   },
   {
-    name: 'Chinelo Girassóis',
-    description:
-      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
-    options: ['Tradicional', 'Slim'],
+    name: `${category} Girassóis`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: FlopsSunflower,
     imgSrc: [FlopsSunflowerBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/girassois-e-margaridas-verde-claro',
   },
   {
-    name: 'Chinelo Tartarugas de Olho',
-    description:
-      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
-    options: ['Tradicional', 'Slim'],
+    name: `${category} Tartarugas de Olho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: FlopsTurtleOrange,
     imgSrc: [FlopsTurtleOrangeBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/tartaruga-marinha-pontilhismo-terceiro-olho',
   },
   {
-    name: 'Chinelo asas para os seus pés',
-    description:
-      'Em tamanhos do 23 ao 46. Borracha premium e varias cores de tiras',
-    options: ['Tradicional', 'Slim'],
+    name: `${category} asas para os seus pés`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: FlopsRedWings,
     imgSrc: [FlopsRedWingsBig],
-    price: 79.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/flipflops/asas-de-carcara-vermelho-e-branco',
   },

@@ -12,48 +12,50 @@ import LegLeavesBack from '../assets/products_img/leggings_leaves_back.png'
 import LegSnakeBig from '../assets/products_img/leggings_snake.png'
 import LegSnakeBack from '../assets/products_img/leggings_snake_back.png'
 
+const ItemDescription =
+  'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 '
+const category = 'Leggings'
+const ItemPrice = 144.9
+const ItemOptions = ['Tamanho Único', '36 ao 44']
+
 const LeggingsDataList = [
   {
-    name: 'Leggings Mandala',
-    description:
-      'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options: ['Tamanho Único', '36 ao 44'],
+    name: `${category} Mandala`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: LegMandala,
     imgSrc: [LegMandalaBig, LegMandalaBack],
-    price: 149.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/leggings/fractal-mandala-branco',
   },
   {
-    name: 'Leggings Tattooo',
-    description:
-      'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options: ['Tamanho Único', '36 ao 44'],
+    name: `${category} Tattoo`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: LegTattoSnake,
     imgSrc: [LegTattoSnakeBig, LegTattoSnakeBack],
-    price: 149.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/leggings/cobra-serpente-flores-e-folhas',
   },
   {
-    name: 'Leggings Folhas',
-    description:
-      'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options: ['Tamanho Único', '36 ao 44'],
+    name: `${category} Folhas`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: LegLeaves,
     imgSrc: [LegLeavesBig, LegLeavesBack],
-    price: 149.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/leggings/folhagem-floral-verde-marmore',
   },
   {
-    name: 'Leggings Serpente',
-    description:
-      'Cós alto e tecido elástico , feita em lycra de poliéster com proteção UV 50 ',
-    options: ['Tamanho Único', '36 ao 44'],
+    name: `${category} Serpente`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: LegSnake,
     imgSrc: [LegSnakeBig, LegSnakeBack],
-    price: 149.9,
+    price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/leggings/cobra-serpente',
   },
 ]

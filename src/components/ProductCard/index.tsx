@@ -2,18 +2,20 @@ import { useTheme } from 'styled-components'
 import {
   BuyActions,
   BuyButton,
+  CardCloseButton,
   CardHeader,
   CardImage,
   LearnAbout,
   LearnMore,
   Modal,
   ModalFlex,
+  ModalHeader,
   ModalInfo,
   OptionsStyle,
   ProductCardStyle,
   ProductInfo,
 } from './styles'
-import { Plus, ShoppingCart } from 'phosphor-react'
+import { ArrowClockwise, Plus, ShoppingCart, XCircle } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 
 export interface IProductData {
@@ -62,58 +64,66 @@ export function ProductCard(props: IProductData) {
 
   return (
     <ProductCardStyle>
-      <CardHeader onClick={() => openModal(props.data)}>
-        <CardImage
-          src={`${iconSrc}`}
-          alt={name}
-          title={`Click e saiba mais sobre ${name}`}
-        />
-        <LearnMore title="Click e saiba mais">
-          <span>
-            <Plus size={24} />
-            Saiba Mais
-          </span>
-        </LearnMore>
-      </CardHeader>
+      <div onClick={() => openModal(props.data)}>
+        <CardHeader>
+          <CardImage
+            src={`${iconSrc}`}
+            alt={name}
+            title={`Click e saiba mais sobre ${name}`}
+          />
+          <LearnMore title="Click e saiba mais">
+            <span>
+              <Plus size={24} />
+              Saiba Mais
+            </span>
+          </LearnMore>
+        </CardHeader>
+        <LearnAbout
+          onClick={() => openModal(props.data)}
+          title="Click e saiba mais"
+        >
+          <Plus size={24} />
+          Saiba Mais
+        </LearnAbout>
 
-      <LearnAbout
-        onClick={() => openModal(props.data)}
-        title="Click e saiba mais"
-      >
-        <Plus size={24} />
-        Saiba Mais
-      </LearnAbout>
-      <ProductInfo>
-        <OptionsStyle>
-          {options.map((option, index) => (
-            <div key={index}>{option}</div>
-          ))}
-        </OptionsStyle>
-
-        <h3>{name}</h3>
-        <p>{description}</p>
-      </ProductInfo>
-
-      <BuyActions>
-        <div title="Preço atual">
-          <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
-        </div>
-
-        <BuyButton title="Comprar" background={theme.product['purple-dark']}>
-          <a href={buyLink} target="_blanc" rel="noopener noreferrer">
-            <ShoppingCart size={22} weight="fill" />
-          </a>
-        </BuyButton>
-      </BuyActions>
+        <ProductInfo>
+          <OptionsStyle>
+            {options.map((option, index) => (
+              <div key={index}>{option}</div>
+            ))}
+          </OptionsStyle>
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </ProductInfo>
+        <BuyActions>
+          <div title="Preço atual">
+            <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
+          </div>
+          <BuyButton
+            title="Comprar direto na Colab 55 @malanskiart"
+            background={theme.product['purple-dark']}
+          >
+            <a href={buyLink} target="_blanc" rel="noopener noreferrer">
+              <ShoppingCart size={22} weight="fill" />
+            </a>
+          </BuyButton>
+        </BuyActions>
+      </div>
 
       {isModalOpen && selectedProduct && (
         <Modal>
           <ModalFlex>
-            <img
-              src={props.data.imgSrc[currentImageIndex]}
-              alt={selectedProduct.name}
-              onClick={changeImage}
-            ></img>
+            <ModalHeader>
+              <img
+                title="Trocar Imagem"
+                src={props.data.imgSrc[currentImageIndex]}
+                alt={selectedProduct.name}
+                onClick={changeImage}
+              ></img>
+              <div>
+                <ArrowClockwise />
+              </div>
+            </ModalHeader>
 
             <ModalInfo>
               <h3>{selectedProduct.name}</h3>
@@ -128,11 +138,11 @@ export function ProductCard(props: IProductData) {
 
               <BuyActions>
                 <div title="Preço atual">
-                  <p>R$ {price}</p>
+                  <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
                 </div>
 
                 <BuyButton
-                  title="Comprar"
+                  title="Comprar direto na Colab 55  @malanskiart"
                   background={theme.product['purple-dark']}
                 >
                   <a
@@ -146,7 +156,9 @@ export function ProductCard(props: IProductData) {
                 </BuyButton>
               </BuyActions>
             </ModalInfo>
-            <button onClick={closeModal}>Fechar</button>
+            <CardCloseButton onClick={closeModal} title="Fechar">
+              <XCircle />
+            </CardCloseButton>
           </ModalFlex>
         </Modal>
       )}
