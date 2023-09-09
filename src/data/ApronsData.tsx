@@ -26,7 +26,7 @@ const ApronsDataList = [
       'https://www.colab55.com/@malanskiart/aprons/peixes-koi-carpas-flores',
   },
   {
-    name: 'Avental Rosa Branca',
+    name: `${category} Rosa Branca`,
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: ApronsSunflower,
@@ -36,7 +36,7 @@ const ApronsDataList = [
       'https://www.colab55.com/@malanskiart/aprons/rosa-grande-rosa-cristal',
   },
   {
-    name: 'Avental Leão Colorido',
+    name: `${category} Leão Colorido`,
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: ApronsTurtleOrange,
@@ -45,7 +45,7 @@ const ApronsDataList = [
     buyLink: 'https://www.colab55.com/@malanskiart/aprons/leao-ruge',
   },
   {
-    name: 'Avental Dragão Vermelho',
+    name: `${category} Dragão Vermelho`,
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: ApronsRedWings,

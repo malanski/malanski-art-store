@@ -146,7 +146,7 @@ export const BuyActions = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin-top: 0.8rem;
   div {
     font-family: 'Roboto';
@@ -236,6 +236,9 @@ export const ModalHeader = styled.div`
   }
   svg {
     color: white;
+  }
+  span {
+    color: ${(props) => props.theme.base.white};
   }
   @media (max-width: 890px) {
     /* height: 70vh; */

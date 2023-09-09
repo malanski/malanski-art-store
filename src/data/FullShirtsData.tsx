@@ -6,6 +6,10 @@ import teeFox from '../assets/products_icon/tee_full_fox.png'
 import teeRose from '../assets/products_icon/tee_full_salmon_rose.png'
 import teeGeisha from '../assets/products_icon/tee_full_geisha.png'
 import teeCobra from '../assets/products_icon/tee_full_snake.png'
+import teeFlowerHead from '../assets/products_icon/tee_full_plant_girl.png'
+import teeLionTriangle from '../assets/products_icon/tee_full_lion_triangle.png'
+import teeKoiColor from '../assets/products_icon/tee_full_koi_twin.png'
+import teeKoi from '../assets/products_icon/tee_full_koi.png'
 
 import teeFullRedDragonBig from '../assets/products_img/tee_full_red_dragon.png'
 import teeFullRedDragonBack from '../assets/products_img/tee_full_red_dragon_back.png'
@@ -23,87 +27,139 @@ import teeGeishaBig from '../assets/products_img/tee_full_geisha.png'
 import teeGeishaBack from '../assets/products_img/tee_full_geisha_back.png'
 import teeCobraBig from '../assets/products_img/tee_full_snake.png'
 import teeCobraBack from '../assets/products_img/tee_full_snake_back.png'
+import teeFlowerHeadBig from '../assets/products_img/tee_full_plant_girl.png'
+import teeFlowerHeadBack from '../assets/products_img/tee_full_plant_girl_back.png'
+import teeLionTriangleBig from '../assets/products_img/tee_full_lion_triangle.png'
+import teeLionTriangleBack from '../assets/products_img/tee_full_lion_triangle_back.png'
+import teeKoiColorBig from '../assets/products_img/tee_full_koi_twin.png'
+import teeKoiBig from '../assets/products_img/tee_full_koi.png'
+import teeKoiBack from '../assets/products_img/tee_full_koi_back.png'
+
+const ItemDescription = 'Disponível em varias cores de gola e tamanhos'
+const category = 'Camiseta'
+const ItemPrice = 134.9
+const ItemOptions = ['Regular', 'Baby Long', 'Infantil']
 
 const FullTshirtsDataList = [
   {
-    name: 'Camiseta Dragão Vermelho',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Dragão Vermelho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeFullRedDragon,
     imgSrc: [teeFullRedDragonBig, teeFullRedDragonBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/dragao-vermelho',
   },
   {
-    name: 'Camiseta Crisântemo Hectograma',
+    name: `${category} Crisântemo Hectograma`,
     description: 'Disponível em vários tamanhos e cores de gola',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    options: ItemOptions,
     iconSrc: teeHeptaInv,
     imgSrc: [teeHeptaInvBig, teeHeptaInvBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-e-estrela-heptagrama-invertido',
   },
   {
-    name: 'Camiseta Dragão Vermelho',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Dragão Vermelho`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeButterflyMarb,
     imgSrc: [teeButterflyMarbBig, teeButterflyMarbBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/grande-borboleta-nas-costas-marmore?m=baby-long',
   },
   {
-    name: 'Camiseta Crisântemo Octógrama',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Crisântemo Octógrama`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeHeptaMud,
     imgSrc: [teeHeptaMudBig, teeHeptaMudBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-octograma-estrela-invertido?m=baby-long',
   },
   {
-    name: 'Camiseta Raposa',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Raposa`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeFox,
     imgSrc: [teeFoxBig, teeFoxBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/raposa-construtivista',
   },
   {
-    name: 'Camiseta Rosa Salmão',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Rosa Salmão`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeRose,
     imgSrc: [teeRoseBig, teeRoseBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/rosa-singular-aberta',
   },
   {
-    name: 'Camiseta Geisha',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Geisha`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeGeisha,
     imgSrc: [teeGeishaBig, teeGeishaBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
   },
   {
-    name: 'Camiseta Cobra',
-    description: 'Disponível em varias cores de gola e tamanhos',
-    options: ['Regular', 'Baby Long', 'Infantil'],
+    name: `${category} Cobra`,
+    description: ItemDescription,
+    options: ItemOptions,
     iconSrc: teeCobra,
     imgSrc: [teeCobraBig, teeCobraBack],
-    price: 134.9,
+    price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/cobra-serpente',
+  },
+  {
+    name: `${category} Cabeça Flor Aterrada`,
+    description: ItemDescription,
+    options: ItemOptions,
+    iconSrc: teeFlowerHead,
+    imgSrc: [teeFlowerHeadBig, teeFlowerHeadBack],
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees-fullprint/cabeca-flor-aterrada?m=standard&c=cinza',
+  },
+  {
+    name: `${category} Leão Iluminado`,
+    description: ItemDescription,
+    options: ItemOptions,
+    iconSrc: teeLionTriangle,
+    imgSrc: [teeLionTriangleBig, teeLionTriangleBack],
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees-fullprint/leao-iluminado?m=standard&c=preta&s=p',
+  },
+  {
+    name: `${category} Carpas Colorido`,
+    description: ItemDescription,
+    options: ItemOptions,
+    iconSrc: teeKoiColor,
+    imgSrc: [teeKoiColorBig, teeKoiBack],
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees-fullprint/peixes-carpas-flores-koi-colorido',
+  },
+  {
+    name: `${category} Carpas`,
+    description: ItemDescription,
+    options: ItemOptions,
+    iconSrc: teeKoi,
+    imgSrc: [teeKoiBig, teeKoiBack],
+    price: ItemPrice,
+    buyLink:
+      'https://www.colab55.com/@malanskiart/tees-fullprint/peixes-koi-carpas-flores',
   },
 ]
 

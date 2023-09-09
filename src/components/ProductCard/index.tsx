@@ -121,7 +121,8 @@ export function ProductCard(props: IProductData) {
                 onClick={changeImage}
               ></img>
               <div>
-                <ArrowClockwise />
+                {/* <ArrowClockwise /> */}
+                <span>Clique na imagem para ver mais</span>
               </div>
             </ModalHeader>
 
