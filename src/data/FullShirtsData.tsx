@@ -35,6 +35,33 @@ import teeKoiColorBig from '../assets/products_img/tee_full_koi_twin.png'
 import teeKoiBig from '../assets/products_img/tee_full_koi.png'
 import teeKoiBack from '../assets/products_img/tee_full_koi_back.png'
 
+export const allTeeArray = [
+  teeFullRedDragonBig,
+  teeFullRedDragonBack,
+  teeHeptaInvBig,
+  teeHeptaInvBack,
+  teeButterflyMarbBig,
+  teeButterflyMarbBack,
+  teeHeptaMudBig,
+  teeHeptaMudBack,
+  teeFoxBig,
+  teeFoxBack,
+  teeRoseBig,
+  teeRoseBack,
+  teeGeishaBig,
+  teeGeishaBack,
+  teeCobraBig,
+  teeCobraBack,
+  teeFlowerHeadBig,
+  teeFlowerHeadBack,
+  teeLionTriangleBig,
+  teeLionTriangleBack,
+  teeKoiColorBig,
+  teeKoiBack,
+  teeKoiBig,
+  teeKoiBack,
+]
+
 const ItemDescription = 'Disponível em varias cores de gola e tamanhos'
 const category = 'Camiseta'
 const ItemPrice = 134.9

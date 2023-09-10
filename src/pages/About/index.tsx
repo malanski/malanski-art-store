@@ -1,8 +1,10 @@
 import { AboutCard, AboutStyles } from './styles'
-import teeGif from '../../assets/gifs/tee_strobe.gif'
-import swTeeGif from '../../assets/gifs/swtee_strobe.gif'
-import strobleGif from '../../assets/gifs/product_strobe.gif'
 import { Nav } from '../../components/Nav'
+import ProductAnimation from '../../components/ProductAnimation'
+import { allTeeArray } from '../../data/FullShirtsData'
+import { allTShirtsArray } from '../../data/TshirtsData'
+import { allSweatArray } from '../../data/SweatShirtsData'
+import { allPillowArray } from '../../data/PillowsData'
 
 export function About() {
   return (
@@ -16,7 +18,7 @@ export function About() {
           cuidadosamente escolhida dos nossos produtos favoritos da Malanski
           Art, a loja oficial na Colab 55. Mas antes de prosseguir, queremos te
           contar um segredo: ao clicar em `Comprar`, você será magicamente
-          redirecionado(a) para a nossa loja oficial{' '}
+          <b> redirecionado(a) </b>para a nossa loja oficial:&ensp;
           <a
             target="_blanc"
             rel="noopener noreferrer"
@@ -26,19 +28,12 @@ export function About() {
             @malanskiart na plataforma Colab 55.
           </a>
         </p>
-        <img
-          src={teeGif}
-          alt="Roupas estampadas com desenhos exclusivos"
-          title="Roupas estampadas com desenhos exclusivos"
-        ></img>
+        <ProductAnimation images={allTeeArray} />
       </AboutCard>
 
       <AboutCard>
-        <img
-          src={swTeeGif}
-          alt="Roupas estampadas com desenhos exclusivos"
-          title="Roupas estampadas com desenhos exclusivos"
-        ></img>
+        <ProductAnimation images={allTShirtsArray} />
+
         <p>
           &ensp;&ensp;&ensp;&ensp;&ensp; Por quê? Simples! É lá que toda a
           mágica acontece. É onde você encontrará todo o nosso estoque incrível,
@@ -55,18 +50,11 @@ export function About() {
           único, mas não se preocupe, você está a apenas um clique de distância
           de explorar todo o nosso universo artístico.
         </p>
-        <img
-          src={teeGif}
-          alt="Roupas estampadas com desenhos exclusivos"
-          title="Roupas estampadas com desenhos exclusivos"
-        ></img>
+        <ProductAnimation images={allSweatArray} />
       </AboutCard>
       <AboutCard>
-        <img
-          src={strobleGif}
-          alt="Roupas estampadas com desenhos exclusivos"
-          title="Roupas estampadas com desenhos exclusivos"
-        ></img>
+        <ProductAnimation images={allPillowArray} />
+
         <p>
           &ensp;&ensp;&ensp;&ensp;&ensp; Então, vá em frente, navegue, clique, e
           se apaixone pelas nossas criações. E, é claro, se quiser nos contar

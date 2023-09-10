@@ -34,6 +34,25 @@ import teeSwTattooBig from '../assets/products_img/tee_sw_tattoo.png'
 import teeSwTattooGrey from '../assets/products_img/tee_sw_tattoo_grey.png'
 import teeSwTattooBlack from '../assets/products_img/tee_sw_tattoo_black.png'
 
+export const allSweatArray = [
+  teeSwRedDragonBig,
+  teeSwRedDragonBlack,
+  teeSwOctoColorBig,
+  teeSwOctoColorBlack,
+  teeSwOctoColorInvBig,
+  teeSwOctoColorInvBlack,
+  teeSwButterflyPinkBig,
+  teeSwButterflyPinkBlack,
+  teeSwSnakeBig,
+  teeSwSnakeGrey,
+  teeSwGeishaBig,
+  teeSwGeishaBlack,
+  teeSwKoiBig,
+  teeSwKoiBlack,
+  teeSwTattooBig,
+  teeSwTattooBlack,
+]
+
 const ItemDescription =
   'Disponível em vários tamanhos, 85% algodão, 15% poliéster'
 const category = 'Moletons'

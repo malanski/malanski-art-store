@@ -16,6 +16,17 @@ import PillowGirassoisBig from '../assets/products_img/pillow_girassois.png'
 import PillowLibelulaBig from '../assets/products_img/pillow_libelula.png'
 import PillowBesouroBig from '../assets/products_img/pillow_besouro.png'
 
+export const allPillowArray = [
+  PillowGeishaBig,
+  PillowKoiBig,
+  PillowRoseBig,
+  PillowElephantBig,
+  PillowTartarugaBig,
+  PillowGirassoisBig,
+  PillowLibelulaBig,
+  PillowBesouroBig,
+]
+
 const ItemDescription =
   'Fofinhas, antialérgicas, zíper invisível, macias e 100% poliéster'
 const category = 'Almofadas'

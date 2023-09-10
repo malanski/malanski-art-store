@@ -25,6 +25,26 @@ import teeKatanaMan from '../assets/products_img/tee_katana_man.png'
 import teeGeoElephantBig from '../assets/products_img/tee_geo_elephant.png'
 import teeGeoElephantMan from '../assets/products_img/tee_geo_elephant_man.png'
 
+export const allTShirtsArray = [
+  teeRedDragonBig,
+  teeRedDragonBlack,
+  teeOctoInvBig,
+  teeOctoInvBlack,
+  teeKoiFishFlowersBig,
+  teeKoiFishFlowersGreen,
+  teeRoseSingBig,
+  teeRoseSingWhite,
+  teeMoonBig,
+  teeMoonGrey,
+  teeMoonMan,
+  teeElephantBig,
+  teeElephantGreen,
+  teeKatanaBig,
+  teeKatanaMan,
+  teeGeoElephantBig,
+  teeGeoElephantMan,
+]
+
 const ItemDescription =
   'Disponível em varias cores e tamanhos, impressão frontal'
 const category = 'Camiseta'

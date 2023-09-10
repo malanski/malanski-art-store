@@ -9,7 +9,7 @@ export const AboutStyles = styled.div`
   h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 32px;
+    margin: 32px;
   }
   h4 {
     width: 100%;
@@ -18,7 +18,10 @@ export const AboutStyles = styled.div`
   }
   p {
     font-size: 1.8rem;
-    padding: 0.8rem;
+    padding: 1rem;
+    background: ${(props) => props.theme.base['base-card']};
+    border-radius: 8px;
+    text-align: justify;
   }
 `
 export const AboutCard = styled.div`
@@ -28,9 +31,17 @@ export const AboutCard = styled.div`
   width: 100%;
   img {
     width: 50%;
+    /* animation-play-state: paused; */
+    margin: 1rem;
   }
   a {
     color: white;
     text-decoration: underline;
+  }
+  @media (max-width: 650px) {
+    flex-direction: column-reverse;
+    img {
+      width: 70%;
+    }
   }
 `
