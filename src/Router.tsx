@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { Roupas } from './pages/Roupas'
 import { Acessorios } from './pages/Acessorios'
 import { Itens } from './pages/Itens'
+import { About } from './pages/About'
 
 export function Router() {
   return (
@@ -14,6 +15,7 @@ export function Router() {
         <Route path="/roupas" element={<Roupas />} />
         <Route path="/acessorios" element={<Acessorios />} />
         <Route path="/itens" element={<Itens />} />
+        <Route path="/about" element={<About />} />
       </Route>
     </Routes>
   )

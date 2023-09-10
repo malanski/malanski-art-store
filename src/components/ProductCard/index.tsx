@@ -15,7 +15,7 @@ import {
   ProductCardStyle,
   ProductInfo,
 } from './styles'
-import { ArrowClockwise, Plus, ShoppingCart, XCircle } from 'phosphor-react'
+import { Plus, ShoppingCart, XCircle } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 
 export interface IProductData {
