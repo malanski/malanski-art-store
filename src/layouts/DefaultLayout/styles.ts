@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  padding: 3.2rem 16rem;
+  padding: 3.2rem 16rem 1rem 16rem;
   flex-direction: column;
   align-items: center;
   display: flex;

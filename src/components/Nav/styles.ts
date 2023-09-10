@@ -33,13 +33,15 @@ export const NavContainer = styled.nav`
     background: ${(props) => props.theme.product.purpleGradient};
     color: ${(props) => props.theme.product['yellow-light']};
   }
-  @media (max-width: 506px) {
+  @media (max-width: 653px) {
     gap: 0.8rem;
     a {
-      min-width: 60px;
+      align-items: center;
+
+      min-width: calc(25% - 0.8rem);
       font-size: 1.5rem;
       font-weight: 800;
-      padding: 0.8rem 0.2rem;
+      padding: 0.4rem 0.1rem;
     }
     svg {
       display: none;
@@ -48,6 +50,15 @@ export const NavContainer = styled.nav`
   @media (max-width: 420px) {
     a {
       min-width: 60px;
+      font-size: 1.2rem;
+    }
+    svg {
+      display: none;
+    }
+  }
+  @media (max-width: 350px) {
+    a {
+      min-width: 50px;
       font-size: 1.3rem;
     }
     svg {
@@ -67,7 +78,7 @@ export const NavButton = styled.div`
   @media (max-width: 700px) {
     padding: 0.2rem;
   }
-  @media (max-width: 506px) {
+  @media (max-width: 653px) {
     gap: 0.2rem;
     padding: 0.1rem;
     justify-content: center;

@@ -3,6 +3,7 @@ import { Header } from '../../components/Header'
 
 import { LayoutContainer } from './styles'
 import { Nav } from '../../components/Nav'
+import Footer from '../../components/Footer'
 
 export function DefaultLayout() {
   return (
@@ -10,6 +11,7 @@ export function DefaultLayout() {
       <Header />
       <Outlet />
       <Nav />
+      <Footer />
     </LayoutContainer>
   )
 }
