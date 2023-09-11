@@ -3,10 +3,7 @@ import styled from 'styled-components'
 export const ProductCardStyle = styled.div`
   background: ${(props) => props.theme.base['base-card']};
   border-radius: 6px 36px 6px 36px;
-  /* min-width: 280px; */
-  /* max-width: 280px; */
   margin: 1rem auto;
-
   transition: ease-out 500ms;
   &:hover {
     transition: ease-in 200ms;
@@ -23,8 +20,6 @@ export const ProductCardStyle = styled.div`
 `
 
 export const CardContainer = styled.div`
-  /* width: 100%;
-  height: 100%; */
   padding: 2.4rem;
   display: flex;
   flex-direction: column;
@@ -33,12 +28,13 @@ export const CardContainer = styled.div`
   text-align: center;
   width: 267px;
   min-height: 450px;
+
   @media (max-width: 849px) {
     min-width: calc(45vw - 2.4rem);
     min-height: 50vh;
     padding: 1.2rem;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 599px) {
     min-width: calc(85vw - 2.4rem);
     margin: 4rem auto;
     padding: 1.2rem;
@@ -239,9 +235,12 @@ export const ModalFlex = styled.div`
     flex-direction: column;
     height: 85vh;
   }
-  @media (max-height: 420px) {
+  @media (max-width: 580px) {
+    height: 50vh;
+  }
+  @media (max-height: 641px) {
     flex-direction: row;
-    height: 100vh;
+    height: 90vh;
   }
 `
 export const ModalHeader = styled.div`
@@ -249,7 +248,7 @@ export const ModalHeader = styled.div`
   width: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   flex-direction: column;
   img {
@@ -261,17 +260,22 @@ export const ModalHeader = styled.div`
   span {
     color: ${(props) => props.theme.base.white};
   }
-  @media (max-width: 890px) {
+  @media (max-width: 950px) {
     /* height: 70vh; */
     /* position: unset; */
-    height: 60%;
+    /* height: 60%; */
 
     img {
       /* min-width: 50vw; */
-      height: 80%;
+      max-height: 60%;
     }
   }
-  @media (max-height: 420px) {
+  @media (max-width: 580px) {
+    img {
+      max-height: 80%;
+    }
+  }
+  @media (max-height: 641px) {
     img {
       height: 100%;
     }
@@ -280,7 +284,7 @@ export const ModalHeader = styled.div`
 export const ModalImageNav = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 `
 
@@ -317,10 +321,11 @@ export const ModalInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  width: 350px;
+  width: 450px;
   h3 {
     text-align: center;
     width: 100%;
+    font-size: 2.5rem;
   }
   h5 {
     text-align: left;
@@ -328,6 +333,7 @@ export const ModalInfo = styled.div`
   p {
     text-align: justify;
     padding: 3.2rem 1rem;
+    font-size: 1.8rem;
   }
   a,
   h3,
@@ -338,13 +344,30 @@ export const ModalInfo = styled.div`
   }
 
   @media (max-width: 1050px) {
-    width: 290px;
+    /* width: 390px; */
+  }
+  @media (max-width: 950px) {
+    width: 500px;
   }
   @media (max-width: 890px) {
-    width: 70vw;
+    width: 50vw;
   }
   @media (max-width: 520px) {
+    h3 {
+      font-size: 2.1rem;
+    }
+
     width: 90vw;
+  }
+  @media (max-height: 630px) {
+    width: 50vw;
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 1.6rem 0.5rem;
+    }
   }
   @media (max-width: 375px) {
     width: 95vw;

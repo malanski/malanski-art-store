@@ -65,10 +65,10 @@ export const allTShirtsArray = [
 ]
 
 const ItemDescription =
-  'Camisetas estampadas e disponíveis em varias cores e tamanhos. Impressão da estampa é frontal.'
+  'Camisetas estampadas em varias cores e tamanhos. Impressão da estampa é frontal. Malha fio 30, 100% algodão, nos modelos Regular, Baby Long (mais acinturada e comprida) e e também Infantil (do n°2 ao n°14).'
 const category = 'Camiseta'
 const ItemPrice = 119.9
-const ItemOptions = ['Regular', 'Baby Long', 'Infantil']
+const ItemOptions = ['Regular', 'Baby Long', 'Infantil', 'Várias cores']
 
 const TshirtsDataList = [
   {
