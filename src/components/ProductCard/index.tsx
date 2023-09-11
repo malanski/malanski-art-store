@@ -34,8 +34,7 @@ export interface IProductData {
 
 export function ProductCard(props: IProductData) {
   const theme = useTheme()
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { name, description, options, iconSrc, price, buyLink } = props.data
+  const { name, options, iconSrc, price, buyLink } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
