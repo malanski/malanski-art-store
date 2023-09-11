@@ -9,7 +9,7 @@ export const LayoutContainer = styled.div`
   gap: 3.2rem;
   max-width: 1640px;
   margin: auto;
-  @media (max-width: 1232px) {
+  @media (max-width: 1290px) {
     padding: 3.2rem 3rem;
     gap: 1.6rem;
   }

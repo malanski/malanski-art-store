@@ -62,7 +62,8 @@ export const allTeeArray = [
   teeKoiBack,
 ]
 
-const ItemDescription = 'Disponível em varias cores de gola e tamanhos'
+const ItemDescription =
+  'Disponível em vários tamanhos, modelos e cores de gola, a impressão da estampa é total, frente e costas dependendo do design.'
 const category = 'Camiseta'
 const ItemPrice = 134.9
 const ItemOptions = ['Regular', 'Baby Long', 'Infantil']
@@ -80,7 +81,7 @@ const FullTshirtsDataList = [
   },
   {
     name: `${category} Crisântemo Hectograma`,
-    description: 'Disponível em vários tamanhos e cores de gola',
+    description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeHeptaInv,
     imgSrc: [teeHeptaInvBig, teeHeptaInvBack],

@@ -3,6 +3,7 @@ import {
   BuyActions,
   BuyButton,
   CardCloseButton,
+  CardContainer,
   CardHeader,
   CardImage,
   LearnAbout,
@@ -12,6 +13,7 @@ import {
   ModalHeader,
   ModalInfo,
   OptionsStyle,
+  Price,
   ProductCardStyle,
   ProductInfo,
 } from './styles'
@@ -32,6 +34,7 @@ export interface IProductData {
 
 export function ProductCard(props: IProductData) {
   const theme = useTheme()
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { name, description, options, iconSrc, price, buyLink } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -64,7 +67,7 @@ export function ProductCard(props: IProductData) {
 
   return (
     <ProductCardStyle>
-      <div onClick={() => openModal(props.data)}>
+      <CardContainer onClick={() => openModal(props.data)}>
         <CardHeader>
           <CardImage
             src={`${iconSrc}`}
@@ -93,12 +96,12 @@ export function ProductCard(props: IProductData) {
             ))}
           </OptionsStyle>
           <h3>{name}</h3>
-          <p>{description}</p>
+          {/* <p>{description}</p> */}
         </ProductInfo>
         <BuyActions>
-          <div title="Preço atual">
+          <Price title="Preço atual">
             <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
-          </div>
+          </Price>
           <BuyButton
             title="Comprar direto na Colab 55 @malanskiart"
             background={theme.product['purple-dark']}
@@ -108,7 +111,7 @@ export function ProductCard(props: IProductData) {
             </a>
           </BuyButton>
         </BuyActions>
-      </div>
+      </CardContainer>
 
       {isModalOpen && selectedProduct && (
         <Modal>
@@ -138,9 +141,9 @@ export function ProductCard(props: IProductData) {
               </OptionsStyle>
 
               <BuyActions>
-                <div title="Preço atual">
+                <Price title="Preço atual">
                   <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
-                </div>
+                </Price>
 
                 <BuyButton
                   title="Comprar direto na Colab 55  @malanskiart"

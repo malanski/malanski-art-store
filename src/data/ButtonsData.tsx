@@ -12,7 +12,7 @@ const ItemDescription =
   'Broches de banho, acabamento em película brilhante de polietileno, fecho	de alfinete em alumínio, 4,5cm de diâmetro'
 const category = 'Broche'
 const ItemPrice = 9.9
-const ItemOptions = ['Banho/Praia', 'Rosto']
+const ItemOptions = ['4,5 centímetros']
 
 const ButtonsDataList = [
   {

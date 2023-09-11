@@ -92,9 +92,8 @@ export const ProductListContainer = styled.section`
   align-items: center;
   flex-wrap: wrap;
   gap: 3.2rem;
-  /* max-width: 112rem; */
   width: 100%;
-  @media (max-width: 1232px) {
+  @media (max-width: 1290px) {
     justify-content: space-around;
     gap: 2.5rem;
   }

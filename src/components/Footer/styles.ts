@@ -27,7 +27,7 @@ export const SocialLinks = styled.div`
     align-items: center;
     gap: 0.4rem;
     min-width: calc(140px - 1rem);
-    max-width: calc(25.6rem - 1rem);
+    max-width: calc(267px - 1rem);
     border: 1px solid ${(props) => props.theme.base['base-title']};
     text-decoration: none;
     padding: 0.8rem 1rem;

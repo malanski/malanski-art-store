@@ -3,15 +3,10 @@ import styled from 'styled-components'
 export const ProductCardStyle = styled.div`
   background: ${(props) => props.theme.base['base-card']};
   border-radius: 6px 36px 6px 36px;
-  max-width: 25.6rem;
-  min-height: 44rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 2.4rem;
-  margin-bottom: 1rem;
+  /* min-width: 280px; */
+  /* max-width: 280px; */
+  margin: 1rem auto;
+
   transition: ease-out 500ms;
   &:hover {
     transition: ease-in 200ms;
@@ -22,7 +17,22 @@ export const ProductCardStyle = styled.div`
       align-items: center;
     }
   }
+  @media (max-width: 849px) {
+    margin: 2.2rem auto;
+  }
+`
 
+export const CardContainer = styled.div`
+  /* width: 100%;
+  height: 100%; */
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 267px;
+  min-height: 450px;
   @media (max-width: 849px) {
     min-width: calc(45vw - 2.4rem);
     min-height: 50vh;
@@ -30,10 +40,11 @@ export const ProductCardStyle = styled.div`
   }
   @media (max-width: 650px) {
     min-width: calc(85vw - 2.4rem);
-    margin: 0 auto;
+    margin: 4rem auto;
     padding: 1.2rem;
   }
 `
+
 export const CardHeader = styled.div`
   display: flex;
   align-items: center;
@@ -104,19 +115,23 @@ export const CardImage = styled.img`
 
 export const ProductInfo = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   h3 {
+    width: 100%;
     font-family: 'Baloo 2';
     font-size: 2rem;
     color: ${(props) => props.theme.base['base-subtitle']};
-    margin: 0.8rem 0;
-    min-height: 6.9rem;
+    margin: 0.8rem auto;
+    min-height: 6rem;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   p {
+    width: 100%;
     font-size: 1.4rem;
     margin: 0.8rem 0;
     color: ${(props) => props.theme.base['base-label']};
@@ -126,14 +141,16 @@ export const OptionsStyle = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  /* min-height: 60px;1 */
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
   div {
     font-size: 1rem;
-    background: ${(props) => props.theme.product['yellow-light']};
-    color: ${(props) => props.theme.product['yellow-dark']};
+    background: ${(props) => props.theme.product.yellow};
+    color: ${(props) => props.theme.base['base-card']};
     border: none;
     padding: 0.4rem 0.8rem;
     border-radius: 100px;
@@ -148,17 +165,6 @@ export const BuyActions = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 0.8rem;
-  div {
-    font-family: 'Roboto';
-    font-size: 1.4rem;
-    color: ${(props) => props.theme.base['base-text']};
-    p {
-      font-family: 'baloo 2';
-      font-size: 2.4rem;
-      font-weight: 800;
-      width: 100%;
-    }
-  }
 
   a:hover {
     transition: all ease-in-out 600ms;
@@ -167,6 +173,19 @@ export const BuyActions = styled.div`
     svg {
       filter: invert();
     }
+  }
+`
+export const Price = styled.div`
+  /* width: 45%; */
+
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+  color: ${(props) => props.theme.base['base-text']};
+  p {
+    font-family: 'baloo 2';
+    font-size: 2.4rem;
+    font-weight: 800;
+    width: 100%;
   }
 `
 
@@ -232,7 +251,7 @@ export const ModalHeader = styled.div`
   position: relative;
   flex-direction: column;
   img {
-    max-height: 100%;
+    max-height: 90%;
   }
   svg {
     color: white;
@@ -247,7 +266,7 @@ export const ModalHeader = styled.div`
 
     img {
       /* min-width: 50vw; */
-      height: 90%;
+      height: 80%;
     }
   }
   @media (max-height: 420px) {

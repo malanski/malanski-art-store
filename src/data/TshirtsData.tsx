@@ -46,7 +46,7 @@ export const allTShirtsArray = [
 ]
 
 const ItemDescription =
-  'Disponível em varias cores e tamanhos, impressão frontal'
+  'Camisetas estampadas e disponíveis em varias cores e tamanhos. Impressão da estampa é frontal.'
 const category = 'Camiseta'
 const ItemPrice = 119.9
 const ItemOptions = ['Regular', 'Baby Long', 'Infantil']

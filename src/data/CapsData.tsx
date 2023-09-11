@@ -8,7 +8,8 @@ import boneCrisantemoHexBig from '../assets/products_img/crisantemo_hexa.png'
 import boneHexaInvBig from '../assets/products_img/bone_hexa_inv.png'
 import boneOctaInvBig from '../assets/products_img/bone_octo_inv.png'
 
-const ItemDescription = 'Bonés em brim, estampados com arte minimalista'
+const ItemDescription =
+  'Bonés em brim, estampados com arte minimalista disponível em diversas cores no modelo americano de aba anatômica.'
 const category = 'Boné'
 const ItemPrice = 99.9
 const ItemOptions = ['preto', 'branco', 'azul', 'vermelho', 'rosa']

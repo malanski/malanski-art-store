@@ -16,7 +16,7 @@ export const NavContainer = styled.nav`
     flex-grow: 1;
     gap: 3.2rem;
     min-width: 140px;
-    max-width: 25.6rem;
+    max-width: 267px;
 
     text-decoration: none;
     padding: 0.1rem 0.4rem;
