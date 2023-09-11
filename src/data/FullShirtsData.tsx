@@ -29,13 +29,24 @@ import teeHeptaMudBack from '../assets/products_img/tee_full_hepta_mud_back.png'
 import teeHeptaMudManBack from '../assets/products_img/tee_full_hepta_mud_man_back.png'
 
 import teeFoxBig from '../assets/products_img/tee_full_fox.png'
+import teeFoxGirl from '../assets/products_img/tee_full_fox_girl.png'
 import teeFoxBack from '../assets/products_img/tee_full_fox_back.png'
+import teeFoxGirlBack from '../assets/products_img/tee_full_fox_girl_back.png'
+
 import teeRoseBig from '../assets/products_img/tee_full_salmon_rose.png'
+import teeRoseGirl from '../assets/products_img/tee_full_salmon_rose_girl.png'
 import teeRoseBack from '../assets/products_img/tee_full_salmon_rose_back.png'
+import teeRoseGirlBack from '../assets/products_img/tee_full_salmon_rose_girl_back.png'
+
 import teeGeishaBig from '../assets/products_img/tee_full_geisha.png'
+import teeGeishaMan from '../assets/products_img/tee_full_geisha_man.png'
 import teeGeishaBack from '../assets/products_img/tee_full_geisha_back.png'
+import teeGeishaManBack from '../assets/products_img/tee_full_geisha_man_back.png'
+
 import teeCobraBig from '../assets/products_img/tee_full_snake.png'
+import teeCobraMan from '../assets/products_img/tee_full_snake_man.png'
 import teeCobraBack from '../assets/products_img/tee_full_snake_back.png'
+import teeCobraManBack from '../assets/products_img/tee_full_snake_man_back.png'
 import teeFlowerHeadBig from '../assets/products_img/tee_full_plant_girl.png'
 import teeFlowerHeadBack from '../assets/products_img/tee_full_plant_girl_back.png'
 import teeLionTriangleBig from '../assets/products_img/tee_full_lion_triangle.png'
@@ -143,7 +154,7 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeFox,
-    imgSrc: [teeFoxBig, teeFoxBack],
+    imgSrc: [teeFoxBig, teeFoxBack, teeFoxGirl, teeFoxGirlBack],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/raposa-construtivista',
@@ -153,7 +164,7 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeRose,
-    imgSrc: [teeRoseBig, teeRoseBack],
+    imgSrc: [teeRoseBig, teeRoseBack, teeRoseGirl, teeRoseGirlBack],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/rosa-singular-aberta',
@@ -163,7 +174,7 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeGeisha,
-    imgSrc: [teeGeishaBig, teeGeishaBack],
+    imgSrc: [teeGeishaBig, teeGeishaBack, teeGeishaMan, teeGeishaManBack],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/geisha-na-nuvem-voadora-nanquim-e-lapis-aquarela',
@@ -173,7 +184,7 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeCobra,
-    imgSrc: [teeCobraBig, teeCobraBack],
+    imgSrc: [teeCobraBig, teeCobraBack, teeCobraMan, teeCobraManBack],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/cobra-serpente',

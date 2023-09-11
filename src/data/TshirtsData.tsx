@@ -9,12 +9,23 @@ import teeGeoElephant from '../assets/products_icon/tee_geo_elephant.png'
 
 import teeRedDragonBig from '../assets/products_img/tee_red_dragon.png'
 import teeRedDragonBlack from '../assets/products_img/tee_red_dragon_black.png'
+import teeRedDragonGirlRed from '../assets/products_img/tee_red_dragon_girl_red.png'
+import teeRedDragonGirlBle from '../assets/products_img/tee_red_dragon_girl_blue.png'
+
 import teeOctoInvBig from '../assets/products_img/tee_octo_inv.png'
 import teeOctoInvBlack from '../assets/products_img/tee_octo_inv_black.png'
+import teeOctoInvGirlGrey from '../assets/products_img/tee_octo_inv_girl_grey.png'
+import teeOctoInvGirlBlue from '../assets/products_img/tee_octo_inv_girl_blue.png'
+
 import teeKoiFishFlowersBig from '../assets/products_img/tee_koi_fish_flowers.png'
 import teeKoiFishFlowersGreen from '../assets/products_img/tee_koi_fish_flowers_green.png'
+import teeKoiFishFlowersManBlue from '../assets/products_img/tee_koi_fish_flowers_man_blue.png'
+import teeKoiFishFlowersManBlack from '../assets/products_img/tee_koi_fish_flowers_man_black.png'
+
 import teeRoseSingBig from '../assets/products_img/tee_rose_sing.png'
 import teeRoseSingWhite from '../assets/products_img/tee_rose_sing_white.png'
+import teeRoseSingManRed from '../assets/products_img/tee_rose_sing_man_red.png'
+import teeRoseSingManGrey from '../assets/products_img/tee_rose_sing_man_grey.png'
 import teeMoonBig from '../assets/products_img/tee_moon_grey.png'
 import teeMoonGrey from '../assets/products_img/tee_moon_black.png'
 import teeMoonMan from '../assets/products_img/tee_moon_man.png'
@@ -28,12 +39,20 @@ import teeGeoElephantMan from '../assets/products_img/tee_geo_elephant_man.png'
 export const allTShirtsArray = [
   teeRedDragonBig,
   teeRedDragonBlack,
+  teeRedDragonGirlRed,
+  teeRedDragonGirlBle,
   teeOctoInvBig,
   teeOctoInvBlack,
+  teeOctoInvGirlGrey,
+  teeOctoInvGirlBlue,
   teeKoiFishFlowersBig,
   teeKoiFishFlowersGreen,
+  teeKoiFishFlowersManBlue,
+  teeKoiFishFlowersManBlack,
   teeRoseSingBig,
   teeRoseSingWhite,
+  teeRoseSingManRed,
+  teeRoseSingManGrey,
   teeMoonBig,
   teeMoonGrey,
   teeMoonMan,
@@ -57,7 +76,12 @@ const TshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeRedDragon,
-    imgSrc: [teeRedDragonBig, teeRedDragonBlack],
+    imgSrc: [
+      teeRedDragonBig,
+      teeRedDragonBlack,
+      teeRedDragonGirlRed,
+      teeRedDragonGirlBle,
+    ],
     price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/dragao-vermelho',
   },
@@ -66,7 +90,12 @@ const TshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeOctoInv,
-    imgSrc: [teeOctoInvBig, teeOctoInvBlack],
+    imgSrc: [
+      teeOctoInvBig,
+      teeOctoInvBlack,
+      teeOctoInvGirlGrey,
+      teeOctoInvGirlBlue,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees/crisantemo-octograma-estrela-invertido',
@@ -76,7 +105,12 @@ const TshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeKoiFishFlowers,
-    imgSrc: [teeKoiFishFlowersBig, teeKoiFishFlowersGreen],
+    imgSrc: [
+      teeKoiFishFlowersBig,
+      teeKoiFishFlowersGreen,
+      teeKoiFishFlowersManBlue,
+      teeKoiFishFlowersManBlack,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees/peixes-koi-carpas-flores',
@@ -86,7 +120,12 @@ const TshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeRoseSing,
-    imgSrc: [teeRoseSingBig, teeRoseSingWhite],
+    imgSrc: [
+      teeRoseSingBig,
+      teeRoseSingWhite,
+      teeRoseSingManRed,
+      teeRoseSingManGrey,
+    ],
     price: ItemPrice,
     buyLink: 'https://www.colab55.com/@malanskiart/tees/rosa-singular',
   },

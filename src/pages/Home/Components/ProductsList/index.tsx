@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import {
   ProductListContainer,
-  ProductListPagination,
   ProductsListStyles,
 } from '../../../../styles/pages'
 import { Nav } from '../../../../components/Nav'
@@ -20,6 +19,7 @@ import SweatShirtsDataList from '../../../../data/SweatShirtsData'
 import TotebagsList from '../../../../data/TotebagsData'
 import TowelsDataList from '../../../../data/TowelsData'
 import TshirtsDataList from '../../../../data/TshirtsData'
+import ProductPagination from '../../../../components/ProductPagination'
 
 const allData = [
   ...FullTshirtsDataList,
@@ -61,35 +61,31 @@ export function ProductsList() {
       <Nav />
       <h2>Todos os Produtos</h2>
 
-      <ProductListPagination id="productList">
-        <h5>Páginas</h5>
-        <ul>
-          {Array(Math.ceil(allData.length / productsPerPage))
-            .fill(0)
-            .map((_, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  setCurrentPage(index + 1)
-                  scrollToElement('productList') // Chama a função para rolar até o elemento com o ID "productList"
-                }}
-                className={`page-item ${
-                  index + 1 === currentPage ? 'active' : ''
-                }`}
-              >
-                <a href="#" title={`Página ${index + 1}`}>
-                  {index + 1}
-                </a>
-              </li>
-            ))}
-        </ul>
-      </ProductListPagination>
+      {/* Paginação superior */}
+      <ProductPagination
+        currentPage={currentPage}
+        totalPages={Math.ceil(allData.length / productsPerPage)}
+        onPageChange={(page) => {
+          setCurrentPage(page)
+          scrollToElement('productList')
+        }}
+      />
 
       <ProductListContainer>
         {currentProducts.map((product, index) => (
           <ProductCard data={product} key={index} />
         ))}
       </ProductListContainer>
+
+      {/* Paginação inferior */}
+      <ProductPagination
+        currentPage={currentPage}
+        totalPages={Math.ceil(allData.length / productsPerPage)}
+        onPageChange={(page) => {
+          setCurrentPage(page)
+          scrollToElement('productList')
+        }}
+      />
     </ProductsListStyles>
   )
 }
