@@ -11,6 +11,8 @@ import {
   Modal,
   ModalFlex,
   ModalHeader,
+  ModalImageButton,
+  ModalImageNav,
   ModalInfo,
   OptionsStyle,
   Price,
@@ -37,7 +39,7 @@ export function ProductCard(props: IProductData) {
   const { name, options, iconSrc, price, buyLink } = props.data
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [selectedProduct, setSelectedProduct] = useState<
     IProductData['data'] | null
   >(null)
@@ -56,12 +58,9 @@ export function ProductCard(props: IProductData) {
     setIsModalOpen(false)
   }
 
-  function changeImage() {
-    if (currentImageIndex === props.data.imgSrc.length - 1) {
-      setCurrentImageIndex(0)
-    } else {
-      setCurrentImageIndex(currentImageIndex + 1)
-    }
+  const changeImage = (index: number) => {
+    setCurrentImageIndex(index)
+    setSelectedImageIndex(index)
   }
 
   return (
@@ -95,7 +94,6 @@ export function ProductCard(props: IProductData) {
             ))}
           </OptionsStyle>
           <h3>{name}</h3>
-          {/* <p>{description}</p> */}
         </ProductInfo>
         <BuyActions>
           <Price title="Preço atual">
@@ -105,7 +103,7 @@ export function ProductCard(props: IProductData) {
             title="Comprar direto na Colab 55 @malanskiart"
             background={theme.product['purple-dark']}
           >
-            <a href={buyLink} target="_blanc" rel="noopener noreferrer">
+            <a href={buyLink} target="_blank" rel="noopener noreferrer">
               <ShoppingCart size={22} weight="fill" />
             </a>
           </BuyButton>
@@ -120,12 +118,21 @@ export function ProductCard(props: IProductData) {
                 title="Trocar Imagem"
                 src={props.data.imgSrc[currentImageIndex]}
                 alt={selectedProduct.name}
-                onClick={changeImage}
-              ></img>
+                // onClick={changeImage}
+              />
               {props.data.imgSrc.length > 1 && (
-                <div>
-                  <span>Clique na imagem para ver mais</span>
-                </div>
+                <ModalImageNav>
+                  {props.data.imgSrc.map((imgSrc, index) => (
+                    <ModalImageButton
+                      key={index}
+                      onClick={() => changeImage(index)}
+                      className={index === selectedImageIndex ? 'active' : ''}
+                      title={`Ver variações de ${selectedProduct.name}`}
+                    >
+                      <img src={imgSrc} alt={selectedProduct.name} />
+                    </ModalImageButton>
+                  ))}
+                </ModalImageNav>
               )}
             </ModalHeader>
 
@@ -154,7 +161,7 @@ export function ProductCard(props: IProductData) {
                 >
                   <a
                     href={selectedProduct.buyLink}
-                    target="_blanc"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <ShoppingCart size={22} weight="fill" />

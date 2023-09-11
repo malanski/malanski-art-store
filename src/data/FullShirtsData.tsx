@@ -12,13 +12,22 @@ import teeKoiColor from '../assets/products_icon/tee_full_koi_twin.png'
 import teeKoi from '../assets/products_icon/tee_full_koi.png'
 
 import teeFullRedDragonBig from '../assets/products_img/tee_full_red_dragon.png'
+import teeFullRedDragonGirl from '../assets/products_img/tee_full_red_dragon_girl.png'
 import teeFullRedDragonBack from '../assets/products_img/tee_full_red_dragon_back.png'
+import teeFullRedDragonGirlBack from '../assets/products_img/tee_full_red_dragon_girl_back.png'
 import teeHeptaInvBig from '../assets/products_img/tee_full_hepta_inv.png'
+import teeHeptaInvGirl from '../assets/products_img/tee_full_hepta_inv_girl.png'
 import teeHeptaInvBack from '../assets/products_img/tee_full_hepta_inv_back.png'
+import teeHeptaInvGirlBack from '../assets/products_img/tee_full_hepta_inv_girl_back.png'
 import teeButterflyMarbBig from '../assets/products_img/tee_full_butterfly_marb.png'
+import teeButterflyMarbMan from '../assets/products_img/tee_full_butterfly_marb_man.png'
 import teeButterflyMarbBack from '../assets/products_img/tee_full_butterfly_marb_back.png'
+import teeButterflyMarbManBack from '../assets/products_img/tee_full_butterfly_marb_man_back.png'
 import teeHeptaMudBig from '../assets/products_img/tee_full_hepta_mud.png'
+import teeHeptaMudMan from '../assets/products_img/tee_full_hepta_mud_man.png'
 import teeHeptaMudBack from '../assets/products_img/tee_full_hepta_mud_back.png'
+import teeHeptaMudManBack from '../assets/products_img/tee_full_hepta_mud_man_back.png'
+
 import teeFoxBig from '../assets/products_img/tee_full_fox.png'
 import teeFoxBack from '../assets/products_img/tee_full_fox_back.png'
 import teeRoseBig from '../assets/products_img/tee_full_salmon_rose.png'
@@ -74,7 +83,12 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeFullRedDragon,
-    imgSrc: [teeFullRedDragonBig, teeFullRedDragonBack],
+    imgSrc: [
+      teeFullRedDragonBig,
+      teeFullRedDragonBack,
+      teeFullRedDragonGirl,
+      teeFullRedDragonGirlBack,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/dragao-vermelho',
@@ -84,17 +98,27 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeHeptaInv,
-    imgSrc: [teeHeptaInvBig, teeHeptaInvBack],
+    imgSrc: [
+      teeHeptaInvBig,
+      teeHeptaInvBack,
+      teeHeptaInvGirl,
+      teeHeptaInvGirlBack,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-e-estrela-heptagrama-invertido',
   },
   {
-    name: `${category} Dragão Vermelho`,
+    name: `${category} Borboleta`,
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeButterflyMarb,
-    imgSrc: [teeButterflyMarbBig, teeButterflyMarbBack],
+    imgSrc: [
+      teeButterflyMarbBig,
+      teeButterflyMarbBack,
+      teeButterflyMarbMan,
+      teeButterflyMarbManBack,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/grande-borboleta-nas-costas-marmore?m=baby-long',
@@ -104,7 +128,12 @@ const FullTshirtsDataList = [
     description: ItemDescription,
     options: ItemOptions,
     iconSrc: teeHeptaMud,
-    imgSrc: [teeHeptaMudBig, teeHeptaMudBack],
+    imgSrc: [
+      teeHeptaMudBig,
+      teeHeptaMudBack,
+      teeHeptaMudMan,
+      teeHeptaMudManBack,
+    ],
     price: ItemPrice,
     buyLink:
       'https://www.colab55.com/@malanskiart/tees-fullprint/crisantemo-octograma-estrela-invertido?m=baby-long',

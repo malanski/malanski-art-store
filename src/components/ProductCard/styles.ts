@@ -277,6 +277,36 @@ export const ModalHeader = styled.div`
     }
   }
 `
+export const ModalImageNav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+`
+
+export const ModalImageButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  img {
+    width: 80px;
+    border: 1px solid ${(props) => props.theme.base['base-title']};
+    background: white;
+    border-radius: 6px;
+    margin-right: 6px;
+    &:hover {
+      box-shadow: 0px 0px 2px 2px
+        ${(props) => props.theme.base['base-subtitle']};
+    }
+  }
+  @media (max-width: 475px) {
+    img {
+      width: 60px;
+    }
+  }
+`
+
 export const ModalInfo = styled.div`
   right: 0;
   background: ${(props) => props.theme.base['base-card']};

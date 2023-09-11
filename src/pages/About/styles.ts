@@ -9,12 +9,13 @@ export const AboutStyles = styled.div`
   h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    margin: 32px;
+    margin: 3.2rem;
   }
   h4 {
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
+    margin: 1.6rem;
   }
   p {
     font-size: 1.8rem;
@@ -22,6 +23,14 @@ export const AboutStyles = styled.div`
     background: ${(props) => props.theme.base['base-card']};
     border-radius: 8px;
     text-align: justify;
+    width: 50%;
+  }
+  @media (max-width: 720px) {
+    p {
+      width: 100%;
+
+      margin: 2rem;
+    }
   }
 `
 export const AboutCard = styled.div`
@@ -38,7 +47,7 @@ export const AboutCard = styled.div`
     color: white;
     text-decoration: underline;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 720px) {
     flex-direction: column-reverse;
     img {
       width: 70%;
