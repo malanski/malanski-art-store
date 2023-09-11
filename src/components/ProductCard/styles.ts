@@ -297,7 +297,7 @@ export const ModalInfo = styled.div`
   }
   p {
     text-align: justify;
-    padding: 2rem 0;
+    padding: 3.2rem 1rem;
   }
   a,
   h3,
@@ -309,6 +309,18 @@ export const ModalInfo = styled.div`
 
   @media (max-width: 1050px) {
     width: 290px;
+  }
+  @media (max-width: 890px) {
+    width: 70vw;
+  }
+  @media (max-width: 520px) {
+    width: 90vw;
+  }
+  @media (max-width: 375px) {
+    width: 95vw;
+    p {
+      padding: 1.5rem 0.5rem;
+    }
   }
 `
 export const CardCloseButton = styled.button`

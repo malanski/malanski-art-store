@@ -18,7 +18,7 @@ export const AboutStyles = styled.div`
   }
   p {
     font-size: 1.8rem;
-    padding: 1rem;
+    padding: 3.2rem 1rem;
     background: ${(props) => props.theme.base['base-card']};
     border-radius: 8px;
     text-align: justify;
