@@ -31,6 +31,10 @@ export const SocialLinks = styled.div`
     text-decoration: none;
     padding: 0.8rem 1rem;
     color: ${(props) => props.theme.base['base-title']};
+    &:hover {
+      background: ${(props) => props.theme.base.transparentBg};
+      transition: ease-in 200ms;
+    }
   }
 
   @media (max-width: 798px) {

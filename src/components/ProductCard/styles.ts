@@ -229,7 +229,9 @@ export const ModalFlex = styled.div`
   align-items: center;
   flex-direction: row;
   padding: 1rem;
-  height: 95vh;
+  height: 98vh;
+  width: 100%;
+
   background: ${(props) => props.theme.base['base-black']};
   border-radius: 6px 36px 6px 36px;
   @media (max-width: 890px) {
@@ -294,7 +296,8 @@ export const ModalInfo = styled.div`
     text-align: left;
   }
   p {
-    padding: 1rem 0;
+    text-align: justify;
+    padding: 2rem 0;
   }
   a,
   h3,

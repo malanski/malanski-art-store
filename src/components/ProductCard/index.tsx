@@ -122,16 +122,20 @@ export function ProductCard(props: IProductData) {
                 alt={selectedProduct.name}
                 onClick={changeImage}
               ></img>
-              <div>
-                {/* <ArrowClockwise /> */}
-                <span>Clique na imagem para ver mais</span>
-              </div>
+              {props.data.imgSrc.length > 1 && (
+                <div>
+                  <span>Clique na imagem para ver mais</span>
+                </div>
+              )}
             </ModalHeader>
 
             <ModalInfo>
               <h3>{selectedProduct.name}</h3>
               <hr />
-              <p>{selectedProduct.description}</p>
+              <p>
+                &ensp;&ensp;&ensp;&ensp;
+                {selectedProduct.description}
+              </p>
               <h5>Modelos:</h5>
               <OptionsStyle>
                 {selectedProduct.options.map((option, index) => (
