@@ -61,7 +61,6 @@ export function ProductsList() {
       <Nav />
       <h2>Todos os Produtos</h2>
 
-      {/* Paginação superior */}
       <ProductPagination
         currentPage={currentPage}
         totalPages={Math.ceil(allData.length / productsPerPage)}
@@ -77,7 +76,6 @@ export function ProductsList() {
         ))}
       </ProductListContainer>
 
-      {/* Paginação inferior */}
       <ProductPagination
         currentPage={currentPage}
         totalPages={Math.ceil(allData.length / productsPerPage)}

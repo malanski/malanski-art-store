@@ -19,6 +19,8 @@ export const ProductsListStyles = styled.section`
     justify-content: center;
   }
   h4 {
+    font-family: 'Baloo 2', cursive;
+
     font-size: 2.5rem;
     text-align: left;
     width: 100%;
@@ -51,6 +53,7 @@ export const ProductsNav = styled.ul`
   a {
     padding: 1rem;
     text-align: center;
+    font-family: 'Baloo 2', cursive;
     font-size: 2.2rem;
     text-transform: uppercase;
     color: ${(props) => props.theme.product['yellow-light']};

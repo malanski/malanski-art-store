@@ -17,6 +17,7 @@ export const NavContainer = styled.nav`
     gap: 3.2rem;
     min-width: 140px;
     max-width: 267px;
+    font-family: 'Baloo 2', cursive;
 
     text-decoration: none;
     padding: 0.1rem 0.4rem;

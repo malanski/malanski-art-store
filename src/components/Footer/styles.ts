@@ -21,6 +21,7 @@ export const SocialLinks = styled.div`
     transition: ease-out 800ms;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: 'Baloo 2', cursive;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;

@@ -7,6 +7,7 @@ export const AboutStyles = styled.div`
     color: white;
   }
   h2 {
+    font-family: 'Baloo 2', cursive;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 3.2rem;
@@ -17,40 +18,33 @@ export const AboutStyles = styled.div`
     text-align: center;
     margin: 1.6rem;
   }
-  p {
-    font-size: 1.8rem;
-    padding: 3.2rem 1rem;
-    background: ${(props) => props.theme.base['base-card']};
-    border-radius: 8px;
-    text-align: justify;
-    width: 50%;
-  }
-  @media (max-width: 720px) {
-    p {
-      width: 100%;
-
-      margin: 2rem;
-    }
-  }
 `
 export const AboutCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  img {
-    width: 50%;
-    /* animation-play-state: paused; */
-    margin: 1rem;
+  flex-grow: 2;
+  p {
+    font-size: 1.8rem;
+    padding: 3.2rem 1.6rem;
+    background: ${(props) => props.theme.base['base-card']};
+    border-radius: 6px 36px 6px 36px;
+    text-align: justify;
+    width: 45%;
+    height: 100%;
   }
   a {
     color: white;
     text-decoration: underline;
   }
-  @media (max-width: 720px) {
+  @media (max-width: 950px) {
     flex-direction: column-reverse;
-    img {
-      width: 70%;
+    width: 100%;
+    p {
+      width: 90%;
+
+      margin: 2rem;
     }
   }
 `
